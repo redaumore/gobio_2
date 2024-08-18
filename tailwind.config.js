@@ -4,13 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        white: "#fff",
+        "grays-white": "#fff",
         gray: "#1e1e1e",
         whitesmoke: "#f5f5f7",
         black: "#000",
         lightgray: "#cad1db",
         slategray: "#687484",
-        dimgray: "#525252",
       },
       spacing: {},
       fontFamily: {
@@ -20,13 +19,19 @@ module.exports = {
     fontSize: {
       xs: "12px",
       base: "16px",
+      xl: "20px",
       "5xl": "24px",
+      "45xl": "64px",
+      "9xl": "28px",
       sm: "14px",
       inherit: "inherit",
     },
     screens: {
-      lg: {
-        max: "1200px",
+      md: {
+        max: "960px",
+      },
+      sm: {
+        max: "420px",
       },
     },
   },
