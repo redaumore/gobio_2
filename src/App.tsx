@@ -5,7 +5,9 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import EnvasesPageDesktop from "./pages/EnvasesPageDesktop";
 import ContactPageDesktop from "./pages/ContactPageDesktop";
+import EnvasesPageDesktop1 from "./pages/EnvasesPageDesktop1";
 
 function App() {
   const action = useNavigationType();
@@ -27,6 +29,14 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/contact-page-desktop":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/envases-page-desktop":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -45,7 +55,9 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<ContactPageDesktop />} />
+      <Route path="/" element={<EnvasesPageDesktop />} />
+      <Route path="/contact-page-desktop" element={<ContactPageDesktop />} />
+      <Route path="/envases-page-desktop" element={<EnvasesPageDesktop1 />} />
     </Routes>
   );
 }
