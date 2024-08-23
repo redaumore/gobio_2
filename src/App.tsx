@@ -5,9 +5,11 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import EnvasesPageDesktop from "./pages/EnvasesPageDesktop";
 import ContactPageDesktop from "./pages/ContactPageDesktop";
+import EnvasesPageDesktop from "./pages/EnvasesPageDesktop";
 import EnvasesPageDesktop1 from "./pages/EnvasesPageDesktop1";
+import FAQsDesktop from "./pages/FAQsDesktop";
+import EnvasesPageDesktop11 from "./pages/EnvasesPageDesktop11";
 
 function App() {
   const action = useNavigationType();
@@ -29,11 +31,19 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/contact-page-desktop":
+      case "/envases-page-desktop":
         title = "";
         metaDescription = "";
         break;
-      case "/envases-page-desktop":
+      case "/envases-page-desktop1":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/faqs-desktop":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/envases-page-desktop2":
         title = "";
         metaDescription = "";
         break;
@@ -55,9 +65,11 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<EnvasesPageDesktop />} />
-      <Route path="/contact-page-desktop" element={<ContactPageDesktop />} />
-      <Route path="/envases-page-desktop" element={<EnvasesPageDesktop1 />} />
+      <Route path="/" element={<ContactPageDesktop />} />
+      <Route path="/envases-page-desktop" element={<EnvasesPageDesktop />} />
+      <Route path="/envases-page-desktop1" element={<EnvasesPageDesktop1 />} />
+      <Route path="/faqs-desktop" element={<FAQsDesktop />} />
+      <Route path="/envases-page-desktop2" element={<EnvasesPageDesktop11 />} />
     </Routes>
   );
 }

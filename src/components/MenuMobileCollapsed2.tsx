@@ -1,11 +1,11 @@
 import { FunctionComponent, useEffect } from "react";
 
-export type MenuMobileCollapsed1Type = {
+export type MenuMobileCollapsed2Type = {
   className?: string;
   onClose?: () => void;
 };
 
-const MenuMobileCollapsed1: FunctionComponent<MenuMobileCollapsed1Type> = ({
+const MenuMobileCollapsed2: FunctionComponent<MenuMobileCollapsed2Type> = ({
   className = "",
   onClose,
 }) => {
@@ -68,4 +68,4 @@ const MenuMobileCollapsed1: FunctionComponent<MenuMobileCollapsed1Type> = ({
   );
 };
 
-export default MenuMobileCollapsed1;
+export default MenuMobileCollapsed2;

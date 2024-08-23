@@ -23,6 +23,7 @@ module.exports = {
       },
       borderRadius: {
         "9xl-6": "28.6px",
+        "9xl": "28px",
       },
     },
     fontSize: {
@@ -36,6 +37,7 @@ module.exports = {
       "smi-5": "12.5px",
       "mini-3": "14.3px",
       "base-1": "16.1px",
+      lg: "18px",
       inherit: "inherit",
     },
     screens: {
