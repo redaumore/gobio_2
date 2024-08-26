@@ -5,6 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import AliadosPageDesktop from "./pages/AliadosPageDesktop";
 import ContactPageDesktop from "./pages/ContactPageDesktop";
 import EnvasesPageDesktop from "./pages/EnvasesPageDesktop";
 import EnvasesPageDesktop1 from "./pages/EnvasesPageDesktop1";
@@ -28,6 +29,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/contact-page-desktop":
         title = "";
         metaDescription = "";
         break;
@@ -65,7 +70,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<ContactPageDesktop />} />
+      <Route path="/" element={<AliadosPageDesktop />} />
+      <Route path="/contact-page-desktop" element={<ContactPageDesktop />} />
       <Route path="/envases-page-desktop" element={<EnvasesPageDesktop />} />
       <Route path="/envases-page-desktop1" element={<EnvasesPageDesktop1 />} />
       <Route path="/faqs-desktop" element={<FAQsDesktop />} />

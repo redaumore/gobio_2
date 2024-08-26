@@ -14,7 +14,12 @@ module.exports = {
         lightgray: "#cad1db",
         slategray: "#687484",
         darkslategray: "#07313e",
-        aliceblue: "#eef3f8",
+        aliceblue: {
+          "100": "#eef3f8",
+          "200": "#e7ebf0",
+        },
+        lightsteelblue: "#b3c8dc",
+        pink: "#f0bfc3",
       },
       spacing: {},
       fontFamily: {
@@ -24,6 +29,7 @@ module.exports = {
       borderRadius: {
         "9xl-6": "28.6px",
         "9xl": "28px",
+        "13xl": "32px",
       },
     },
     fontSize: {
@@ -38,6 +44,7 @@ module.exports = {
       "mini-3": "14.3px",
       "base-1": "16.1px",
       lg: "18px",
+      "17xl": "36px",
       inherit: "inherit",
     },
     screens: {
