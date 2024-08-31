@@ -3,7 +3,7 @@ import { FunctionComponent } from "react";
 const EnvasesPageDesktop11: FunctionComponent = () => {
   return (
     <div className="w-full relative bg-grays-white h-[1849px] overflow-hidden flex flex-col items-center justify-between text-right text-base text-gray-200 font-montserrat">
-      <div className="w-[1440px] bg-aliceblue h-20 flex flex-row items-start justify-between py-6 px-16 box-border text-5xl text-black">
+      <div className="w-[1440px] bg-aliceblue-100 h-20 flex flex-row items-start justify-between py-6 px-16 box-border text-5xl text-black">
         <img
           className="w-8 relative h-8 object-contain"
           alt=""

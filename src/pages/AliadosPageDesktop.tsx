@@ -2,32 +2,32 @@ import { FunctionComponent } from "react";
 
 const AliadosPageDesktop: FunctionComponent = () => {
   return (
-    <div className="w-full relative bg-grays-white overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[213.5px] box-border text-center text-[80px] text-grays-white font-montserrat">
-      <div className="self-stretch bg-gray-200 overflow-hidden flex flex-col items-center justify-end py-[73.5px] px-0">
+    <div className="w-full relative bg-grays-white overflow-hidden flex flex-col items-start justify-end pt-0 px-0 pb-[213.5px] box-border text-center text-[80px] text-grays-white font-montserrat sm:w-[420px] sm:pb-0 sm:box-border">
+      <div className="self-stretch bg-gray-200 overflow-hidden flex flex-col items-center justify-end py-[73.5px] px-0 sm:pb-[73px] sm:box-border">
         <div className="self-stretch flex flex-col items-start justify-start gap-[74px]">
           <div className="self-stretch overflow-hidden flex flex-row items-start justify-start">
             <div className="flex-1 h-[388.3px] overflow-hidden flex flex-row items-start justify-start gap-[43px]">
-              <div className="w-[214px] h-[387px] overflow-hidden shrink-0 flex flex-col items-center justify-center">
+              <div className="w-[214px] h-[387px] overflow-hidden shrink-0 flex flex-col items-center justify-center lg:items-start lg:justify-center">
                 <img
-                  className="w-[213.9px] relative rounded-tl-none rounded-tr-3xl rounded-br-3xl rounded-bl-none h-[292.8px] object-cover"
+                  className="w-[213.9px] relative rounded-tl-none rounded-tr-3xl rounded-br-3xl rounded-bl-none h-[292.8px] object-cover lg:w-[140px] lg:h-[190px]"
                   alt=""
                   src="/frame-1000005051@2x.png"
                 />
               </div>
-              <div className="w-[894px] h-[388px] overflow-hidden shrink-0 flex flex-col items-center justify-center">
-                <div className="w-[866px] flex flex-col items-center justify-center gap-10">
+              <div className="w-[894px] h-[388px] overflow-hidden shrink-0 flex flex-col items-center justify-center lg:flex-1 lg:pl-5 lg:pr-5 lg:box-border md:flex-1 sm:flex-1">
+                <div className="w-[866px] flex flex-col items-center justify-center gap-10 lg:self-stretch lg:w-auto md:self-stretch md:w-auto md:pl-5 md:pr-5 md:box-border sm:self-stretch sm:w-auto">
                   <div className="self-stretch flex flex-col items-center justify-start">
-                    <div className="self-stretch flex flex-col items-center justify-center gap-6">
-                      <div className="self-stretch relative">
+                    <div className="self-stretch flex flex-col items-center justify-center gap-6 sm:pr-0 sm:box-border">
+                      <div className="self-stretch relative sm:text-[56px] sm:self-stretch sm:w-auto">
                         <span className="font-semibold">{`Nuestros `}</span>
                         <b className="text-transparent !bg-clip-text [background:linear-gradient(90deg,_#f0bfc3,_#32aa93_36.5%,_#7cbf80_70%,_#e8ef7c)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
                           Aliados.
                         </b>
                       </div>
-                      <div className="self-stretch relative text-5xl leading-[32px] font-medium">{`Conocé más sobre los negocios qué eligen preservar el futuro día a día y las diferentes soluciones que nosotros ofrecemos. `}</div>
+                      <div className="self-stretch relative text-5xl leading-[32px] font-medium sm:text-base">{`Conocé más sobre los negocios qué eligen preservar el futuro día a día y las diferentes soluciones que nosotros ofrecemos. `}</div>
                     </div>
                   </div>
-                  <div className="h-14 flex flex-col items-end justify-start text-5xl">
+                  <div className="h-14 flex flex-col items-end justify-start text-5xl lg:w-auto lg:[align-self:unset]">
                     <div className="self-stretch rounded-lg border-grays-white border-[2px] border-solid box-border h-14 flex flex-row items-center justify-center py-4 px-10">
                       <div className="relative font-semibold">
                         Unite al cambio
@@ -100,33 +100,39 @@ const AliadosPageDesktop: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className="self-stretch flex flex-col items-end justify-start gap-[88px] text-left text-17xl text-gray-200">
-        <div className="self-stretch flex flex-col items-start justify-start">
-          <div className="self-stretch flex flex-row items-center justify-between py-12 px-16 sm:flex-col">
-            <div className="w-[666px] flex flex-col items-start justify-start gap-8 sm:self-stretch sm:w-auto">
-              <b className="self-stretch relative">Hotel Four Seasons</b>
-              <div className="self-stretch relative text-xl leading-[28px]">
-                <p className="m-0">
-                  Uno de los más prestigiosos de la ciudad de Buenos Aires
-                  decidió no quedarse atrás e incorporar nuestros envases en su
-                  comedor interno.
-                </p>
-                <p className="m-0">{` `}</p>
-                <p className="m-0">
-                  Esto se debe a que en la pandemia no era posible usar vajilla
-                  reutilizable y pudimos brindarles la solución de packaging
-                  descartable ecológico y no generar residuos plásticos en su
-                  comedor. Seguimos hasta el día de hoy trabajando continuamente
-                  con ellos.
-                </p>
+      <div className="self-stretch flex flex-col items-end justify-start gap-[88px] text-left text-17xl text-gray-200 sm:self-stretch sm:w-auto sm:items-center sm:justify-start">
+        <div className="self-stretch flex flex-col items-start justify-start sm:self-stretch sm:w-auto sm:items-center sm:justify-start">
+          <div className="self-stretch flex flex-row items-center justify-between py-12 px-16 lg:py-[15px] lg:px-0 lg:box-border md:flex-row sm:self-stretch sm:w-auto sm:flex-col sm:items-center sm:justify-start sm:p-0 sm:box-border mq350small:flex-col">
+            <div className="flex-1 h-[500px] flex flex-col items-start justify-start lg:gap-3 lg:pl-[50px] lg:box-border md:pr-10 md:box-border sm:flex-[unset] sm:h-[450px] sm:gap-8 sm:items-center sm:justify-start sm:pr-5 sm:box-border sm:self-stretch mq350small:flex-[unset] mq350small:self-stretch">
+              <div className="self-stretch flex-1 flex flex-col items-center justify-center gap-8 lg:pr-0 lg:box-border md:flex-col md:pr-0 md:box-border sm:self-stretch sm:w-auto sm:pr-0 sm:box-border">
+                <b className="self-stretch relative lg:text-[30px] md:text-[25px] sm:text-[26px] sm:self-stretch sm:w-auto">
+                  Hotel Four Seasons
+                </b>
+                <div className="self-stretch relative text-xl leading-[28px] lg:text-lg md:text-[15px] sm:text-lg sm:leading-[22px] sm:self-stretch sm:w-auto">
+                  <p className="m-0">
+                    Uno de los más prestigiosos de la ciudad de Buenos Aires
+                    decidió no quedarse atrás e incorporar nuestros envases en
+                    su comedor interno.
+                  </p>
+                  <p className="m-0">{` `}</p>
+                  <p className="m-0">
+                    Esto se debe a que en la pandemia no era posible usar
+                    vajilla reutilizable y pudimos brindarles la solución de
+                    packaging descartable ecológico y no generar residuos
+                    plásticos en su comedor. Seguimos hasta el día de hoy
+                    trabajando continuamente con ellos.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="w-[532px] rounded-13xl bg-whitesmoke border-pink border-[6px] border-solid box-border h-[500px] flex flex-col items-center justify-center sm:self-stretch sm:w-auto">
-              <img
-                className="w-[416px] relative h-[275px] overflow-hidden shrink-0"
-                alt=""
-                src="/isolation-mode.svg"
-              />
+            <div className="w-[654px] flex flex-col items-end justify-center lg:flex-1 lg:flex-col lg:items-center lg:justify-center lg:pl-0 lg:pr-0 lg:box-border md:flex-1 md:items-center md:justify-center sm:flex-1 sm:pl-5 sm:pr-5 sm:box-border">
+              <div className="w-[533px] rounded-13xl bg-whitesmoke border-pink border-[6px] border-solid box-border h-[500px] flex flex-col items-center justify-center lg:w-[470px] lg:h-auto lg:gap-2.5 lg:items-center lg:justify-center lg:pt-0 lg:box-border md:w-[370px] md:h-auto md:items-center md:justify-center md:rounded-13xl sm:self-stretch sm:w-auto sm:h-auto">
+                <img
+                  className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover sm:flex-1 sm:self-stretch sm:h-auto"
+                  alt=""
+                  src="/fourseason@2x.png"
+                />
+              </div>
             </div>
           </div>
           <div className="self-stretch flex flex-row items-center justify-start py-12 px-16 gap-[152px]">
@@ -158,7 +164,7 @@ const AliadosPageDesktop: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-center justify-between py-12 px-16">
+          <div className="w-[1440px] hidden flex-row items-center justify-between py-12 px-16 box-border">
             <div className="w-[666px] flex flex-col items-start justify-start gap-8">
               <b className="self-stretch relative">Florida Day School</b>
               <div className="self-stretch relative text-xl">
@@ -173,7 +179,7 @@ const AliadosPageDesktop: FunctionComponent = () => {
             </div>
             <div className="w-[532px] rounded-13xl bg-whitesmoke border-pink border-[6px] border-solid box-border h-[500px]" />
           </div>
-          <div className="self-stretch flex flex-row items-center justify-start py-12 px-16 gap-[152px]">
+          <div className="w-[1440px] hidden flex-row items-center justify-start py-12 px-16 box-border gap-[152px]">
             <div className="w-[532px] rounded-13xl bg-whitesmoke border-pink border-[6px] border-solid box-border h-[500px] flex flex-col items-center justify-center">
               <img
                 className="w-[137.1px] relative h-[364.6px] overflow-hidden shrink-0"
@@ -199,7 +205,7 @@ const AliadosPageDesktop: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-center justify-between py-12 px-16">
+          <div className="w-[1440px] hidden flex-row items-center justify-between py-12 px-16 box-border">
             <div className="w-[666px] flex flex-col items-start justify-start gap-8">
               <b className="self-stretch relative">Alparmis</b>
               <div className="self-stretch relative text-xl">
@@ -218,7 +224,7 @@ const AliadosPageDesktop: FunctionComponent = () => {
               />
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-center justify-start py-12 px-16 gap-[152px]">
+          <div className="w-[1440px] hidden flex-row items-center justify-start py-12 px-16 box-border gap-[152px]">
             <div className="w-[532px] rounded-13xl bg-whitesmoke border-pink border-[6px] border-solid box-border h-[500px] flex flex-col items-center justify-center">
               <img
                 className="w-[358.8px] relative h-[119.2px] overflow-hidden shrink-0"
@@ -240,7 +246,7 @@ const AliadosPageDesktop: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-center justify-between py-12 px-16">
+          <div className="w-[1440px] hidden flex-row items-center justify-between py-12 px-16 box-border">
             <div className="w-[666px] flex flex-col items-start justify-start gap-8">
               <b className="self-stretch relative">Parque Nacional Talampaya</b>
               <div className="self-stretch relative text-xl">
@@ -268,7 +274,7 @@ const AliadosPageDesktop: FunctionComponent = () => {
               />
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-center justify-start py-12 px-16 gap-[152px]">
+          <div className="w-[1440px] hidden flex-row items-center justify-start py-12 px-16 box-border gap-[152px]">
             <div className="w-[532px] rounded-13xl bg-whitesmoke border-pink border-[6px] border-solid box-border h-[500px] flex flex-col items-center justify-center">
               <img
                 className="w-[338px] relative h-[74.4px] overflow-hidden shrink-0"
@@ -291,7 +297,7 @@ const AliadosPageDesktop: FunctionComponent = () => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-row items-center justify-between py-12 px-16">
+          <div className="w-[1440px] hidden flex-row items-center justify-between py-12 px-16 box-border">
             <div className="w-[666px] flex flex-col items-start justify-start gap-8">
               <b className="self-stretch relative">Tremun</b>
               <div className="self-stretch relative text-xl">
