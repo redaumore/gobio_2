@@ -20,6 +20,8 @@ module.exports = {
         },
         lightsteelblue: "#b3c8dc",
         pink: "#f0bfc3",
+        lavender: "#d6e3f2",
+        paleturquoise: "#baeee3",
       },
       spacing: {},
       fontFamily: {
@@ -45,6 +47,7 @@ module.exports = {
       "base-1": "16.1px",
       lg: "18px",
       "17xl": "36px",
+      "7xl": "26px",
       inherit: "inherit",
     },
     screens: {
