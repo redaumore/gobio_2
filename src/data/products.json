@@ -1,0 +1,12 @@
+{
+  "estuche-950ml": {
+    "name": "Estuche 950ml",
+    "material": "Bagazo de caña de azucar",
+    "slots": "2 compartimentos",
+    "size": "24cmx15cmx8cm.",
+    "customizableText": "Envase customizable.",
+    "biodegradableText": "En 60 días se biodegrada por completo.",
+    "shippingText": "Envíos a todo el país",
+    "imagePath":"/assets/images/estuche-950ml.jpg"
+  }
+}

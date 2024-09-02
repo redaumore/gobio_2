@@ -5,6 +5,8 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import './styles.css';
+import './index.css';
 import ProductPageDesktop from "./pages/ProductPageDesktop";
 import ContactPageDesktop from "./pages/ContactPageDesktop";
 import EnvasesPageDesktop from "./pages/EnvasesPageDesktop";
@@ -12,12 +14,13 @@ import EnvasesPageDesktop1 from "./pages/EnvasesPageDesktop1";
 import FAQsDesktop from "./pages/FAQsDesktop";
 import EnvasesPageDesktop11 from "./pages/EnvasesPageDesktop11";
 import AliadosPageDesktop from "./pages/AliadosPageDesktop";
+import ProductPageWrapper from "./pages/ProductPageWrapper";
 
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
-
+  
   useEffect(() => {
     if (action !== "POP") {
       window.scrollTo(0, 0);
@@ -57,6 +60,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/product-page-desktop":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -82,6 +89,8 @@ function App() {
       <Route path="/faqs-desktop" element={<FAQsDesktop />} />
       <Route path="/envases-page-desktop2" element={<EnvasesPageDesktop11 />} />
       <Route path="/aliados-page-desktop" element={<AliadosPageDesktop />} />
+      <Route path="/product-page-desktop" element={<ProductPageDesktop />} />
+      <Route path="/product/:productId" element={<ProductPageWrapper />} />
     </Routes>
   );
 }

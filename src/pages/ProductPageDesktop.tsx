@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import ProductDescription from "../components/ProductDescription";
 
 const ProductPageDesktop: FunctionComponent = () => {
   return (
@@ -265,75 +266,16 @@ const ProductPageDesktop: FunctionComponent = () => {
                 src="/arrow-right@2x.png"
               />
             </div>
-            <div className="w-[533px] flex flex-col items-start justify-center gap-8">
-              <div className="self-stretch flex flex-col items-start justify-start">
-                <div className="self-stretch flex flex-col items-start justify-start gap-2">
-                  <div className="self-stretch flex flex-row items-center justify-between py-1 px-0">
-                    <div className="relative leading-[21.48px] font-semibold">{`Estuche 950ml `}</div>
-                    <div className="rounded-[1000px] border-pink border-[2px] border-solid flex flex-row items-center justify-center py-1 px-4 text-center text-sm">
-                      <b className="relative">100% biodegradable</b>
-                    </div>
-                  </div>
-                  <div className="self-stretch relative text-lg leading-[21.48px] font-medium">
-                    Bagazo de caña de azucar
-                  </div>
-                </div>
-              </div>
-              <div className="w-[533px] rounded-3xl bg-whitesmoke flex flex-row items-center justify-start py-6 px-0 box-border text-lg">
-                <div className="w-[456px] flex flex-col items-start justify-start gap-2.5">
-                  <div className="flex flex-row items-center justify-start py-1.5 px-0 gap-1">
-                    <div className="w-8 h-8 flex flex-row items-center justify-center">
-                      <div className="w-[5.8px] relative rounded-[50%] bg-gray-200 h-[5.8px]" />
-                    </div>
-                    <div className="w-[414px] relative leading-[21.48px] inline-block shrink-0">
-                      2 compartimentos.
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-row items-center justify-start py-1.5 px-0 gap-1">
-                    <div className="w-8 h-8 flex flex-row items-center justify-center">
-                      <div className="w-[5.8px] relative rounded-[50%] bg-gray-200 h-[5.8px]" />
-                    </div>
-                    <div className="flex-1 relative leading-[21.48px]">
-                      24cm x 15cm x 8cm.
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-row items-center justify-start py-1.5 px-0 gap-1">
-                    <div className="w-8 h-8 flex flex-row items-center justify-center">
-                      <div className="w-[5.8px] relative rounded-[50%] bg-gray-200 h-[5.8px]" />
-                    </div>
-                    <div className="flex-1 relative leading-[21.48px]">
-                      Envase customizable.
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-row items-center justify-start py-1.5 px-0 gap-1">
-                    <div className="w-8 h-8 flex flex-row items-center justify-center">
-                      <div className="w-[5.8px] relative rounded-[50%] bg-gray-200 h-[5.8px]" />
-                    </div>
-                    <div className="flex-1 relative leading-[21.48px]">
-                      En 60 días se biodegrada por completo.
-                    </div>
-                  </div>
-                  <div className="self-stretch flex flex-row items-center justify-start py-1.5 px-0 gap-1">
-                    <div className="w-8 h-8 flex flex-row items-center justify-center">
-                      <div className="w-[5.8px] relative rounded-[50%] bg-gray-200 h-[5.8px]" />
-                    </div>
-                    <div className="flex-1 relative leading-[21.48px]">{`Envios a todo el pais. `}</div>
-                  </div>
-                </div>
-              </div>
-              <div className="self-stretch flex flex-row items-start justify-start gap-8 text-center text-5xl text-grays-white">
-                <div className="flex-1 flex flex-col items-end justify-start">
-                  <div className="self-stretch rounded-lg bg-gray-200 h-14 flex flex-row items-center justify-center py-4 px-10 box-border">
-                    <div className="relative font-semibold">Cotizar</div>
-                  </div>
-                </div>
-                <div className="flex-1 flex flex-col items-end justify-start text-gray-200">
-                  <div className="self-stretch rounded-lg border-gray-200 border-[2px] border-solid box-border h-14 flex flex-row items-center justify-center py-4 px-10">
-                    <div className="relative font-semibold">Muestra</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ProductDescription name="Estuche 950ml"
+              description={[
+                "2 compartimientos.",
+                "24cm x 15cm x 8cm.",
+                "Envase customizable.",
+                "En 60 días es biodegradable por completo."
+              ]}
+              customizableText="Envase customizable"
+              biodegradableText="biodegradable"
+              shippingText="Envíos a todo el país."/>
           </div>
         </div>
       </div>

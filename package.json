@@ -1,30 +1,33 @@
 {
-  "name": "gobio_(copy)",
+  "name": "gobio_2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/montserrat": "^5.0.19",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^29.5.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "lucide-react": "^0.438.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "web-vitals": "^2.1.4",
+    "react-router-dom": "^6.2.1",
     "typescript": "^5.5.4",
-    "react-router-dom": "^6.2.1"
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "postcss": "^8.4.44",
+    "tailwind-react": "^1.0.1",
+    "tailwindcss": "^3.4.10",
     "vite": "^5.2.3"
   },
   "scripts": {
