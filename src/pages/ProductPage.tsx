@@ -21,23 +21,21 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
       <ProductNameHeader name={name}/>
       <div className="flex flex-col md:flex-row md:items-start gap-6">
         {/* Etiqueta 100% biodegradable y Cabecera para móvil */}
-        <div className="md:hidden mb-4">
+        <div className="invisible md:visible mb-4">
           <ProductTitle name={name} material={material} />
         </div>
-        <div className="grid md:grid-cols-1 lg:grid-cols-2">
-          <ProductImage imagePath={imagePath}/>
-          <div className="md:hidden mb-4">
-            <ProductTitle name={name} material={material} />
-          </div>
-          <ProductDescription 
-            name={name}
-            material={material}
-            slots={slots}
-            size={size}
-            customizableText={customizableText}
-            biodegradableText={biodegradableText}
-            shippingText={shippingText}/>
+        <ProductImage imagePath={imagePath}/>
+        <div className="visible md:invisible mb-4">
+          <ProductTitle name={name} material={material} />
         </div>
+        <ProductDescription 
+          name={name}
+          material={material}
+          slots={slots}
+          size={size}
+          customizableText={customizableText}
+          biodegradableText={biodegradableText}
+          shippingText={shippingText}/>
       </div>
     </div>
   )
