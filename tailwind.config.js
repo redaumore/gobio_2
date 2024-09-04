@@ -53,27 +53,11 @@ module.exports = {
       inherit: "inherit",
     },
     screens: {
-      lg: {
-        max: "1200px",
-      },
-      mq1050: {
-        raw: "screen and (max-width: 1050px)",
-      },
-      md: {
-        max: "960px",
-      },
-      mq750: {
-        raw: "screen and (max-width: 750px)",
-      },
-      mq450: {
-        raw: "screen and (max-width: 450px)",
-      },
-      sm: {
-        max: "420px",
-      },
-      mq350small: {
-        raw: "screen and (max-width: 350px)",
-      },
+      sm: '640px', // Para pantallas pequeñas
+      md: '768px', // Para pantallas medianas
+      lg: '1024px', // Para pantallas grandes
+      xl: '1280x', // Para pantallas extra grandes
+      xxl: '1536px' // Para pantallas extra extra grandes
     },
   },
   corePlugins: {
