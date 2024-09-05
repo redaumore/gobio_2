@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import './styles.css';
 import './index.css';
-import ProductPageDesktop from "./pages/ProductPageDesktop";
 import ContactPageDesktop from "./pages/ContactPageDesktop";
 import EnvasesPageDesktop from "./pages/EnvasesPageDesktop";
 import EnvasesPageDesktop1 from "./pages/EnvasesPageDesktop1";
@@ -82,14 +81,13 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<ProductPageDesktop />} />
+      <Route path="/" element={<ProductPageWrapper />} />
       <Route path="/contact-page-desktop" element={<ContactPageDesktop />} />
       <Route path="/envases-page-desktop" element={<EnvasesPageDesktop />} />
       <Route path="/envases-page-desktop1" element={<EnvasesPageDesktop1 />} />
       <Route path="/faqs-desktop" element={<FAQsDesktop />} />
       <Route path="/envases-page-desktop2" element={<EnvasesPageDesktop11 />} />
       <Route path="/aliados-page-desktop" element={<AliadosPageDesktop />} />
-      <Route path="/product-page-desktop" element={<ProductPageDesktop />} />
       <Route path="/product/:productId" element={<ProductPageWrapper />} />
     </Routes>
   );

@@ -1,6 +1,7 @@
 import { FunctionComponent } from "react";
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ProductNameHeader from "../components/ProductNameHeader";
+import ProductCarousel from "../components/ProductCarousel";
 
 interface ProductPageProps {
   name: string;
@@ -17,9 +18,9 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
   return (
     <div className="min-h-screen">
       <ProductNameHeader name={name}/>
-      <div className="flex flex-col md:flex-row md:items-start gap-6">
+      <div className="flex flex-col md:flex-row md:items-start gap-6 p-6">
         {/* Etiqueta 100% biodegradable y Cabecera para móvil */}
-        <div className="visible md:invisible mb-4">
+        <div className="visible md:hidden mb-4">
           <div className="mb-2">
             <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
               100% biodegradable
@@ -75,6 +76,7 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
           </div>
         </div>
       </div>
+      <ProductCarousel />
     </div>
   )
 };

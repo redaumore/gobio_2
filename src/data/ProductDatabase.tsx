@@ -1,4 +1,4 @@
-{
+const productDatabase = {
   "estuche-950ml": {
     "name": "Estuche 950ml",
     "material": "Bagazo de caña de azucar",
@@ -38,5 +38,9 @@
     "biodegradableText": "En 60 días se biodegrada por completo.",
     "shippingText": "Envíos a todo el país",
     "imagePath":"/bowl-1500ml.png"
-  }
+  },
+}
+
+export default function ProductDatabase():any {
+  return productDatabase;
 }
