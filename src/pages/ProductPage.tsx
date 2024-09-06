@@ -2,6 +2,7 @@ import { FunctionComponent } from "react";
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ProductNameHeader from "../components/ProductNameHeader";
 import ProductCarousel from "../components/ProductCarousel";
+import GeneralInfo from "../components/GeneralInfo";
 
 interface ProductPageProps {
   name: string;
@@ -16,7 +17,7 @@ interface ProductPageProps {
 
 const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots, size, customizableText, biodegradableText, shippingText, imagePath}) => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-montserrat">
       <ProductNameHeader name={name}/>
       <div className="flex flex-col md:flex-row md:items-start gap-6 p-6">
         {/* Etiqueta 100% biodegradable y Cabecera para móvil */}
@@ -26,8 +27,9 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
               100% biodegradable
             </span>
           </div>
-          <h1 className="text-2xl font-bold mb-2">{name}</h1>
-          <h2 className="text-lg text-gray-600">{material}</h2>
+          <h1 className="text-2xl font-medium mb-2">{name}</h1>
+          <h2 className="text-lg font-medium text-gray-9
+          00">{material}</h2>
         </div>
         
         {/* Imagen */}
@@ -46,7 +48,7 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
         {/* Contenido para desktop */}
         <div className="md:w-1/2">
           {/* Etiqueta 100% biodegradable y Cabecera para desktop */}
-          <div className="invisible md:visible mb-4">
+          <div className="hidden md:visible mb-4">
             <div className="mb-2">
               <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
                 100% biodegradable
@@ -57,7 +59,7 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
           </div>
 
           {/* Descripción */}
-          <ul className="space-y-2 mb-6">
+          <ul className="space-y-8 py-6 mb-6 bg-gray-200 rounded-2xl">
             <li>{slots}</li>
             <li>{size}</li>
             <li>{customizableText}</li>
@@ -67,16 +69,17 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
 
           {/* Botones */}
           <div className="flex flex-col gap-2">
-            <button className="w-full bg-black text-white py-2 px-4 rounded">
+            <button className="w-full text-xl bg-black text-white py-3 px-4 rounded-md">
               WhatsApp
             </button>
-            <button className="w-full border border-black text-black py-2 px-4 rounded">
+            <button className="w-full text-xl border border-black text-black py-3 px-4 rounded-md">
               Email
             </button>
           </div>
         </div>
       </div>
       <ProductCarousel />
+      <GeneralInfo />
     </div>
   )
 };

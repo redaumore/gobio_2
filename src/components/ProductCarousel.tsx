@@ -101,24 +101,24 @@ export default function ProductDetail() {
 
   return (
     <div className="mt-12 p-6">
-    <h2 className="text-2xl font-bold mb-4">Otros Productos</h2>
+    <h2 className="text-2xl font-medium mb-4">Otros Productos</h2>
     <div className="relative">
       <div 
         ref={carouselRef}
         className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-hide"
       >
         {Object.entries(productData).map(([id, product]) => (
-          <a href={`/product/${id}`} key={id} className="snap-start">
-            <div className="w-64 flex-shrink-0 border rounded-lg overflow-hidden">
-              <div className="relative h-48 w-full">
+          <a href={`/product/${id}`} key={id} className="snap-start no-underline">
+            <div className="w-64 flex-shrink-0 border rounded-lg overflow-hidden bg-gray-200 my-2">
+              <div className="relative h-48 w-full mt-6">
                 <img
                   src={product.imagePath}
                   alt={product.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">{product.name}</h3>
+              <div className="p-5">
+                <h3 className="font-medium text-lg text-black">{product.name}</h3>
                 <p className="text-sm text-gray-600">{product.material}</p>
                 <p className="text-sm text-gray-500 mt-2">{product.size}</p>
               </div>

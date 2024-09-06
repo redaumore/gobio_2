@@ -10,7 +10,7 @@ module.exports = {
         "grays-white": "#fff",
         gray: {
           "100": "#EEF3F8",
-          "200": "#1e1e1e",
+          "200": "#f5f5f7",
         },
         whitesmoke: "#f5f5f7",
         black: "#000",
