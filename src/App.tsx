@@ -14,6 +14,9 @@ import FAQsDesktop from "./pages/FAQsDesktop";
 import EnvasesPageDesktop11 from "./pages/EnvasesPageDesktop11";
 import AliadosPageDesktop from "./pages/AliadosPageDesktop";
 import ProductPageWrapper from "./pages/ProductPageWrapper";
+import EcoenvasesCatalog from "./components/EcoenvasesGrid";
+import EcoenvasesGrid from "./components/EcoenvasesGrid";
+import EcoenvasesPageWrapper from "./pages/EcoenvasesPageWrapper";
 
 function App() {
   const action = useNavigationType();
@@ -83,7 +86,7 @@ function App() {
     <Routes>
       <Route path="/" element={<ProductPageWrapper />} />
       <Route path="/contact-page-desktop" element={<ContactPageDesktop />} />
-      <Route path="/envases-page-desktop" element={<EnvasesPageDesktop />} />
+      <Route path="/ecoenvases" element={<EcoenvasesPageWrapper />} />
       <Route path="/envases-page-desktop1" element={<EnvasesPageDesktop1 />} />
       <Route path="/faqs-desktop" element={<FAQsDesktop />} />
       <Route path="/envases-page-desktop2" element={<EnvasesPageDesktop11 />} />

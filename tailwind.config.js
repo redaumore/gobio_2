@@ -25,8 +25,14 @@ module.exports = {
         pink: "#f0bfc3",
         lavender: "#d6e3f2",
         paleturquoise: "#baeee3",
+        eco1: "#f0bfc3",
+        eco2: "#32aa93",
+        eco3: "#7cbf80",
+        eco4: "#e8ef7c",
       },
-      spacing: {},
+      spacing: {
+        '128': '32rem',
+      },
       fontFamily: {
         'montserrat': ['Montserrat'],
       },

@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ProductNameHeader from "../components/ProductNameHeader";
 import ProductCarousel from "../components/ProductCarousel";
 import GeneralInfo from "../components/GeneralInfo";
+import GobioFooter from "../components/GobioFooter";
 
 interface ProductPageProps {
   name: string;
@@ -17,7 +18,7 @@ interface ProductPageProps {
 
 const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots, size, customizableText, biodegradableText, shippingText, imagePath}) => {
   return (
-    <div className="min-h-screen font-montserrat">
+    <div className="min-h-screen font-montserrat max-w-1440">
       <ProductNameHeader name={name}/>
       <div className="flex flex-col md:flex-row md:items-start gap-6 p-6">
         {/* Etiqueta 100% biodegradable y Cabecera para móvil */}
@@ -80,6 +81,7 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
       </div>
       <ProductCarousel />
       <GeneralInfo />
+      <GobioFooter />
     </div>
   )
 };
