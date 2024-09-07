@@ -8,15 +8,13 @@ import {
 import './styles.css';
 import './index.css';
 import ContactPageDesktop from "./pages/ContactPageDesktop";
-import EnvasesPageDesktop from "./pages/EnvasesPageDesktop";
 import EnvasesPageDesktop1 from "./pages/EnvasesPageDesktop1";
 import FAQsDesktop from "./pages/FAQsDesktop";
 import EnvasesPageDesktop11 from "./pages/EnvasesPageDesktop11";
 import AliadosPageDesktop from "./pages/AliadosPageDesktop";
 import ProductPageWrapper from "./pages/ProductPageWrapper";
-import EcoenvasesCatalog from "./components/EcoenvasesGrid";
-import EcoenvasesGrid from "./components/EcoenvasesGrid";
 import EcoenvasesPageWrapper from "./pages/EcoenvasesPageWrapper";
+import AliadosPage from "./pages/AliadosPage";
 
 function App() {
   const action = useNavigationType();
@@ -84,7 +82,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<ProductPageWrapper />} />
+      <Route path="/" element={<AliadosPage />} />
       <Route path="/contact-page-desktop" element={<ContactPageDesktop />} />
       <Route path="/ecoenvases" element={<EcoenvasesPageWrapper />} />
       <Route path="/envases-page-desktop1" element={<EnvasesPageDesktop1 />} />
@@ -92,6 +90,7 @@ function App() {
       <Route path="/envases-page-desktop2" element={<EnvasesPageDesktop11 />} />
       <Route path="/aliados-page-desktop" element={<AliadosPageDesktop />} />
       <Route path="/product/:productId" element={<ProductPageWrapper />} />
+      <Route path="/aliados" element={<AliadosPage />} />
     </Routes>
   );
 }

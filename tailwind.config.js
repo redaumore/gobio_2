@@ -57,6 +57,7 @@ module.exports = {
       "17xl": "36px",
       "7xl": "26px",
       inherit: "inherit",
+      rem3: "3rem"
     },
     screens: {
       sm: '640px', // Para pantallas pequeñas
