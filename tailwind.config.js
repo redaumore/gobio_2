@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        "1440": "1440px",
+      },
       colors: {
         "grays-white": "#fff",
         gray: {
@@ -46,16 +49,15 @@ module.exports = {
       xs: "12px",
       base: "16px",
       xl: "20px",
-      "5xl": "24px",
       "45xl": "64px",
-      "9xl": "28px",
       sm: "14px",
       "smi-5": "12.5px",
       "mini-3": "14.3px",
       "base-1": "16.1px",
       lg: "18px",
-      "17xl": "36px",
-      "7xl": "26px",
+      "5xl": "3rem",
+      "6xl": "3.75rem",
+      "7xl": "4.5rem",
       inherit: "inherit",
       rem3: "3rem"
     },
@@ -63,8 +65,9 @@ module.exports = {
       sm: '640px', // Para pantallas pequeñas
       md: '768px', // Para pantallas medianas
       lg: '1024px', // Para pantallas grandes
-      xl: '1280x', // Para pantallas extra grandes
-      xxl: '1536px' // Para pantallas extra extra grandes
+      xl: '1280px', // Para pantallas extra grandes
+      xxl: '1440px',
+      xxxl: '1536px' // Para pantallas extra extra grandes
     },
   },
   corePlugins: {

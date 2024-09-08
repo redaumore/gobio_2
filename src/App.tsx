@@ -85,11 +85,9 @@ function App() {
       <Route path="/" element={<AliadosPage />} />
       <Route path="/contact-page-desktop" element={<ContactPageDesktop />} />
       <Route path="/ecoenvases" element={<EcoenvasesPageWrapper />} />
-      <Route path="/envases-page-desktop1" element={<EnvasesPageDesktop1 />} />
       <Route path="/faqs-desktop" element={<FAQsDesktop />} />
       <Route path="/envases-page-desktop2" element={<EnvasesPageDesktop11 />} />
-      <Route path="/aliados-page-desktop" element={<AliadosPageDesktop />} />
-      <Route path="/product/:productId" element={<ProductPageWrapper />} />
+      <Route path="/producto/:productId" element={<ProductPageWrapper />} />
       <Route path="/aliados" element={<AliadosPage />} />
     </Routes>
   );
