@@ -28,7 +28,7 @@ const TextImageBlock: React.FC<TextImageBlockProps> = ({
 
   const imageContent = (
     <div className="flex items-center justify-center p-6 rounded">
-      <div className="w-5/6 h-full max-w-xs rounded-lg overflow-hidden border-4 border-black bg-gray-200 shadow-sm aspect-square">
+      <div className="w-5/6 h-full max-w-xs rounded-[25px] overflow-hidden border-8 border-solid px-2 bg-gray-200 aspect-square border-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">
         <img src={imageSrc} alt={imageAlt} className="w-full h-full object-contain" />
       </div>
     </div>
