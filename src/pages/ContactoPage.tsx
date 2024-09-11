@@ -31,7 +31,7 @@ const ContactoPage: React.FC = () => {
 
   return (
     <div className='font-montserrat'>
-      <div className="w-full mx-auto bg-white">
+      <div className="mx-auto p-4 bg-white">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
           Pedínos una <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">muestra.</span>
         </h2>
@@ -41,19 +41,22 @@ const ContactoPage: React.FC = () => {
         <p className="text-center text-gray-600 mt-0 mb-8 max-w-xl mx-auto">
           ¡Queremos que los veas y pruebes por vos mismo!
         </p>
-        <div className="mt-8 sm:mt-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          <div className="bg-gray-100 m-4 p-5 rounded-lg shadow-md">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <input
-                type='text'
-                id="name"
-                name="name"
-                required
-                value={name}
-                placeholder='Nombre'
-                onChange={(e) => setName(e.target.value)}
-                className="rounded flex justify-center"
-              />
+        <div className="mt-8 sm:mt-0 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="bg-gray-300 rounded-lg shadow-md container mx-auto flex flex-col justify-center">
+            <form onSubmit={handleSubmit} className="w-full space-y-6">
+              <div className='relative'>
+                <input
+                  type='text'
+                  id="name"
+                  name="name"
+                  required
+                  value={name}
+                  placeholder='Nombre'
+                  onChange={(e) => setName(e.target.value)}
+                  className="w-5/6 max-w-full mx-4 mt-4 pb-2 border border-transparent rounded-md shadow-sm text-sm"
+                />
+              </div>
+              <div className='relative'>
               <input
                 type="email"
                 id="email"
@@ -62,8 +65,10 @@ const ContactoPage: React.FC = () => {
                 value={email}
                 placeholder='Email'
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full flex justify-center border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-green-500 focus:border-green-500"
+                className="w-5/6 max-w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm"
               />
+              </div>
+              <div className='relative'>
               <input
                 type="tel"
                 id="phone"
@@ -72,8 +77,10 @@ const ContactoPage: React.FC = () => {
                 value={phone}
                 placeholder='Teléfono'
                 onChange={(e) => setPhone(e.target.value)}
-                className="w-full flex justify-center border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-green-500 focus:border-green-500"
+                className="w-5/6 max-w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm"
               />
+              </div>
+              <div className='relative'>
               <textarea
                 id="message"
                 name="message"
@@ -82,18 +89,24 @@ const ContactoPage: React.FC = () => {
                 value={message}
                 placeholder='Mensaje'
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full flex justify-center mt-1 border border-gray-300 rounded-md shadow-sm  focus:outline-none focus:ring-green-500 focus:border-green-500"
+                className="w-5/6 max-w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm"
               ></textarea>
+              </div>
+              <div className='relative'>
               <ReCAPTCHA
                 sitekey="YOUR_RECAPTCHA_SITE_KEY"
                 onChange={(value) => setCaptchaValue(value)}
               />
-              <button
+              </div>
+              <div className='relative'>
+                <button
                 type="submit"
-                className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
-              >
-                Enviar
-              </button>
+                className="w-5/6 max-w-full mb-4 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-black hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                >
+                  Enviar
+                </button>
+              </div>
+              
             </form>
           </div>
           <div className="md:block">
