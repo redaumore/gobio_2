@@ -55,6 +55,8 @@ module.exports = {
       "mini-3": "14.3px",
       "base-1": "16.1px",
       lg: "18px",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
       "5xl": "3rem",
       "6xl": "3.75rem",
       "7xl": "4.5rem",
@@ -70,6 +72,9 @@ module.exports = {
       xxxl: '1536px' // Para pantallas extra extra grandes
     },
   },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
   corePlugins: {
     preflight: false,
   },
