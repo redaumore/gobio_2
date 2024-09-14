@@ -9,6 +9,9 @@ module.exports = {
       maxWidth: {
         "1440": "1440px",
       },
+      height: {
+        'screen': '100vh'
+      },
       colors: {
         "grays-white": "#fff",
         gray: {
