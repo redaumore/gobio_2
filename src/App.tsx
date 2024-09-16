@@ -13,6 +13,7 @@ import FAQsDesktop from "./pages/FAQsDesktop";
 import EnvasesPageDesktop11 from "./pages/EnvasesPageDesktop11";
 import AliadosPageDesktop from "./pages/AliadosPageDesktop";
 import ProductPageWrapper from "./pages/ProductPageWrapper";
+import ProductsPageWrapper from "./pages/ProductsPageWrapper";
 import EcoenvasesPageWrapper from "./pages/EcoenvasesPageWrapper";
 import AliadosPage from "./pages/AliadosPage";
 import ContactoPage from "./pages/ContactoPage";
@@ -84,13 +85,13 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<AliadosPage />} />
-      <Route path="/contact-page-desktop" element={<ContactPageDesktop />} />
+      <Route path="/aliados" element={<AliadosPage />} />
       <Route path="/contacto" element={<ContactoPage />} />
       <Route path="/ecoenvases" element={<EcoenvasesPageWrapper />} />
       <Route path="/faqs-desktop" element={<FAQsDesktop />} />
       <Route path="/envases-page-desktop2" element={<EnvasesPageDesktop11 />} />
       <Route path="/producto/:productId" element={<ProductPageWrapper />} />
-      <Route path="/aliados" element={<AliadosPage />} />
+      <Route path="/productos/:familyId" element={<ProductsPageWrapper />} />
     </Routes>
   );
 }

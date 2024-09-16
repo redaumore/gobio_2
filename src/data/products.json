@@ -1,42 +1,617 @@
 {
-  "estuche-950ml": {
-    "name": "Estuche 950ml",
-    "material": "Bagazo de caña de azucar",
-    "slots": "2 compartimentos",
-    "size": "24cm x 15cm x 8cm.",
-    "customizableText": "Envase customizable.",
-    "biodegradableText": "En 60 días se biodegrada por completo.",
-    "shippingText": "Envíos a todo el país",
-    "imagePath":"/estuche-950ml.png"
+  "estuche-1500-con-3-compartimentos": {
+    "name": "Estuche 1500 con 3 Compartimentos",
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "23cm Ancho x 23cm Largo x 8cm Alto",
+    "pack": 200,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
   },
-  "estuche-1500ml": {
-    "name": "Estuche 1500ml",
-    "material": "Bagazo de caña de azucar",
-    "slots": "3 compartimentos",
-    "size": "23cm x 23cm x 7,5cm.",
-    "customizableText": "Envase customizable.",
-    "biodegradableText": "En 60 días se biodegrada por completo.",
-    "shippingText": "Envíos a todo el país",
-    "imagePath":"/estuche-1500ml.png"
+  "estuche-950-alto": {
+    "name": "Estuche 950 Alto",
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "23cm Ancho x 15cm Largo x 8cm Alto",
+    "pack": 250,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
   },
-  "bowl-1500ml": {
-    "name": "Bowl 1500ml",
-    "material": "Bagazo de caña de azucar",
-    "slots": "Incluye tapa biodegradable",
-    "size": "18cm x 13,5cm x 8cm (alto)",
-    "customizableText": "Envase customizable.",
-    "biodegradableText": "En 60 días se biodegrada por completo.",
-    "shippingText": "Envíos a todo el país",
-    "imagePath":"/bowl-1500ml.png"
+  "estuche-950-bajo": {
+    "name": "Estuche 950 Bajo",
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "24cm Ancho x 22cm Largo x 5cm Alto",
+    "pack": 200,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
   },
-  "bowl-redondo-500ml": {
-    "name": "Bowl redondo 500ml",
-    "material": "Bagazo de caña de azucar",
-    "slots": "Incluye tapa biodegradable",
-    "size": "14cm x 9cm x 5cm (alto)",
-    "customizableText": "Envase customizable.",
-    "biodegradableText": "En 60 días se biodegrada por completo.",
-    "shippingText": "Envíos a todo el país",
-    "imagePath":"/bowl-1500ml.png"
+  "estuche-600": {
+    "name": "Estuche 600",
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "18cm Ancho x 14cm Largo x 7cm Alto",
+    "pack": 600,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bowl-1250-con-tapa-bio": {
+    "name": "Bowl 1250 con Tapa Bio",
+    "family": "Bowls",
+    "family_id": "bowls",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "19cm Øsup x 13cm Øinf x 8cm Alto",
+    "pack": 500,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bowl-1000-con-tapa-bio": {
+    "name": "Bowl 1000 con Tapa Bio",
+    "family": "Bowls",
+    "family_id": "bowls",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "18cm Øsup x 12cm Øinf x 7cm Alto",
+    "pack": 500,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bowl-850-con-tapa-bio": {
+    "name": "Bowl 850 con Tapa Bio",
+    "family": "Bowls",
+    "family_id": "bowls",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "16cm Øsup x 10cm Øinf x 7cm Alto",
+    "pack": 300,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bowl-500-con-tapa-bio": {
+    "name": "Bowl 500 con Tapa Bio",
+    "family": "Bowls",
+    "family_id": "bowls",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "14cm Øsup x 8cm Øinf x 6cm Alto",
+    "pack": 300,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "dip-2oz-con-tapa-bio": {
+    "name": "Dip 2oz con Tapa Bio",
+    "family": "Bowls",
+    "family_id": "bowls",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "5cm Øsup x 4cm Øinf x 3cm Alto",
+    "pack": 2000,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "vaso-8oz": {
+    "name": "Vaso 8oz",
+    "family": "Vasos",
+    "family_id": "vasos",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "8cm Øsup x 5cm Øinf x 9cm Alto",
+    "pack": 1000,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "tapa-vaso-8oz": {
+    "name": "Tapa Vaso 8oz",
+    "family": "Vasos",
+    "family_id": "vasos",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "-",
+    "pack": 1000,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "vaso-12oz": {
+    "name": "Vaso 12oz",
+    "family": "Vasos",
+    "family_id": "vasos",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "9cm Øsup x 5cm Øinf x 10cm Alto",
+    "pack": 1000,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "tapa-vaso-12oz": {
+    "name": "Tapa Vaso 12oz",
+    "family": "Vasos",
+    "family_id": "vasos",
+    "material": "Bagazo de Caña de Azúcar",
+    "size": "-",
+    "pack": 1000,
+    "observations": [
+      "Envase Customizable.",
+      "En 60 días se biodegrada por completo.",
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "cuchillo-madera-16cm": {
+    "name": "Cuchillo Madera 16cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Madera",
+    "size": "16cm Largo",
+    "pack": 2000,
+    "observations": [
+      "Madera de Abedul.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "cuchara-madera-16cm": {
+    "name": "Cuchara Madera 16cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Madera",
+    "size": "16cm Largo",
+    "pack": 2000,
+    "observations": [
+      "Madera de Abedul.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "tenedor-madera-16cm": {
+    "name": "Tenedor Madera 16cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Madera",
+    "size": "16cm Largo",
+    "pack": 2000,
+    "observations": [
+      "Madera de Abedul.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "plato-18cm-papel-kraft": {
+    "name": "Plato 18cm Papel Kraft",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "18cm ØDiámetro",
+    "pack": 1000,
+    "observations": [
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "plato-18cm-blanco": {
+    "name": "Plato 18cm Blanco",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "18cm ØDiámetro",
+    "pack": 1000,
+    "observations": [
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "plato-23cm-papel-kraft": {
+    "name": "Plato 23cm Papel Kraft",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "23cm ØDiámetro",
+    "pack": 1000,
+    "observations": [
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "plato-23cm-blanco": {
+    "name": "Plato 23cm Blanco",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "23cm ØDiámetro",
+    "pack": 1000,
+    "observations": [
+      "Apto líquidos calientes, microondas y freezer.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bandeja-n1-12x9cm": {
+    "name": "Bandeja N1 12x9cm",
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas",
+    "material": "Papel Kraft",
+    "size": "12cm Ancho x 9cm Largo",
+    "pack": 600,
+    "observations": [
+      "Recomendación: Ideal para Food Truck.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bandeja-n2-16x13cm": {
+    "name": "Bandeja N2 16x13cm",
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas",
+    "material": "Papel Kraft",
+    "size": "16cm Ancho x 13cm Largo",
+    "pack": 600,
+    "observations": [
+      "Recomendación: Ideal para Food Truck.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bandeja-n3-18x14cm": {
+    "name": "Bandeja N3 18x14cm",
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas",
+    "material": "Papel Kraft",
+    "size": "18cm Ancho x 14cm Largo",
+    "pack": 600,
+    "observations": [
+      "Recomendación: Ideal para Food Truck.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bandeja-n4-20x17cm": {
+    "name": "Bandeja N4 20x17cm",
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas",
+    "material": "Papel Kraft",
+    "size": "20cm Ancho x 17cm Largo",
+    "pack": 600,
+    "observations": [
+      "Recomendación: Ideal para Food Truck.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-con-fuelle-n2-9x18cm": {
+    "name": "Bolsa con Fuelle N2 9x18cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "9cm Largo x 18cm Alto",
+    "pack": 1000,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-con-fuelle-n3-11x25cm": {
+    "name": "Bolsa con Fuelle N3 11x25cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "11cm Largo x 25cm Alto",
+    "pack": 1000,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-con-fuelle-n4a-15x23cm": {
+    "name": "Bolsa con Fuelle N4A 15x23cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "15cm Largo x 23cm Alto",
+    "pack": 1000,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-con-fuelle-n6-15x33cm": {
+    "name": "Bolsa con Fuelle N6 15x33cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "15cm Largo x 33cm Alto",
+    "pack": 1000,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-con-fuelle-n7-19x35cm": {
+    "name": "Bolsa con Fuelle N7 19x35cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "19cm Largo x 35cm Alto",
+    "pack": 1000,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-con-fuelle-n8-19x44cm": {
+    "name": "Bolsa con Fuelle N8 19x44cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "19cm Largo x 44cm Alto",
+    "pack": 1000,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-cuadrada-fm3-24x12x7cm": {
+    "name": "Bolsa Cuadrada FM3 24x12x7cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "24cm Largo x 12cm Alto x 7cm Ancho",
+    "pack": 250,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-cuadrada-fm5l-16x30x11cm": {
+    "name": "Bolsa Cuadrada FM5L 16x30x11cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "16cm Largo x 30cm Alto x 11cm Ancho",
+    "pack": 250,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-cuadrada-fm5-20x30x11cm": {
+    "name": "Bolsa Cuadrada FM5 20x30x11cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "20cm Largo x 30cm Alto x 11cm Ancho",
+    "pack": 250,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-cuadrada-fm9-26x37x12cm": {
+    "name": "Bolsa Cuadrada FM9 26x37x12cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "26cm Largo x 37cm Alto x 12cm Ancho",
+    "pack": 250,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "bolsa-cuadrada-fm10-26x38x17cm": {
+    "name": "Bolsa Cuadrada FM10 26x38x17cm",
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres",
+    "material": "Papel Kraft",
+    "size": "26cm Largo x 38cm Alto x 17cm Ancho",
+    "pack": 250,
+    "observations": [
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "portavaso-doble-universal": {
+    "name": "Portavaso Doble Universal",
+    "family": "Accesorios para Cafetería",
+    "family_id": "accesorios-para-cafeteria",
+    "material": "Papel Kraft",
+    "size": "-",
+    "pack": 250,
+    "observations": [
+      "Aptos para Vasos de Todas las Medidas.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "portavaso-doble-valija-(carry-trade)": {
+    "name": "Portavaso Doble Valija (Carry Trade)",
+    "family": "Accesorios para Cafetería",
+    "family_id": "accesorios-para-cafeteria",
+    "material": "Papel Kraft",
+    "size": "-",
+    "pack": 250,
+    "observations": [
+      "Aptos para Vasos de Todas las Medidas.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "collarín-multi-medida": {
+    "name": "Collarín Multi Medida",
+    "family": "Accesorios para Cafetería",
+    "family_id": "accesorios-para-cafeteria",
+    "material": "Papel Kraft",
+    "size": "-",
+    "pack": 2000,
+    "observations": [
+      "Aptos para Vasos de 8oz o 12oz.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "sorbete-23cm-(ø9mm)": {
+    "name": "Sorbete 23cm (ø9mm)",
+    "family": "Accesorios para Cafetería",
+    "family_id": "accesorios-para-cafeteria",
+    "material": "Papel Kraft",
+    "size": "23cm Largo x 0,9cm ØDiámetro",
+    "pack": 250,
+    "observations": [
+      "Más Resistentes, No Se Desarman.",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
+  },
+  "revolvedor-madera-15cm": {
+    "name": "Revolvedor Madera 15cm",
+    "family": "Accesorios para Cafetería",
+    "family_id": "accesorios-para-cafeteria",
+    "material": "Madera",
+    "size": "15cm Largo",
+    "pack": 5000,
+    "observations": [
+      "Madera de Abedul",
+      "Envíos a todo el país."
+    ],
+    "images": [
+      "/bowl-1500ml.png"
+    ]
   }
 }

@@ -1,3 +1,6 @@
 .div-align-center{
   text-align: -webkit-center;
 }
+.fill-available{
+  width: -webkit-fill-available;
+}

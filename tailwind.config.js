@@ -57,7 +57,9 @@ module.exports = {
       "smi-5": "12.5px",
       "mini-3": "14.3px",
       "base-1": "16.1px",
-      lg: "18px",
+      lg: "1.125rem",
+      "xl": "1.25rem",
+      "2xl": "1.5rem",
       "3xl": "1.875rem",
       "4xl": "2.25rem",
       "5xl": "3rem",
@@ -67,6 +69,7 @@ module.exports = {
       rem3: "3rem"
     },
     screens: {
+      xs: '412px',
       sm: '640px', // Para pantallas pequeñas
       md: '768px', // Para pantallas medianas
       lg: '1024px', // Para pantallas grandes

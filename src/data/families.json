@@ -1,0 +1,22 @@
+[
+  {
+    "family": "Estuches y Bandejas",
+    "family_id": "estuches-y-bandejas"
+  },
+  {
+    "family": "Bowls",
+    "family_id": "bowls"
+  },
+  {
+    "family": "Vasos",
+    "family_id": "vasos"
+  },
+  {
+    "family": "Bolsas y Sobres",
+    "family_id": "bolsas-y-sobres"
+  },
+  {
+    "family": "Accesorios para Cafetería",
+    "family_id": "accesorios-para-cafeteria"
+  }
+]
