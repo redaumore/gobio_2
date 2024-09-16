@@ -67,7 +67,6 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
   const uniqueFamilies = Array.from(new Set(Object.values(productsData).map(product => product.family)))
   const uniqueMaterials = Array.from(new Set(Object.values(productsData).map(product => product.material)))
 
-  console.log(filteredProducts)
   return (
     <div className="font-montserrat h-screen max-w-1440>">
       <ProductNameHeader name={familyTitle}/>
@@ -101,7 +100,7 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
           {Object.entries(filteredProducts).map(([key, product]) => (
             <div className='relative' key={key}>
-              <a href={`/product/${key}`} key={key} className="snap-start no-underline">
+              <a href={`/producto/${key}`} key={key} className="snap-start no-underline">
               <div className="w-full flex-shrink-0 border rounded-lg overflow-hidden bg-gray-200 my-2">
                 <div className="w-full">
                   <img

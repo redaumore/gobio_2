@@ -1,22 +1,23 @@
 import { FunctionComponent } from "react";
+import { useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 import ProductNameHeader from "../components/ProductNameHeader";
 import ProductCarousel from "../components/ProductCarousel";
 import GeneralInfo from "../components/GeneralInfo";
 import GobioFooter from "../components/GobioFooter";
+import productsData from '../data/products.json'
 
-interface ProductPageProps {
+interface ProductProps {
   name: string;
+  family: string;
   material: string;
-  slots: string;
   size: string;
-  customizableText: string;
-  biodegradableText: string;
-  shippingText: string;
-  imagePath: string,
-}
+  pack: number;
+  observations: string[];
+  images: string[];
+};
 
-const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots, size, customizableText, biodegradableText, shippingText, imagePath}) => {
+const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, size, pack, observations, images}) => {
   return (
     <div className="min-h-screen font-montserrat max-w-1440">
       <ProductNameHeader name={name}/>
@@ -36,7 +37,7 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
         {/* Imagen */}
         <div className="relative w-full md:w-1/2 aspect-square">
           <img
-            src={imagePath}
+            src={images[0]}
             alt={name}
             className="w-full h-full object-contain rounded-lg"
           />
@@ -61,11 +62,10 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({name, material, slots
 
           {/* Descripción */}
           <ul className="space-y-8 py-6 mb-6 bg-gray-200 rounded-2xl">
-            <li>{slots}</li>
             <li>{size}</li>
-            <li>{customizableText}</li>
-            <li>{biodegradableText}</li>
-            <li>{shippingText}</li>
+            {observations.map((observation, index) => (
+            <li key={index}>{observation}</li>
+            ))}
           </ul>
 
           {/* Botones */}
