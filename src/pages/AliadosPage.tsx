@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import AliadosGrid from '../components/AliadosGrid';
 import GobioFooter from '../components/GobioFooter';
+import GobioHeader from '../components/GobioHeader';
 
 interface LogoProps {
   src: string;
@@ -75,7 +76,6 @@ const AliadosPage: React.FC = () => {
         </div>
       </div>
       <AliadosGrid />
-      <GobioFooter />
     </div>
   );
 };

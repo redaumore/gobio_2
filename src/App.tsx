@@ -7,11 +7,9 @@ import {
 } from "react-router-dom";
 import './styles.css';
 import './index.css';
-import ContactPageDesktop from "./pages/ContactPageDesktop";
-import EnvasesPageDesktop1 from "./pages/EnvasesPageDesktop1";
-import FAQsDesktop from "./pages/FAQsDesktop";
+import Layout from './layout'; // Importa el Layout
+import FaqsPage from "./pages/FaqsPage";
 import EnvasesPageDesktop11 from "./pages/EnvasesPageDesktop11";
-import AliadosPageDesktop from "./pages/AliadosPageDesktop";
 import ProductPageWrapper from "./pages/ProductPageWrapper";
 import ProductsPageWrapper from "./pages/ProductsPageWrapper";
 import EcoenvasesPageWrapper from "./pages/EcoenvasesPageWrapper";
@@ -84,15 +82,15 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<AliadosPage />} />
-      <Route path="/aliados" element={<AliadosPage />} />
-      <Route path="/contacto" element={<ContactoPage />} />
-      <Route path="/ecoenvases" element={<EcoenvasesPageWrapper />} />
-      <Route path="/faqs-desktop" element={<FAQsDesktop />} />
-      <Route path="/envases-page-desktop2" element={<EnvasesPageDesktop11 />} />
-      <Route path="/producto/:productId" element={<ProductPageWrapper />} />
-      <Route path="/productos/:familyId" element={<ProductsPageWrapper />} />
+      <Route path="/" element={<Layout><AliadosPage /></Layout>} />
+      <Route path="/aliados" element={<Layout><AliadosPage /></Layout>} />
+      <Route path="/contacto" element={<Layout><ContactoPage /></Layout>} />
+      <Route path="/ecoenvases" element={<Layout><EcoenvasesPageWrapper /></Layout>} />
+      <Route path="/faqs" element={<Layout><FaqsPage /></Layout>} />
+      <Route path="/producto/:productId" element={<Layout><ProductPageWrapper /></Layout>} />
+      <Route path="/productos/:familyId" element={<Layout><ProductsPageWrapper /></Layout>} />
     </Routes>
   );
 }
+
 export default App;

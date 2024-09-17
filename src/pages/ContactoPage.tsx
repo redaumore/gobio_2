@@ -106,7 +106,6 @@ const ContactoPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <GobioFooter />
     </div>
   );
 };
