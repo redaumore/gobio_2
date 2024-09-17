@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import { Autoplay, Pagination } from 'swiper/modules';
 import AliadosGrid from '../components/AliadosGrid';
-import GobioFooter from '../components/GobioFooter';
-import GobioHeader from '../components/GobioHeader';
 
 interface LogoProps {
   src: string;
@@ -12,18 +12,35 @@ interface LogoProps {
 }
 
 const logos: LogoProps[] = [
-  { alt: "Terma", src: "aliados/terma-logo.svg" },
-  { alt: "Orei", src: "aliados/orei-logo.png" },
-  { alt: "Talampaya", src: "aliados/talampaya-logo.svg" },
-  { alt: "Alparamis", src: "aliados/alparmis-logo.svg" },
-  { alt: "Tremun", src: "aliados/tremun-log.svg" },
-  { alt: "Four Season", src: "aliados/four-season-2-logo.svg" },
-  { alt: "Aeropuertos Argentina 2000", src: "aliados/aa2000-logo.svg" },
-  { alt: "Tea Connection", src: "aliados/tea-connection-svg" },
-  { alt: "Club de la Milanesa", src: "aliados/club-de-la-milanesa.svg" },    
+  { alt: "Terma", src: "aliados/terma-white.svg" },
+  { alt: "Orei", src: "aliados/orei-white.svg" },
+  { alt: "Talampaya", src: "aliados/talampaya-white.svg" },
+  { alt: "Alparamis", src: "aliados/alparmis-white.svg" },
+  { alt: "Tremun", src: "aliados/tremun-white.svg" },
+  { alt: "Four Season", src: "aliados/four-seasons-white.png" },
+  { alt: "Aeropuertos Argentina 2000", src: "aliados/aa-2001-white.svg" },
+  { alt: "Tea Connection", src: "aliados/tea-connection-white.svg" }
 ];
 
 const AliadosPage: React.FC = () => {
+  const [slidesPerView, setslidesPerView] = useState(4);
+
+  useEffect(() => {
+    const updateView = () => {
+      const width = window.innerWidth;
+      if (width < 640) {
+        setslidesPerView(4);
+      } else {
+        setslidesPerView(6);
+      }
+    };
+
+    updateView();
+    window.addEventListener('resize', updateView);
+
+    return () => window.removeEventListener('resize', updateView);
+  }, []);
+
   return (
     <div className='font-montserrat'>
       <div className="bg-black text-white pt-8">
@@ -54,22 +71,24 @@ const AliadosPage: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mx-auto pt-6">
+        <div className="mx-auto py-6 md:py-10 lg:py-16">
           <Swiper
-            spaceBetween={50}
-            slidesPerView={4}
+            modules={[Autoplay, Pagination]} 
+            spaceBetween={20} // Adjust spacing as needed
+            slidesPerView={slidesPerView}
             pagination={{ clickable: true }}
-            breakpoints={{
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
-            }}
+            loop={true} // Enable looping
+            autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay with 2s delay and continuous play
             className="mySwiper"
+            style={{ maxWidth: '630px', margin: '0 auto' }} // Set max width and center
           >
             {logos.map((logo) => (
-              <SwiperSlide key={logo.alt}>
-                <img src={logo.src} alt={logo.alt} className="w-full" />
+              <SwiperSlide key={logo.alt} className="flex items-center">
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="w-full max-h-16 object-contain" // Limit height to 63px
+                />
               </SwiperSlide>
             ))}
           </Swiper>
