@@ -9,7 +9,6 @@ import './styles.css';
 import './index.css';
 import Layout from './layout'; // Importa el Layout
 import FaqsPage from "./pages/FaqsPage";
-import EnvasesPageDesktop11 from "./pages/EnvasesPageDesktop11";
 import ProductPageWrapper from "./pages/ProductPageWrapper";
 import ProductsPageWrapper from "./pages/ProductsPageWrapper";
 import EcoenvasesPageWrapper from "./pages/EcoenvasesPageWrapper";
