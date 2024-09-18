@@ -15,6 +15,7 @@ import ProductsPageWrapper from "./pages/ProductsPageWrapper";
 import EcoenvasesPageWrapper from "./pages/EcoenvasesPageWrapper";
 import AliadosPage from "./pages/AliadosPage";
 import ContactoPage from "./pages/ContactoPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const action = useNavigationType();
@@ -82,7 +83,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Layout><AliadosPage /></Layout>} />
+      <Route path="/" element={<Layout><HomePage /></Layout>} />
       <Route path="/aliados" element={<Layout><AliadosPage /></Layout>} />
       <Route path="/contacto" element={<Layout><ContactoPage /></Layout>} />
       <Route path="/ecoenvases" element={<Layout><EcoenvasesPageWrapper /></Layout>} />

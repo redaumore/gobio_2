@@ -28,3 +28,12 @@
   background: #fff;
   padding: 15px;
 }
+
+.section {
+  /* Other styles */
+  transition: "opacity duration-1000 ease-in-out"; /* Keep the transition here */
+}
+
+.section.opacity-0 { /* New class for initial state */
+  opacity: 0;
+}
