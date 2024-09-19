@@ -14,7 +14,7 @@ const EcoenvasesSection: React.FC = () => {
   return (
     <section className="py-12 px-4 md:px-8">
       <h2 className="text-lg md:text-3xl mb-2 font-light">Ecoenvases</h2>
-      <p className="xs:text-2xl sm:text-4xl mb-8 mt-2 font-medium">
+      <p className="text-xl sm:text-4xl mb-8 mt-2 font-medium">
         Venimos de la tierra y volvemos a ella en{' '}
         <span className="text-green-500">60 días</span>.
       </p>
