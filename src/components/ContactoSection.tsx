@@ -6,7 +6,7 @@ const ContactoSection: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 justify-center">
           {/* Muestras Section */}
-          <div className="bg-white p-6 rounded-xl shadow-md justify-center max-w-xl">
+          <div className="bg-white p-6 rounded-xl shadow-md justify-center max-w-lg">
             <h2 className="text-xl font-medium mb-4 text-center">Muestras</h2>
               <p className="mb-6 text-sm text-center">Pedinos una muestra del producto que vos quieras.</p>
               <div className="flex justify-center">
@@ -24,7 +24,7 @@ const ContactoSection: React.FC = () => {
           </div>
 
           {/* Contactanos Section */}
-          <div className="bg-white px-8 pt-8 rounded-xl shadow-md justify-center max-w-96">
+          <div className="bg-white px-8 pt-8 rounded-xl shadow-md justify-center max-w-lg">
             <h2 className="text-xl font-medium mb-4 text-center">Contactanos</h2>
             <p className="mb-6 text-sm text-center">
               Contactanos para conocer todos sobre nuestros productos y descuentos.
