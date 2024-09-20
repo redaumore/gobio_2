@@ -81,7 +81,6 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
       </div>
       <ProductCarousel />
       <GeneralInfo />
-      <GobioFooter />
     </div>
   )
 };

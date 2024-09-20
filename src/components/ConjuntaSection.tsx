@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ConjuntaSection() {
   return (
-    <section className="bg-gray-200 py-12 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gray-200 py-6 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="lg:w-1/2 lg:pr-8">
@@ -41,8 +41,8 @@ export default function ConjuntaSection() {
                 </div>
               ))}
             </div>
-            <div className="p-5 px-5 text-left">
-              <a href={"/contacto"} className="text-black no-underline">Contactanos →</a>
+            <div className="py-5 text-left">
+              <a href={"/contacto"} className="text-black font-semibold no-underline">Contactanos →</a>
             </div>
           </div>
         </div>
