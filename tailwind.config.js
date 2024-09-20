@@ -17,6 +17,7 @@ module.exports = {
         gray: {
           "100": "#EEF3F8",
           "200": "#f5f5f7",
+          "300": "#d6e3f2",
         },
         whitesmoke: "#f5f5f7",
         black: "#000",
