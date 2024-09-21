@@ -3,5 +3,6 @@
   { "family_id": "bowls", "family": "Ensaladeras y bowls", "imageSrcMobile": "/Bowls-ecoenvases-mobile.png", "imageSrcDesktop": "/Bowls-ecoenvases-desktop.png", "altText": "Ensaladeras y bowls" },
   { "family_id": "vasos", "family": "Vasos", "imageSrcMobile": "/Vasos-ecoenvases-mobile.png", "imageSrcDesktop": "/Vasos-ecoenvases-desktop.png", "altText": "Vasos" },
   { "family_id": "platos-y-cubiertos", "family": "Platos y cubiertos", "imageSrcMobile": "/Cubiertos-ecoenvases-mobile.png", "imageSrcDesktop": "/Cubiertos-ecoenvases-desktop.png", "altText": "Platos y cubiertos" },
+  { "family_id": "bolsas-y-sobres", "family": "Bolsas", "imageSrcMobile": "/Bolsas-ecoenvases-mobile.png", "imageSrcDesktop": "/Bolsas-ecoenvases-desktop.png", "altText": "Bolsas" },
   { "family_id": "accesorios-para-cafeteria", "family": "Accesorios", "imageSrcMobile": "/Accesorios-ecoenvases-mobile.png", "imageSrcDesktop": "/Accesorios-ecoenvases-desktop.png", "altText": "Accesorios" }
 ]

@@ -11,10 +11,11 @@ const GobioHeader: React.FC = () => {
 
   const menuItems = [
     { name: 'Ecoenvases', subItems: [
-      { name: 'Ver Todo', url: '/productos' },
+      { name: 'Ver Todo', url: '/ecoenvases' },
       { name: 'Estuches y Bandejas', url: '/productos/estuches-y-bandejas' },
       { name: 'Ensaladeras y bowls', url: '/productos/bowls' },
       { name: 'Vasos', url: '/productos/vasos' },
+      { name: 'Platos y cubiertos', url: '/productos/platos-y-cubiertos' },
       { name: 'Bolsas', url: '/productos/bolsas-y-sobres' },
       { name: 'Accesorios', url: '/productos/accesorios-para-cafeteria' },
     ]},
@@ -30,7 +31,7 @@ const GobioHeader: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img alt="Gobio Logo" src="./logo-gobio-dsk.png" className='w-1/2' />
+              <img alt="Gobio Logo" src="/logo-gobio-dsk.png" className='w-1/2' />
             </div>
           </div>
           <div className="hidden md:block">

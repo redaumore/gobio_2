@@ -45,10 +45,16 @@ const FaqsAccordion = () => {
   return (
     <div className="accordion-container">
       {faqs.map((faq, index) => (
-        <div key={index} className="accordion-item">
+        <div key={index} className="accordion-item text-sm text-left">
           <div className="accordion-header" onClick={() => toggleAccordion(index)}>
-            <span>{faq.question}</span>
-            <span>{activeIndex === index ? '▲' : '▼'}</span>
+            <span className='font-medium mr-3'>{faq.question}</span>
+            <img
+              className="w-4 h-4 transform transition duration-200 ease-in-out"
+              src="/accordionarrow.png"
+              alt="Toggle accordion"
+              // Opcional: Animación de rotación
+              style={activeIndex === index ? { transform: 'rotate(180deg)' } : {}}
+            />
           </div>
           {activeIndex === index && (
             <div className="accordion-content">

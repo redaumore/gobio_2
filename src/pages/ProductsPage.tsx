@@ -120,8 +120,7 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
           ))}
         </div>
       </div>
-      <GobioFooter/>
-      </div>
+    </div>
   )
 }
 
