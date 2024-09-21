@@ -59,16 +59,18 @@ export default function HeroSection() {
       <div className="grid grid-cols-2 gap-4 h-64">
         <div className="relative h-full">
           <img
-            src="/home/Hero-2-desktop.png" // Reemplaza con la ruta de tu imagen
-            alt="Personas comiendo comida asiática"
-            className="absolute bottom-0 left-0 w-full h-3/4 object-cover rounded-lg"
+              src="/home/Hero-2-desktop.png" // Reemplaza con la ruta de tu imagen
+              alt="Personas comiendo comida asiática"
+              className="absolute bottom-0 left-0 w-full h-3/4 object-cover rounded-lg"
           />
         </div>
+        <div className="w-full flex justify-end">
           <img
-            src="/home/Hero-1-desktop.png" // Reemplaza con la ruta de tu imagen
-            alt="Persona comiendo un bocadillo"
-            className="w-3/4 h-2/4 object-cover rounded-lg justify-end"
-          />
+              src="/home/Hero-1-desktop.png" // Reemplaza con la ruta de tu imagen
+              alt="Persona comiendo un bocadillo"
+              className="w-3/4 h-2/4 object-cover rounded-lg"
+            />
+        </div>
       </div>
 
       <div className="flex justify-center">

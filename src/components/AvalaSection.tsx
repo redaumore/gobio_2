@@ -23,16 +23,16 @@ export default function AvalaSection() {
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 mt-12 gap-6 flex justify-center items-center">
-            <div className="bg-gray-100 p-4 rounded-lg text-center aspect-square max-w-sm mx-auto flex flex-col items-center">
-              <img src='/home/icon-planta.svg' />
+            <div className="bg-gray-100 p-4 rounded-3xl text-center aspect-square max-w-sm mx-auto flex flex-col items-center">
+              <img src='/home/icon-planta.svg' className="mb-2 mt-8 size-16"/>
               <p className="text-base font-medium text-gray-700 max-w-48">Amigable con el medio ambiente.</p>
             </div>
-            <div className="bg-gray-100 p-4 rounded-lg text-center aspect-square max-w-sm mx-auto flex flex-col items-center">
-              <img src='/home/icon-reciclado.svg' />
+            <div className="bg-gray-100 p-4 rounded-3xl text-center aspect-square max-w-sm mx-auto flex flex-col items-center">
+              <img src='/home/icon-reciclado.svg' className="mb-2 mt-8 size-16" />
               <p className="text-base font-medium text-gray-700 max-w-48">Utiliza envases biodegradables.</p>
             </div>
-            <div className="bg-gray-100 p-4 rounded-lg text-center aspect-square max-w-sm mx-auto flex flex-col items-center">
-              <img src='/home/icon-sostenible.svg' />
+            <div className="bg-gray-100 p-4 rounded-3xl text-center aspect-square max-w-sm mx-auto flex flex-col items-center">
+              <img src='/home/icon-sostenible.svg' className="mb-2 mt-8 size-16"/>
               <p className="text-base font-medium text-gray-700 max-w-48">Comprometido al cambio sostenible.</p>
             </div>
           </div>
