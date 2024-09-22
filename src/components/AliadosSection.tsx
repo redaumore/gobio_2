@@ -23,13 +23,13 @@ const AliadosSection: React.FC = () => {
   }, [])
 
   return (
-    <section className="bg-black text-white py-12 px-4 md:px-8">
+    <section className="bg-black text-white py-8 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-lg md:text-3xl font-light mb-2">Aliados GoBio</h2>
-        <p className="text-xl md:text-2xl mb-4 sm:max-w-xs font-semibold">
+        <h2 className="text-lg xs:text-4xl md:text-3xl font-light mb-2">Aliados GoBio</h2>
+        <p className="text-2xl xs:text-5xl md:text-2xl mb-10¿¿8 xs:mb-14 sm:max-w-xs font-semibold">
           Comercios qué eligieron <span className="text-green-500">preservar el futuro</span>.
         </p>
-        <Link to="/aliados" className="text-white text-sm no-underline mb-8 inline-block">
+        <Link to="/aliados" className="text-white text-base xs:text-3xl no-underline mb-10 xs:mb-16 inline-block">
           Ver más →
         </Link>
         <div 
@@ -39,7 +39,7 @@ const AliadosSection: React.FC = () => {
           {aliadosLogos.map((logo, index) => (
             <div 
               key={index} 
-              className="bg-white p-4 rounded-lg flex-shrink-0 w-20 h-20 md:w-auto md:h-auto flex items-center justify-center"
+              className="bg-white p-4 rounded-lg flex-shrink-0 w-20 h-20 xs:w-48 xs:h-48 md:w-auto md:h-auto flex items-center justify-center"
             >
               <img src={logo.src} alt={logo.name} className="max-w-full max-h-full object-contain" />
             </div>

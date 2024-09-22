@@ -2,7 +2,7 @@ import React from 'react';
 
 const GobioFooter: React.FC = () => {
   return (
-    <footer className="bottom-0 left-0 w-full bg-[#A8F0D0] text-black py-4">
+    <footer className="bottom-0 left-0 w-full bg-gray-200 text-black py-4">
       <div className="max-w-[1440px] mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between font-montserrat">
           <div className="mb-4 md:mb-0">

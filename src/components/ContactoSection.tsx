@@ -7,10 +7,10 @@ const ContactoSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 justify-center">
           {/* Muestras Section */}
           <div className="bg-white p-6 rounded-xl shadow-md justify-center max-w-lg">
-            <h2 className="text-xl font-medium mb-4 text-center">Muestras</h2>
-              <p className="mb-6 text-sm text-center">Pedinos una muestra del producto que vos quieras.</p>
+            <h2 className="text-xl xs:text-4xl font-medium mb-4 text-center">Muestras</h2>
+              <p className="mb-6 text-sm xs:text-2xl text-center">Pedinos una muestra del producto que vos quieras.</p>
               <div className="flex justify-center">
-                <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
+                <button className="bg-black text-white xs:w-48 xs:h-12 xs:text-lg px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
                   Pedir muestra
                 </button>
               </div>
@@ -25,15 +25,15 @@ const ContactoSection: React.FC = () => {
 
           {/* Contactanos Section */}
           <div className="bg-white px-8 pt-8 rounded-xl shadow-md justify-center max-w-lg">
-            <h2 className="text-xl font-medium mb-4 text-center">Contactanos</h2>
-            <p className="mb-6 text-sm text-center">
+            <h2 className="text-xl xs:text-4xl font-medium mb-4 text-center">Contactanos</h2>
+            <p className="mb-6 text-sm xs:text-2xl text-center">
               Contactanos para conocer todos sobre nuestros productos y descuentos.
             </p>
             <div className="flex justify-center space-x-4">
-              <button className="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
+              <button className="bg-black text-white xs:w-48 xs:h-12 xs:text-lg px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
                 WhatsApp
               </button>
-              <button className="bg-white text-black px-6 py-2 rounded-md border border-black hover:bg-gray-100 transition-colors">
+              <button className="bg-white text-black xs:w-48 xs:h-12 xs:text-lg px-6 py-2 rounded-md border border-black hover:bg-gray-100 transition-colors">
                 Email
               </button>
             </div>

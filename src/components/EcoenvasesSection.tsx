@@ -13,8 +13,8 @@ const EcoenvasesSection: React.FC = () => {
 
   return (
     <section className="py-12 px-4 md:px-8">
-      <h2 className="text-lg md:text-3xl mb-2 font-light">Ecoenvases</h2>
-      <p className="text-xl sm:text-4xl mb-8 mt-2 font-medium">
+      <h2 className="xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light">Ecoenvases</h2>
+      <p className="text-xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-medium">
         Venimos de la tierra y volvemos a ella en{' '}
         <span className="text-green-500">60 días</span>.
       </p>

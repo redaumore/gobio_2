@@ -1,6 +1,7 @@
 export default function NosotrosSection() {
   return (
     <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <a id="nosotros"></a>
       <div className="max-w-[1440px] mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="lg:w-1/2 lg:pr-8">

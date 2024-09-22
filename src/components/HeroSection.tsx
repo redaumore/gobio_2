@@ -43,20 +43,20 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="bg-black text-white min-h-screen flex flex-col justify-between px-4 pt-4">
-      <div className="space-y-6">
-        <h1 className="text-5xl font-medium leading-tight">
+    <section className="bg-black text-white flex flex-col justify-between">
+      <div className="space-y-6 text-center">
+        <h1 className="text-4xl xs:text-7xl font-medium sm:text-lg leading-tight px-8">
           Elegí mejor.
           <br />
           Elegí <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">GoBio.</span>
         </h1>
-        <p className="text-xl">
+        <p className="text-lg xs:text-3xl px-8 xs:px-20 pb-12">
           Desarrollamos envases para alimentos que son{' '}
           <span className="font-semibold">100% biodegradables</span>.
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 h-64">
+      <div className="grid grid-cols-2 gap-4 h-64 xs:h-96 pb-12">
         <div className="relative h-full">
           <img
               src="/home/Hero-2-desktop.png" // Reemplaza con la ruta de tu imagen
@@ -73,7 +73,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center pb-12">
         <ChevronDown className="w-12 h-12 animate-bounce" />
       </div>
       <div className="mx-auto pb-6 md:py-10 lg:py-16">
@@ -84,8 +84,7 @@ export default function HeroSection() {
             pagination={{ clickable: true }}
             loop={true} // Enable looping
             autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay with 2s delay and continuous play
-            className="mySwiper"
-            style={{ maxWidth: '320px', margin: '0 auto' }} // Set max width and center
+            className="mySwiper w-full max-w-72 xs:max-w-sm sm:max-w-xl mb-12"
           >
             {logos.map((logo) => (
               <SwiperSlide key={logo.alt} className="flex items-center">

@@ -23,8 +23,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ family_id, family, imageSrcMo
         />
     </div>
     <div className="pb-5 px-5 text-left">
-      <h3 className="font-semibold text-lg mb-2">{family}</h3>
-      <a href={`/productos/${family_id}`} className="text-black no-underline">Ver más →</a>
+      <h3 className="font-semibold text-lg xs:text-3xl mb-2">{family}</h3>
+      <a href={`/productos/${family_id}`} className="xs:text-xl text-black no-underline">Ver más →</a>
     </div>
   </div>
 );

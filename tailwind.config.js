@@ -48,6 +48,9 @@ module.exports = {
         "9xl": "28px",
         "13xl": "32px",
       },
+      screens: {
+        xs: '412px',
+      }
     },
     fontSize: {
       xs: "12px",
@@ -70,7 +73,6 @@ module.exports = {
       rem3: "3rem"
     },
     screens: {
-      xs: '412px',
       sm: '640px', // Para pantallas pequeñas
       md: '768px', // Para pantallas medianas
       lg: '1024px', // Para pantallas grandes

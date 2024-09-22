@@ -20,7 +20,7 @@ const GobioHeader: React.FC = () => {
       { name: 'Accesorios', url: '/productos/accesorios-para-cafeteria' },
     ]},
     { name: 'Aliados', url: '/aliados' },
-    { name: 'Nosotros', url: '/nosotros' },
+    { name: 'Nosotros', url: '/#nosotros' },
     { name: 'FAQs', url: '/faqs' },
     { name: 'Contacto', url: '/contacto' },
   ]
@@ -30,9 +30,11 @@ const GobioHeader: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <img alt="Gobio Logo" src="/logo-gobio-dsk.png" className='w-1/2' />
-            </div>
+            <a href='/'>
+              <div className="flex-shrink-0">
+                <img alt="Gobio Logo" src="/logo-gobio-dsk.png" className='w-1/2' />
+              </div>
+            </a>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
