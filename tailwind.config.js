@@ -44,9 +44,9 @@ module.exports = {
         'montserrat': ['Montserrat'],
       },
       borderRadius: {
-        "9xl-6": "28.6px",
-        "9xl": "28px",
-        "13xl": "32px",
+        "xl": "0.75rem",
+        "2xl": "1rem",
+        "4xl": "4rem",
       },
       screens: {
         xs: '412px',
@@ -69,6 +69,8 @@ module.exports = {
       "5xl": "3rem",
       "6xl": "3.75rem",
       "7xl": "4.5rem",
+      "8xl": "6rem",
+      "9xl": "8rem",
       inherit: "inherit",
       rem3: "3rem"
     },

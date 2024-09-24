@@ -5,12 +5,12 @@ export default function NosotrosSection() {
       <div className="max-w-[1440px] mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="lg:w-1/2 lg:pr-8">
-            <h2 className="text-lg md:text-3xl mb-2 font-light">Nosotros</h2>
-            <h3 className="mt-2 text-3xl font-medium text-gray-900 sm:text-4xl">
+            <h2 className="xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light">Nosotros</h2>
+            <h3 className="text-xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-medium">
               Vos también podes ser parte. <br />
               Elegí mejor. <span className="text-green-500 font-semibold">Elegí GoBio.</span>
             </h3>
-            <div className="space-y-4 text-gray-600 text-xs">
+            <div className="mt-4 text-xs xs:text-xl text-gray-600">
               <p>
                 GoBio nace de la convicción de emprendedores en que revertir el
                 daño causado por el uso del plástico es posible.
@@ -29,7 +29,7 @@ export default function NosotrosSection() {
           </div>
           <div className="mt-10 lg:mt-0 lg:w-1/2">
             <img
-              className="w-full rounded-lg shadow-lg aspect-square"
+              className="w-full rounded-4xl shadow-lg aspect-square"
               src="/home/Nosotros-desktop.png"
               alt="GoBio biodegradable packaging with food"
             />

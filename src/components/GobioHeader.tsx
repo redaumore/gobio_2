@@ -32,7 +32,7 @@ const GobioHeader: React.FC = () => {
           <div className="flex items-center">
             <a href='/'>
               <div className="flex-shrink-0">
-                <img alt="Gobio Logo" src="/logo-gobio-dsk.png" className='w-1/2' />
+                <img alt="Gobio Logo" src="/logo-gobio-dsk.png" className='w-1/2 sm:h-12 sm:w-28' />
               </div>
             </a>
           </div>

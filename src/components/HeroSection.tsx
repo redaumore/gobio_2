@@ -45,7 +45,7 @@ export default function HeroSection() {
   return (
     <section className="bg-black text-white flex flex-col justify-between">
       <div className="space-y-6 text-center">
-        <h1 className="text-4xl xs:text-7xl font-medium sm:text-lg leading-tight px-8">
+        <h1 className="text-4xl xs:text-7xl sm:text-8xl font-medium leading-tight px-8">
           Elegí mejor.
           <br />
           Elegí <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">GoBio.</span>
@@ -79,19 +79,19 @@ export default function HeroSection() {
       <div className="mx-auto pb-6 md:py-10 lg:py-16">
           <Swiper
             modules={[Autoplay, Pagination]} 
-            spaceBetween={20} // Adjust spacing as needed
+            spaceBetween={30} // Adjust spacing as needed
             slidesPerView={slidesPerView}
             pagination={{ clickable: true }}
             loop={true} // Enable looping
             autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay with 2s delay and continuous play
-            className="mySwiper w-full max-w-72 xs:max-w-sm sm:max-w-xl mb-12"
+            className="mySwiper w-full max-w-72 xs:max-w-sm sm:max-w-xl  md:max-w-2xl mb-12"
           >
             {logos.map((logo) => (
               <SwiperSlide key={logo.alt} className="flex items-center">
                 <img
                   src={logo.src}
                   alt={logo.alt}
-                  className="w-full max-h-16 object-contain" // Limit height to 63px
+                  className="w-full max-h-16 md:max-h-24 object-contain" // Limit height to 63px
                 />
               </SwiperSlide>
             ))}

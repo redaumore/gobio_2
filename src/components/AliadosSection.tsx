@@ -26,7 +26,7 @@ const AliadosSection: React.FC = () => {
     <section className="bg-black text-white py-8 px-4 md:px-8">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-lg xs:text-4xl md:text-3xl font-light mb-2">Aliados GoBio</h2>
-        <p className="text-2xl xs:text-5xl md:text-2xl mb-10¿¿8 xs:mb-14 sm:max-w-xs font-semibold">
+        <p className="text-2xl xs:text-5xl md:text-2xl mb-10¿¿8 xs:mb-14 sm:max-w-5/6 font-semibold">
           Comercios qué eligieron <span className="text-green-500">preservar el futuro</span>.
         </p>
         <Link to="/aliados" className="text-white text-base xs:text-3xl no-underline mb-10 xs:mb-16 inline-block">
