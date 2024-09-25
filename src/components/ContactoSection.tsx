@@ -6,15 +6,15 @@ const ContactoSection: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 justify-center">
           {/* Muestras Section */}
-          <div className="bg-white p-6 rounded-xl shadow-md justify-center max-w-lg">
+          <div className="bg-white px-8 pt-8 rounded-xl shadow-md justify-center max-w-lg">
             <h2 className="text-xl xs:text-4xl font-medium mb-4 text-center">Muestras</h2>
-              <p className="mb-6 text-sm xs:text-2xl text-center">Pedinos una muestra del producto que vos quieras.</p>
+              <p className="mb-6 lg:mb-12 lg:mx-8 text-sm xs:text-2xl lg:text-lg text-center">Pedinos una muestra del producto que vos quieras.</p>
               <div className="flex justify-center">
                 <button className="bg-black text-white xs:w-48 xs:h-12 xs:text-lg px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
                   Pedir muestra
                 </button>
               </div>
-              <div className="flex justify-center mt-8">
+              <div className="flex justify-center mt-8 lg:mt-0">
                 <img
                   src="/home/Muestras-home-mobile.png"
                   alt="Muestra de contenedor"
@@ -26,7 +26,7 @@ const ContactoSection: React.FC = () => {
           {/* Contactanos Section */}
           <div className="bg-white px-8 pt-8 rounded-xl shadow-md justify-center max-w-lg">
             <h2 className="text-xl xs:text-4xl font-medium mb-4 text-center">Contactanos</h2>
-            <p className="mb-6 text-sm xs:text-2xl text-center">
+            <p className="mb-6  lg:mx-8 text-sm xs:text-2xl lg:text-lg text-center">
               Contactanos para conocer todos sobre nuestros productos y descuentos.
             </p>
             <div className="flex justify-center space-x-4">

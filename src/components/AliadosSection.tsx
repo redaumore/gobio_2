@@ -23,23 +23,25 @@ const AliadosSection: React.FC = () => {
   }, [])
 
   return (
-    <section className="bg-black text-white py-8 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-lg xs:text-4xl md:text-3xl font-light mb-2">Aliados GoBio</h2>
-        <p className="text-2xl xs:text-5xl md:text-2xl mb-10¿¿8 xs:mb-14 sm:max-w-5/6 font-semibold">
-          Comercios qué eligieron <span className="text-green-500">preservar el futuro</span>.
-        </p>
-        <Link to="/aliados" className="text-white text-base xs:text-3xl no-underline mb-10 xs:mb-16 inline-block">
-          Ver más →
-        </Link>
+    <section className="bg-black text-white py-8 lg:py-20 px-4 md:px-8">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row">
+        <div className='lg:w-1/2' >
+          <h2 className="text-lg xs:text-4xl md:text-3xl lg:text-2xl font-light mb-2">Aliados GoBio</h2>
+          <p className="text-2xl xs:text-5xl md:text-4xl lg:text-3xl mb-10 lg:mb-6 xs:mb-14 sm:max-w-5/6 md:w-3/4 lg:w-5/6 font-semibold lg:font-medium">
+            Comercios qué eligieron <span className="text-green-500">preservar el futuro</span>.
+          </p>
+          <Link to="/aliados" className="text-white text-base xs:text-3xl  md:text-xl no-underline mb-10 lg:mb-2 xs:mb-16 inline-block">
+            Ver más →
+          </Link>
+        </div>
         <div 
           ref={scrollRef}
-          className="flex md:grid md:grid-cols-3 lg:grid-cols-4 gap-4 overflow-hidden pb-4 md:pb-0"
+          className="lg:w-1/2 flex lg:grid-cols-4 lg:items-center gap-4 overflow-hidden pb-4"
         >
           {aliadosLogos.map((logo, index) => (
             <div 
               key={index} 
-              className="bg-white p-4 rounded-lg flex-shrink-0 w-20 h-20 xs:w-48 xs:h-48 md:w-auto md:h-auto flex items-center justify-center"
+              className="bg-white p-4 rounded-lg flex-shrink-0 w-20 h-20 xs:w-52 xs:h-52  md:w-52 md:h-52 lg:w-36 lg:h-36  flex items-center justify-center"
             >
               <img src={logo.src} alt={logo.name} className="max-w-full max-h-full object-contain" />
             </div>

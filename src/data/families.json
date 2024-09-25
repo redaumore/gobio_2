@@ -1,8 +1,8 @@
 [ 
-  { "family_id": "estuches-y-bandejas", "family": "Bandejas y estuches", "imageSrcMobile": "Estuches-ecoenvases-mobile.png", "imageSrcDesktop": "Estuches-ecoenvases-desktop.png", "altText": "Bandejas y estuches" },
-  { "family_id": "bowls", "family": "Ensaladeras y bowls", "imageSrcMobile": "/Bowls-ecoenvases-mobile.png", "imageSrcDesktop": "/Bowls-ecoenvases-desktop.png", "altText": "Ensaladeras y bowls" },
-  { "family_id": "vasos", "family": "Vasos", "imageSrcMobile": "/Vasos-ecoenvases-mobile.png", "imageSrcDesktop": "/Vasos-ecoenvases-desktop.png", "altText": "Vasos" },
-  { "family_id": "platos-y-cubiertos", "family": "Platos y cubiertos", "imageSrcMobile": "/Cubiertos-ecoenvases-mobile.png", "imageSrcDesktop": "/Cubiertos-ecoenvases-desktop.png", "altText": "Platos y cubiertos" },
-  { "family_id": "bolsas-y-sobres", "family": "Bolsas", "imageSrcMobile": "/Bolsas-ecoenvases-mobile.png", "imageSrcDesktop": "/Bolsas-ecoenvases-desktop.png", "altText": "Bolsas" },
-  { "family_id": "accesorios-para-cafeteria", "family": "Accesorios", "imageSrcMobile": "/Accesorios-ecoenvases-mobile.png", "imageSrcDesktop": "/Accesorios-ecoenvases-desktop.png", "altText": "Accesorios" }
+  { "family_id": "estuches-y-bandejas", "family": "Bandejas y estuches", "imageSrcMobile": "/family/Estuches-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Estuches-ecoenvases-desktop.png", "altText": "Bandejas y estuches" },
+  { "family_id": "bowls", "family": "Ensaladeras y bowls", "imageSrcMobile": "/family/Bowls-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Bowls-ecoenvases-desktop.png", "altText": "Ensaladeras y bowls" },
+  { "family_id": "vasos", "family": "Vasos", "imageSrcMobile": "/family/Vasos-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Vasos-ecoenvases-desktop.png", "altText": "Vasos" },
+  { "family_id": "platos-y-cubiertos", "family": "Platos y cubiertos", "imageSrcMobile": "/family/Cubiertos-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Cubiertos-ecoenvases-desktop.png", "altText": "Platos y cubiertos" },
+  { "family_id": "bolsas-y-sobres", "family": "Bolsas", "imageSrcMobile": "/family/Bolsas-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Bolsas-ecoenvases-desktop.png", "altText": "Bolsas" },
+  { "family_id": "accesorios-para-cafeteria", "family": "Accesorios", "imageSrcMobile": "/family/Accesorios-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Accesorios-ecoenvases-desktop.png", "altText": "Accesorios" }
 ]
