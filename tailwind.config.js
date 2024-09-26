@@ -80,7 +80,7 @@ module.exports = {
       md: '768px', // Para pantallas medianas
       lg: '1024px', // Para pantallas grandes
       xl: '1280px', // Para pantallas extra grandes
-      xxl: '1440px',
+      "2xl": '1440px',
       xxxl: '1536px' // Para pantallas extra extra grandes
     },
   },

@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react'
 const PrimerCompraSection: React.FC = () => {
   return (
     <section>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-1440 mx-auto">
         <div className='flex flex-row'>
           <div id="coll" className='hidden lg:flex w-2/12'>
             <div className="w-full flex justify-end mr-20 xs:mr-28">
@@ -19,20 +19,20 @@ const PrimerCompraSection: React.FC = () => {
               </div>
               <div className='flex flex-row'>
                 <div className="text-center px-8 xs:px-12 mb-6 md:mb-0 lg:pr-0">
-                  <h2 className="text-3xl xs:text-6xl md:text-6xl lg:text-4.5xl font-medium mb-4 md:mb-12 lg:mb-6 lg:mt-16 lg:pr-6 text-left max-w-64 xs:max-w-lg">
+                  <h2 className="text-3xl xs:text-6xl md:text-6xl lg:text-4.5xl xl:text-6xl font-medium mb-4 md:mb-12 lg:mb-6 lg:mt-16 lg:pr-6 text-left max-w-64 xs:max-w-lg ">
                     Realiza tu primera <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">compra.</span>
                   </h2>
-                  <p className="mb-6 md:mb-16 text-base xs:text-3xl lg:text-base text-left">
+                  <p className="mb-6 md:mb-16 xl:mr-24 text-base xs:text-3xl lg:text-base xl:text-xl text-left">
                     Si no estás conforme y nos avisás en un lapso de 72 hs te devolvemos tu dinero.
                   </p>
                 </div>
-                <div className='hidden lg:flex h-64 items-center'>
+                <div className='hidden lg:flex h-72 xl:h-96 items-center'>
                   <Link 
                     to="/contacto" 
-                    className="flex items-start ml-8 xs:ml-12 justify-left w-32 h-32 rounded-full bg-white text-black border-2 border-black transition-colors"
+                    className="flex items-center ml-8 xs:ml-12 justify-left rounded-full bg-white text-black border-2 border-black transition-colors"
                     aria-label="Contactar para primera compra"
                   >
-                    <img src="/home/arrowright1.svg" alt="Imagen de contacto" className="w-20" />
+                    <img src="/home/arrowright1.svg" alt="Imagen de contacto" className="w-20 xl:w-24 " />
                   </Link>
                 </div>
               </div>
@@ -53,10 +53,10 @@ const PrimerCompraSection: React.FC = () => {
           </div>
           <div id="colr" className='hidden lg:flex lg:flex-col w-2/12'>
             <div className="w-full h-1/2 flex justify-end mr-20">
-              <img src="/home/Primera-1-desktop.png" alt="Comida en envase biodegradable" className="rounded-b-2xl h-28 object-cover mr-8" />
+              <img src="/home/Primera-1-desktop.png" alt="Comida en envase biodegradable" className="rounded-b-2xl h-28 xl:h-32 object-cover mr-8" />
             </div>
               <div className="w-full h-1/2 flex justify-end items-end">
-                <img src="/home/Primera-3-desktop.png" alt="Comida en envase biodegradable" className="rounded-tl-3xl h-24 object-cover" />
+                <img src="/home/Primera-3-desktop.png" alt="Comida en envase biodegradable" className="rounded-tl-3xl h-24 xl:h-28 object-cover" />
               </div>
           </div>
         </div>
