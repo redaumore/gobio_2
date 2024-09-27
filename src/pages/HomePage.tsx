@@ -25,12 +25,7 @@ const HomePage: React.FC = () => {
     <div className="home-page">
       {[Section1, Section2, Section3, Section4, Section5, Section6, Section7, Section8, Section9].map(
         (Section, index) => (
-          <div
-            key={index}
-            className="section" // Eliminamos la clase condicional
-          >
             <Section />
-          </div>
         )
       )}
     </div>
