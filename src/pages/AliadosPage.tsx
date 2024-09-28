@@ -59,7 +59,7 @@ const AliadosPage: React.FC = () => {
                   Conoce más sobre los negocios que eligen preservar el futuro día a día y las diferentes soluciones que nosotros ofrecemos.
                 </p>
               </div>
-              <button className="bg-black border-2 border-white text-xl text-white font-medium py-2 px-4 rounded-lg font-montserrat tracking-wide">
+              <button className="bg-gray-900 border-2 border-white text-xl text-white font-medium py-2 px-4 rounded-lg font-montserrat tracking-wide">
                 Unite al cambio
               </button>
             </div>
