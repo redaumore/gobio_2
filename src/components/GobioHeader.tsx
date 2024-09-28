@@ -32,7 +32,7 @@ const GobioHeader: React.FC = () => {
           <div className="flex items-center">
             <a href='/'>
               <div className="flex-shrink-0">
-                <img alt="Gobio Logo" src="/logo-gobio-dsk.png" className='w-1/2 sm:h-12 sm:w-28' />
+                <img alt="Gobio Logo" src="/logo-gobio-dsk.png" className='w-2/3 sm:w-28' />
               </div>
             </a>
           </div>
@@ -45,7 +45,7 @@ const GobioHeader: React.FC = () => {
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
-                    <div className="absolute z-10 hidden group-hover:block bg-black border border-gray-700 mt-1 rounded-md shadow-lg">
+                    <div className="absolute z-10 w-48 hidden group-hover:block bg-black border border-gray-700 mt-1 rounded-md shadow-lg">
                       {item.subItems.map((subItem) => (
                         <Link
                           key={subItem.name}

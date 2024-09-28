@@ -50,6 +50,9 @@ module.exports = {
       },
       screens: {
         xs: '412px',
+      },
+      backgroundImages: {
+        'somos_text': "url('./home/somos-text.svg')"
       }
     },
     fontSize: {
