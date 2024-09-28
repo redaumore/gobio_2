@@ -2,11 +2,11 @@ import React from 'react';
 
 const GobioFooter: React.FC = () => {
   return (
-    <footer className="bg-gray-200 text-black py-14 mt-auto">
+    <footer className="bg-gray-200 text-black py-14 md:py-6 mt-auto">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6">
         <div className="flex flex-col md:flex-row items-center justify-between font-montserrat">
           <div className="mb-4 md:mb-0">
-            <img src="/logo-footer.png" alt="GoBio Logo" className="h-16" />
+            <img src="/logo-footer.png" alt="GoBio Logo" className="h-16 md:h-10" />
           </div>
           <div className="flex flex-col lg:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-sm">
             <a href="mailto:hola@gobio.ar" className="no-underline text-black">hola@gobio.ar</a>

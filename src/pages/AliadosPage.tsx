@@ -42,8 +42,8 @@ const AliadosPage: React.FC = () => {
   }, []);
 
   return (
-    <div className='font-montserrat'>
-      <div className="bg-gray-900 text-white pt-8">
+    <div className='font-montserrat bg-gray-900'>
+      <div className="text-white pt-8">
         <div className="max-w-1440 mx-auto w-full">
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* Left column - visible only on desktop */}
