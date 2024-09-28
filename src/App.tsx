@@ -89,7 +89,7 @@ function App() {
       <Route path="/ecoenvases" element={<Layout><EcoenvasesPageWrapper /></Layout>} />
       <Route path="/faqs" element={<Layout><FaqsPage /></Layout>} />
       <Route path="/producto/:productId" element={<Layout><ProductPageWrapper /></Layout>} />
-      <Route path="/productos/:familyId" element={<Layout><ProductsPageWrapper /></Layout>} />
+      <Route path="/productos/:familyId?" element={<Layout><ProductsPageWrapper /></Layout>} />
     </Routes>
   );
 }

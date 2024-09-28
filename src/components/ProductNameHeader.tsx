@@ -24,7 +24,7 @@ export default function ProductNameHeader({
       onClick={handleBackClick} >
       <ArrowLeft size={20} />
     </button>
-    <h1 className="text-lg font-semibold text-sm">{name}</h1>
+    <h1 className="text-sm sm:text-xl font-semibold">{name}</h1>
   </header>
   );
 }

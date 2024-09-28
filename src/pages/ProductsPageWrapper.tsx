@@ -3,11 +3,12 @@ import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-r
 import ProductsPage from './ProductsPage';
 
 const ProductsPageWrapper = () => {
-  const { familyId } = useParams<{ familyId: string }>();
+  let { familyId } = useParams<{ familyId: string }>();
   //const productData = productsData[familyId as keyof typeof productsData];
 
-  if (!familyId) {
-    return <h2>Familia no especificada</h2>;
+  if (!familyId || familyId === undefined) {
+    familyId = '*'
+    //return <h2>Familia no especificada</h2>;
   }
 
   return <ProductsPage familyId={familyId} />;
