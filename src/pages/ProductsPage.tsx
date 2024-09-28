@@ -64,9 +64,9 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
   const uniqueMaterials = Array.from(new Set(Object.values(productsData).map(product => product.material)))
 
   return (
-    <div className="font-montserrat max-w-1440">
+    <div className="font-montserrat">
       <ProductNameHeader name={familyTitle}/>
-      <div className="mx-auto pt-4 div-align-center">
+      <div className="max-w-1440 mx-auto pt-4 div-align-center">
         <div className="flex relative mb-6 px-4">
           <input
             type="text"
