@@ -67,7 +67,7 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
     <div className="font-montserrat max-w-1440">
       <ProductNameHeader name={familyTitle}/>
       <div className="mx-auto pt-4 div-align-center">
-        <div className="relative mb-6 px-4">
+        <div className="flex relative mb-6 px-4">
           <input
             type="text"
             placeholder="Buscar"
