@@ -21,17 +21,18 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
   return (
     <div className="min-h-screen font-montserrat max-w-1440">
       <ProductNameHeader name={name}/>
-      <div className="flex flex-col md:flex-row md:items-start gap-6 p-6">
+      <div className="flex flex-col md:flex-row md:items-start gap-6 px-6 py-10">
         {/* Etiqueta 100% biodegradable y Cabecera para móvil */}
         <div className="visible md:hidden mb-4">
-          <div className="mb-2">
-            <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
-              100% biodegradable
-            </span>
+          <div className="flex mb-2 ">
+            <div className="border-gradient">
+              <div className="flex-shrink-0 text-sm bg-white text-gray-800 font-bold border-gradient-content ">
+                100% biodegradable
+             </div>
+            </div>
           </div>
           <h1 className="text-2xl font-medium mb-2">{name}</h1>
-          <h2 className="text-lg font-medium text-gray-9
-          00">{material}</h2>
+          <h2 className="text-lg font-medium text-gray-9 my-2">{material}</h2>
         </div>
         
         {/* Imagen */}
@@ -50,14 +51,16 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
         {/* Contenido para desktop */}
         <div className="md:w-1/2">
           {/* Etiqueta 100% biodegradable y Cabecera para desktop */}
-          <div className="hidden md:visible mb-4">
-            <div className="mb-2">
-              <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
-                100% biodegradable
-              </span>
+          <div className="hidden md:inline-block mb-4">
+            <div className="flex mb-2 ">
+              <div className="border-gradient">
+                <div className="flex-shrink-0 text-sm bg-white text-gray-800 font-bold border-gradient-content ">
+                  100% biodegradable
+              </div>
+              </div>
             </div>
             <h1 className="text-2xl font-bold mb-2">{name}</h1>
-            <h2 className="text-lg text-gray-600">{material}</h2>
+            <h2 className="text-lg text-gray-600 my-0">{material}</h2>
           </div>
 
           {/* Descripción */}

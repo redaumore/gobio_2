@@ -6,13 +6,13 @@ const GeneralInfo: React.FC = () => {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row gap-6 font-light">
         <div className="flex-1 bg-green-100 rounded-3xl p-6 xs:p-12 flex flex-col justify-between">
-          <h2 className="text-xl xs:text-4xl md:text-2xl mb-4 font-medium">
+          <h2 className="text-xl md:text-2xl mb-4 font-medium">
             Te contamos qué sucede cuando compostás, reciclás o desechás nuestros productos.
           </h2>
           <div className="flex items-center justify-end mt-4">
             <a
               href="#"
-              className="text-black flex items-center no-underline xs:text-3xl md:text-xl font-medium"
+              className="text-black flex items-center no-underline md:text-xl font-medium"
             >
               Saber más
               <ArrowRight className="ml-2 h-4 w-4" />
@@ -21,13 +21,13 @@ const GeneralInfo: React.FC = () => {
         </div>
 
         <div className="flex-1 bg-blue-100 rounded-3xl p-6 xs:p-12 flex flex-col justify-between">
-          <h2 className="text-xl mb-4 xs:text-4xl md:text-2xl font-medium">
+          <h2 className="text-xl mb-4 md:text-2xl font-medium">
             Personaliza tus ecoenvases. Ofrecemos cuatro opciones de impresión diferentes.
           </h2>
           <div className="flex items-center justify-end mt-4">
             <a
               href="#"
-              className="text-black flex items-center no-underline xs:text-3xl md:text-xl font-medium"
+              className="text-black flex items-center no-underline md:text-xl font-medium"
             >
               Saber más
               <ArrowRight className="ml-2 h-4 w-4" />

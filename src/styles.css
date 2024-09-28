@@ -37,3 +37,20 @@
 .section.opacity-0 { /* New class for initial state */
   opacity: 0;
 }
+
+.border-gradient {
+  position: relative;
+  background: white;
+  border-radius: 9999px; /* Full rounded corners */
+  padding: 3px; /* Adjust this to control border thickness */
+  background: linear-gradient(90deg, #f0bfc3 0%, #55a591 50%, #7cbf80 75%, #ecf1a1 100%);
+}
+
+
+.border-gradient-content {
+  background: white;
+  border-radius: 9999px;
+  padding: 0.2rem 1rem; /* Adjust padding as needed */
+  font-weight: bold;
+  color: #1f2937; /* text-gray-800 equivalent */
+}
