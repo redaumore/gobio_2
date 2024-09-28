@@ -26,7 +26,7 @@ const GobioHeader: React.FC = () => {
   ]
 
   return (
-    <nav className="bg-black text-white">
+    <nav className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -41,7 +41,7 @@ const GobioHeader: React.FC = () => {
               {menuItems.map((item) => (
                 item.subItems ? (
                   <div key={item.name} className="relative group">
-                    <button className="bg-black text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <button className="bg-gray-900 text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium flex items-center">
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
@@ -72,7 +72,7 @@ const GobioHeader: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="bg-black inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               {isOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
@@ -92,7 +92,7 @@ const GobioHeader: React.FC = () => {
                 <div key={item.name}>
                   <button
                     onClick={toggleEcoenvase}
-                    className="bg-black text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left flex justify-between items-center"
+                    className="bg-gray-900 text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left flex justify-between items-center"
                   >
                     {item.name}
                     <ChevronDown className={`ml-1 h-4 w-4 transform transition-transform ${isEcoenvaseOpen ? 'rotate-180' : ''}`} />

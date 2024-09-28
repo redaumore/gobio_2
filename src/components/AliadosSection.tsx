@@ -23,7 +23,7 @@ const AliadosSection: React.FC = () => {
   }, [])
 
   return (
-    <section className="bg-black text-white py-8 lg:py-20 pl-4 md:pl-8">
+    <section className="bg-gray-900 text-white py-8 lg:py-20 pl-4 md:pl-8">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row">
         <div className='lg:w-1/2' >
           <h2 className="text-lg xs:text-4xl md:text-3xl lg:text-2xl font-light mb-2">Aliados GoBio</h2>

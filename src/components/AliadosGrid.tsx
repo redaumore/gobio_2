@@ -16,10 +16,10 @@ const TextImageBlock: React.FC<TextImageBlockProps> = ({
   imageFirst = false
 }) => {
   const textContent = (
-    <div className="flex flex-col justify-center p-4">
+    <div className="flex flex-col justify-center py-4 px-6 ">
       <h2 className="text-xl font-semibold mb-4">{title}</h2>
       {description.split('#').map((paragraph, index) => (
-        <p key={index} className="text-gray-600 text-base">
+        <p key={index} className="text-white text-base font-normal leading-snug">
           {paragraph.replace(/#+/, '')}
         </p>
       ))}
@@ -27,9 +27,11 @@ const TextImageBlock: React.FC<TextImageBlockProps> = ({
   )
 
   const imageContent = (
-    <div className="flex items-center justify-center p-6 rounded">
-      <div className="w-5/6 h-full max-w-xs rounded-[25px] overflow-hidden border-8 border-solid px-2 bg-gray-200 aspect-square border-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">
-        <img src={imageSrc} alt={imageAlt} className="w-full h-full object-contain" />
+    <div className="flex items-center justify-center p-6 rounded w-5/6 h-5/6">
+      <div className="flex border-gradient rounded-[25px] w-full h-full max-w-sm max-h-sm aspect-square">
+        <div className="rounded-3xl bg-gray-200 border-gradient-content w-full">
+          <img src={imageSrc} alt={imageAlt} className="w-full h-full object-contain" />
+        </div>
       </div>
     </div>
   )
@@ -38,13 +40,13 @@ const TextImageBlock: React.FC<TextImageBlockProps> = ({
     <div className="flex flex-col md:flex-row">
       {imageFirst ? (
         <>
-          <div className="md:w-1/2 order-2 md:order-1">{imageContent}</div>
+          <div className="flex justify-center md:w-1/2 order-2 md:order-1">{imageContent}</div>
           <div className="md:w-1/2 order-1 md:order-2">{textContent}</div>
         </>
       ) : (
         <>
           <div className="md:w-1/2">{textContent}</div>
-          <div className="md:w-1/2">{imageContent}</div>
+          <div className="flex justify-center md:w-1/2">{imageContent}</div>
         </>
       )}
     </div>
@@ -53,7 +55,7 @@ const TextImageBlock: React.FC<TextImageBlockProps> = ({
 
 const AliadosGrid: React.FC = () => {
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto text-white bg-gray-900">
       <div className="space-y-12">
         <TextImageBlock
           title="Hotel Four Seasons"
