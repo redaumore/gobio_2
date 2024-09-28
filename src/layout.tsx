@@ -8,7 +8,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col h-svh font-montserrat">
+    <div className="flex flex-col min-h-screen font-montserrat">
       <GobioHeader />
       <main className="flex-grow">
         {children}
