@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function ConjuntaSection() {
   return (
-    <section className='flex justify-center bg-gray-200'>
-      <div className="w-full max-w-1440">
-        <div className="py-12 px-6 sm:px-10 lg:px-8 rounded-2xl bg-white">
+    <section className='flex justify-center'>
+      <div className="w-full max-w-1440 py-12 px-6 sm:px-10 lg:px-8 bg-gray-100">
+        <div className="rounded-2xl bg-white p-4">
           <div className='flex flex-col lg:flex-row items-center'>
             <div className="lg:w-1/2 lg:pr-8">
-              <h2 className="xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light">Compra conjunta</h2>
+              <h2 className="text-lg xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light">Compra conjunta</h2>
               <h3 className="text-xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-medium">
                 Accedé a los <span className="text-green-500">mejores precios</span> y productos en packaging biodegradable.
               </h3>
@@ -22,7 +22,7 @@ export default function ConjuntaSection() {
               </p>
             </div>
             <div className="mt-10 lg:mt-0 md:w-5/6 lg:w-1/2">
-              <img className="w-full rounded-4xl shadow-lg aspect-square" src="/home/Conjunta-desktop.png" alt="Packaging products" />
+              <img className="w-full rounded-3xl shadow-lg aspect-square" src="/home/Conjunta-desktop.png" alt="Packaging products" />
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-8 md:mt-12 space-y-6 lg:space-y-0">

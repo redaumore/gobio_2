@@ -47,7 +47,7 @@ export default function HeroSection() {
       <div className='max-w-1440 text-white flex flex-col justify-between'>
         <div className='lg:hidden'>
           <div className="space-y-6 text-center">
-            <h1 className="text-4xl xs:text-7xl sm:text-8xl font-medium leading-tight px-8">
+            <h1 className="text-4xl xs:text-7xl md:text-8xl font-medium leading-tight px-8">
               Elegí mejor.
               <br />
               Elegí <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">GoBio.</span>

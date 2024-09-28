@@ -16,9 +16,9 @@ export default function AvalaSection() {
                 Por eso, creamos este sello para certificar que tu comercio es:
               </p>
             </div>
-            <div className="lg:w-1/2 lg:pr-8">
+            <div className="flex justify-center sm:w-full lg:w-1/2 lg:pr-8">
               <img
-                className="w-5/6 rounded-xl"
+                className="w-full rounded-xl"
                 src="/home/Avala-mobile.png"
                 alt="GoBio product in a cafe setting"
               />
