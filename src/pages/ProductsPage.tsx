@@ -92,7 +92,7 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
             <option value="estuches-y-bandejas">Estuches y Bandejas</option>
             <option value="bowls">Bowls</option>
             <option value="vasos">Vasos</option>
-            <option value="cubiertos-y-platos">Cubiertos y Platos</option>
+            <option value="platos-y-cubiertos">Platos y Cubiertos</option>
             <option value="bolsas-y-sobres">Bolsas y Sobres</option>
             <option value="accesorios-para-cafeteria">Accesorios para Cafetería</option>
           </select>
