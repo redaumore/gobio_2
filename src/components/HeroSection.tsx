@@ -43,14 +43,14 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="bg-black flex justify-center">
+    <section className="bg-gray-900 flex justify-center">
       <div className='max-w-1440 text-white flex flex-col justify-between'>
         <div className='lg:hidden'>
           <div className="space-y-6 text-center">
-            <h1 className="text-4xl xs:text-7xl md:text-8xl font-medium leading-tight px-8">
+            <h1 className="text-4xl xs:text-7xl md:text-8xl font-semibold leading-tight px-8">
               Elegí mejor.
               <br />
-              Elegí <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">GoBio.</span>
+              Elegí <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">GoBio.</span>
             </h1>
             <p className="text-lg xs:text-3xl px-8 xs:px-20 pb-12">
               Desarrollamos envases para alimentos que son{' '}
@@ -86,7 +86,7 @@ export default function HeroSection() {
               />
             </div>
             <div className='w-2/3'>
-              <h1 className="text-4xl xs:text-7xl lg:text-7xl font-medium leading-tight px-8">
+              <h1 className="text-4xl xs:text-7xl lg:text-7xl font-semibold leading-tight px-8">
               Elegí mejor.
               </h1>
             </div>
@@ -94,8 +94,8 @@ export default function HeroSection() {
           <div className='flex flex-row'>
             <div className='flex flex-col w-8/12 '>
                 <div>
-                  <h1 className="text-4xl lg:text-7xl font-medium px-8 mt-0 mb-6">
-                    Elegí <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">GoBio.</span>
+                  <h1 className="text-4xl lg:text-7xl font-semibold px-8 mt-0 mb-6">
+                    Elegí <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">GoBio.</span>
                   </h1>
                 </div>
                 <div className='flex flex-row'>
@@ -141,7 +141,7 @@ export default function HeroSection() {
               pagination={{ clickable: true }}
               loop={true} // Enable looping
               autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay with 2s delay and continuous play
-              className="mySwiper w-full max-w-72 xs:max-w-sm sm:max-w-xl  md:max-w-2xl mb-12"
+              className="mySwiper w-full max-w-72 xs:max-w-sm sm:max-w-xl  md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-1440 mb-12"
             >
               {logos.map((logo) => (
                 <SwiperSlide key={logo.alt} className="flex items-center">
