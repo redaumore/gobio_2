@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ContactoSection: React.FC = () => {
   return (
@@ -8,11 +9,13 @@ const ContactoSection: React.FC = () => {
           {/* Muestras Section */}
           <div className="bg-white px-8 rounded-xl shadow-md justify-center max-w-lg">
             <h2 className="text-xl xs:text-4xl font-medium mb-4 text-center">Muestras</h2>
-              <p className="mb-6 lg:mb-12 lg:mx-8 text-sm xs:text-2xl lg:text-lg text-center">Pedinos una muestra del producto que vos quieras.</p>
-              <div className="flex justify-center">
-                <button className="bg-black text-white xs:w-48 xs:h-12 xs:text-lg lg:w-44 lg:h-10 px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
-                  Pedir muestra
-                </button>
+              <p className="mb-6 lg:mb-12 xl:mx-8 text-sm xs:text-2xl lg:text-lg text-center">Pedinos una muestra del producto que vos quieras.</p>
+              <div className="flex justify-center lg:mb-6 xl:mb-6">
+                <Link to="/muestra">
+                  <button className="bg-black text-white xs:w-48 xs:h-12 xs:text-lg lg:w-44 lg:h-10 px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
+                    Pedir muestra
+                  </button>
+                </Link>
               </div>
               <div className="flex justify-center my-4 lg:mt-0">
                 <img

@@ -4,25 +4,25 @@ export default function ConjuntaSection() {
   return (
     <section className='flex justify-center'>
       <div className="w-full max-w-1440 py-12 px-6 sm:px-10 lg:px-8 bg-gray-100">
-        <div className="rounded-2xl bg-white p-4">
-          <div className='flex flex-col lg:flex-row items-center'>
-            <div className="lg:w-1/2 lg:pr-8">
-              <h2 className="text-lg xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light">Compra conjunta</h2>
-              <h3 className="text-xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-medium">
-                Accedé a los <span className="text-green-500">mejores precios</span> y productos en packaging biodegradable.
+        <div className="rounded-2xl bg-white p-4 lg:pt-0 lg:px-8">
+          <div className='flex flex-col items-center lg:flex-row lg:items-start'>
+            <div className="lg:w-7/12 2xl:w-8/12 lg:pr-8 lg:pt-4">
+              <h2 className="text-lg xs:text-3xl sm:text-2xl md:text-3xl lg:text-xl xl:text-2xl mb-2 font-light">Compra conjunta</h2>
+              <h3 className="text-xl xs:text-4xl sm:text-4xl xl:text-5xl mb-8 mt-2 font-semibold">
+                Accedé a los <span className="bg-clip-text text-transparent bg-gradient-to-r from-eco2 to-eco3">mejores precios</span> y productos en packaging biodegradable.
               </h3>
-              <p className="mt-4 text-xs xs:text-xl text-gray-600">
+              <p className="mt-4 text-xs xs:text-xl lg:text-sm xl:text-base 2xl:text-xl text-gray-600 leading-6 2xl:leading-8">
                 Queremos ayudarte a que tu empresa o negocio sea 100% ecológico, 
                 por eso si tu consumo mensual de envases es alto, te podés sumar a 
                 nuestra próxima importación para bajar costos y asegurarte el stock.
               </p>
-              <p className="mt-4 text-xs xs:text-xl text-gray-600">
+              <p className="mt-4 text-xs xs:text-xl lg:text-sm xl:text-base 2xl:text-xl text-gray-600 leading-6 2xl:leading-8">
                 A través de nuestro servicio de Compra Conjunta podés acceder a 
                 todos los modelos y los mejores precios sin límite de cantidad.
               </p>
             </div>
-            <div className="mt-10 lg:mt-0 md:w-5/6 lg:w-1/2">
-              <img className="w-full rounded-3xl shadow-lg aspect-square" src="/home/Conjunta-desktop.png" alt="Packaging products" />
+            <div className="mt-10 lg:mt-0 md:w-5/6 lg:w-5/12 2xl:w-4/12 lg:flex lg:items-start lg:justify-end">
+              <img className="w-full rounded-3xl lg:rounded-b-3xl lg:rounded-t-none aspect-square lg:aspect-auto" src="/home/Conjunta-desktop.png" alt="Packaging products" />
             </div>
           </div>
           <div className="flex flex-col lg:flex-row items-center mt-8 md:mt-12 space-y-6 lg:space-y-0">
@@ -34,13 +34,13 @@ export default function ConjuntaSection() {
               <div key={step.number}>
                 <div className="flex lg:flex-col">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-11 w-11 xs:h-24 xs:w-24 md:w-20 md:h-20 lg:w-12 lg:h-12 rounded-full bg-gray-300 text-black border-solid border-2 border-black font-medium text-2xl xs:text-6xl lg:text-4xl">
+                    <div className="flex items-center justify-center h-11 w-11 xs:h-24 xs:w-24 md:w-20 md:h-20 lg:w-12 lg:h-12 2xl:h-16 2xl:w-16 rounded-full bg-gray-300 text-black border-solid border-2 border-black font-medium text-2xl xs:text-6xl lg:text-4xl 2xl:text-5xl">
                       {step.number}
                     </div>
                   </div>
                   <div className="ml-4 lg:ml-0 lg:mt-8">
-                    <h4 className="text-sm xs:text-3xl lg:text-lg font-semibold text-gray-900 my-0">{step.title}</h4>
-                    <p className="text-xs xs:text-2xl lg:text-sm lg:w-3/4 text-gray-600">{step.description}</p>
+                    <h4 className="text-sm xs:text-3xl lg:text-base 2xl:text-xl font-semibold text-gray-900 my-0">{step.title}</h4>
+                    <p className="text-xs xs:text-2xl lg:text-xs 2xl:text-base lg:w-3/4 text-gray-600">{step.description}</p>
                   </div>
                 </div>
               </div>

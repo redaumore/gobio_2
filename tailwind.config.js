@@ -85,7 +85,7 @@ module.exports = {
       lg: '1024px', // Para pantallas grandes
       xl: '1280px', // Para pantallas extra grandes
       "2xl": '1440px',
-      xxxl: '1536px' // Para pantallas extra extra grandes
+      "3xl": '1536px' // Para pantallas extra extra grandes
     },
   },
   plugins: [
