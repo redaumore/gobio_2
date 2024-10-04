@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Autoplay, Pagination } from 'swiper/modules';
 import AliadosGrid from '../components/AliadosGrid';
+import { Link } from 'react-router-dom';
 
 interface LogoProps {
   src: string;
@@ -59,9 +60,11 @@ const AliadosPage: React.FC = () => {
                   Conoce más sobre los negocios que eligen preservar el futuro día a día y las diferentes soluciones que nosotros ofrecemos.
                 </p>
               </div>
-              <button className="bg-gray-900 border-2 border-white text-xl text-white font-medium py-2 px-4 rounded-lg font-montserrat tracking-wide">
-                Unite al cambio
-              </button>
+              <Link to="https://gobio.mkt1.com.ar/form/">
+                <button className="bg-gray-900 border-2 border-white text-xl text-white font-medium py-2 px-4 rounded-lg font-montserrat tracking-wide">
+                  Unite al cambio
+                </button>
+              </Link>
             </div>
 
             {/* Right column - visible only on desktop */}
