@@ -8,7 +8,7 @@ export default function ConjuntaSection() {
           <div className='flex flex-col items-center lg:flex-row lg:items-start'>
             <div className="lg:w-7/12 2xl:w-8/12 lg:pr-8 lg:pt-4">
               <h2 className="text-lg xs:text-3xl sm:text-2xl md:text-3xl lg:text-xl xl:text-2xl mb-2 font-light">Compra conjunta</h2>
-              <h3 className="text-xl xs:text-4xl sm:text-4xl xl:text-5xl mb-8 mt-2 font-semibold">
+              <h3 className="text-2xl xs:text-4xl sm:text-4xl xl:text-5xl mb-8 mt-2 font-semibold">
                 Accedé a los <span className="bg-clip-text text-transparent bg-gradient-to-r from-eco2 to-eco3">mejores precios</span> y productos en packaging biodegradable.
               </h3>
               <p className="mt-4 text-xs xs:text-xl lg:text-sm xl:text-base 2xl:text-xl text-gray-600 leading-6 2xl:leading-8">

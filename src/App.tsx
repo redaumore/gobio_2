@@ -16,6 +16,7 @@ import EcoenvasesPageWrapper from "./pages/EcoenvasesPageWrapper";
 import AliadosPage from "./pages/AliadosPage";
 import ContactoPage from "./pages/ContactoPage";
 import HomePage from "./pages/HomePage";
+import TestPage from "./pages/TestPage";
 
 function App() {
   const action = useNavigationType();
@@ -90,6 +91,7 @@ function App() {
       <Route path="/faqs" element={<Layout><FaqsPage /></Layout>} />
       <Route path="/producto/:productId" element={<Layout><ProductPageWrapper /></Layout>} />
       <Route path="/productos/:familyId?" element={<Layout><ProductsPageWrapper /></Layout>} />
+      <Route path="/test" element={<Layout><TestPage /></Layout>} />
     </Routes>
   );
 }

@@ -3,48 +3,50 @@ import { Link } from 'react-router-dom'
 
 const ContactoSection: React.FC = () => {
   return (
-    <section className="py-12 px-4 md:px-8 bg-gray-200">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8 justify-center">
+    <section className="w-full bg-gray-200 py-12">
+      <div className="px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row space-y-8 md:space-x-8 md:space-y-0 justify-center">
           {/* Muestras Section */}
-          <div className="bg-white px-8 rounded-xl shadow-md justify-center max-w-lg">
-            <h2 className="text-xl xs:text-4xl font-medium mb-4 text-center">Muestras</h2>
-              <p className="mb-6 lg:mb-12 xl:mx-8 text-sm xs:text-2xl lg:text-lg text-center">Pedinos una muestra del producto que vos quieras.</p>
-              <div className="flex justify-center lg:mb-6 xl:mb-6">
+          <div className="bg-white px-6 sm:p-8 rounded-3xl shadow-md flex flex-col items-center">
+              <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-2xl lg:text-3xl font-medium mb-4 text-center">Muestras</h2>
+              <p className="mb-6 lg:mb-8 text-sm xs:text-lg sm:text-xl md:text-base lg:text-lg text-center max-w-md">
+                Pedinos una muestra del producto que vos quieras.
+              </p>
+              <div className="mb-6">
                 <Link to="/muestra">
-                  <button className="bg-black text-white xs:w-48 xs:h-12 xs:text-lg lg:w-44 lg:h-10 px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
+                  <button className="bg-black text-white w-full xs:w-48 h-10 xs:h-12 text-sm xs:text-lg px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
                     Pedir muestra
                   </button>
                 </Link>
               </div>
-              <div className="flex justify-center my-4 lg:mt-0">
+              <div className="flex w-full mb-8 justify-center">
                 <img
                   src="/home/Muestras-home-mobile.png"
                   alt="Muestra de contenedor"
-                  className="w-full max-w-sm mx-auto"
+                  className="w-full max-w-sm mx-auto object-cover"
                 />
               </div>
           </div>
 
           {/* Contactanos Section */}
-          <div className="bg-white px-8 rounded-xl shadow-md justify-center max-w-lg">
-            <h2 className="text-xl xs:text-4xl font-medium mb-4 text-center">Contactanos</h2>
-            <p className="mb-6  lg:mx-8 text-sm xs:text-2xl lg:text-lg text-center">
+          <div className="bg-white px-6 sm:px-8 rounded-3xl shadow-md flex flex-col items-center">
+            <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-2xl lg:text-3xl md:pt-8 font-medium mb-4 text-center">Contactanos</h2>
+            <p className="mb-6 lg:mb-8 text-sm xs:text-lg sm:text-xl md:text-base lg:text-lg text-center max-w-md">
               Contactanos para conocer todos sobre nuestros productos y descuentos.
             </p>
-            <div className="flex justify-center space-x-4">
-              <button className="bg-black text-white xs:w-48 xs:h-12 xs:text-lg lg:w-40 lg:h-10 px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">
+            <div className="flex justify-center space-x-4 mb-6">
+              <button className="bg-black text-white w-32 xs:w-36 h-10 xs:h-12 text-sm xs:text-lg px-4 py-2 rounded-md hover:bg-gray-800 transition-colors">
                 WhatsApp
               </button>
-              <button className="bg-white text-black xs:w-48 xs:h-12 xs:text-lg lg:w-32 lg:h-10 px-6 py-2 rounded-md border border-black hover:bg-gray-100 transition-colors">
+              <button className="bg-white text-black w-32 xs:w-46 h-10 xs:h-12 text-sm xs:text-lg px-4 py-2 rounded-md border border-black hover:bg-gray-100 transition-colors">
                 Email
               </button>
             </div>
-            <div className="flex justify-center">
+            <div className="flex w-full justify-center">
               <img
                 src="/home/Contactanos-home-mobile.png"
                 alt="Vista previa de WhatsApp"
-                className="w-full mx-auto align-bottom"
+                className="w-full max-w-sm mx-auto object-cover"
               />
             </div>
           </div>
