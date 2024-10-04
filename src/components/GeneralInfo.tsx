@@ -11,7 +11,8 @@ const GeneralInfo: React.FC = () => {
           </h2>
           <div className="flex items-center justify-end mt-4">
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1fKv8QbubUMrJgoT93Dcz6r6Ecg4F2mAH/view"
+              target='_blank'
               className="text-black flex items-center no-underline md:text-xl font-medium"
             >
               Saber más
@@ -26,7 +27,8 @@ const GeneralInfo: React.FC = () => {
           </h2>
           <div className="flex items-center justify-end mt-4">
             <a
-              href="#"
+              href="https://drive.google.com/file/d/1A25POpzYn14TwWSYchPzSmnNrIV1Doeu/view"
+              target='_blank'
               className="text-black flex items-center no-underline md:text-xl font-medium"
             >
               Saber más
