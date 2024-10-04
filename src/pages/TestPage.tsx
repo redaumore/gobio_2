@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
-import ContactoSection from '../components/ContactoSection';
+import ConjuntaSection from '../components/ConjuntaSection';
 
 const TestPage = () => {
-  return <ContactoSection />;
+  return <ConjuntaSection />;
 };
 
 export default TestPage
