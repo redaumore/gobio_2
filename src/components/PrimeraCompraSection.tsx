@@ -5,10 +5,10 @@ import { ArrowRight } from 'lucide-react'
 const PrimerCompraSection: React.FC = () => {
   return (
     <section className="w-full">
-      <div className="w-full mx-auto sm:px-6 lg:px-8">
+      <div className="mx-auto">
         <div className='flex flex-col lg:flex-row'>
           <div id="coll" className='hidden lg:flex lg:w-2/12'>
-            <div className="w-full flex justify-end lg:mr-4 xl:mr-8">
+            <div className="w-full flex justify-start lg:mr-4 xl:mr-8">
               <img 
                 src="/home/Primera-2-desktop.png" 
                 alt="Comida en envase biodegradable" 
@@ -20,14 +20,14 @@ const PrimerCompraSection: React.FC = () => {
             <div className="flex flex-col items-center justify-between">
               <div className="w-full flex justify-end mb-6 lg:hidden">
                 <img 
-                  src="/home/Primera-1-desktop.png" 
+                  src="/home/Primera-1-mobile.png" 
                   alt="Comida en envase biodegradable" 
-                  className="rounded-b-2xl h-32 xs:h-60 object-cover aspect-square w-auto" 
+                  className="rounded-b-xl rounded-t-none pr-8 h-32 xs:h-36 sm:h-44 object-cover aspect-square w-auto" 
                 />
               </div>
               <div className='flex flex-col lg:flex-row w-full'>
-                <div className="text-center px-4 xs:px-6 sm:px-8 mb-6 md:mb-0 lg:pr-0 lg:w-3/4">
-                  <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-4.5xl xl:text-6xl font-medium mb-4 md:mb-8 lg:mb-6 lg:mt-16 text-left max-w-full xs:max-w-lg">
+                <div className="text-center px-4 xs:px-6 sm:px-8 mb-6 md:mb-0 lg:pl-16 lg:pr-0 lg:w-3/4">
+                  <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-4.5xl xl:text-6xl font-medium mb-4 md:mb-8 lg:mb-6 lg:mt-16 text-left max-w-full mr-14">
                     Realiza tu primera <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">compra.</span>
                   </h2>
                   <p className="mb-6 md:mb-16 text-base xs:text-xl sm:text-2xl lg:text-base xl:text-xl text-left">
@@ -47,34 +47,34 @@ const PrimerCompraSection: React.FC = () => {
               <div className="w-full flex flex-row gap-4 lg:hidden">
                 <Link 
                   to="/contacto" 
-                  className="flex items-center justify-center w-32 h-32 rounded-full bg-white text-black border-2 border-black transition-colors"
+                  className="flex items-start pl-4 xs:pl-6 w-32 h-32 rounded-full bg-white text-black border-2 border-black transition-colors"
                   aria-label="Contactar para primera compra"
                 >
-                  <img src="/home/arrowright1.svg" alt="Imagen de contacto" className="w-16 xs:w-28" />
+                  <img src="/home/arrowright1.svg" alt="Imagen de contacto" className="w-16 sm:w-28" />
                 </Link>
                 <div className="w-full flex justify-end items-end">
                   <img 
                     src="/home/Primera-2-desktop.png" 
                     alt="Comida en envase biodegradable" 
-                    className="rounded-tl-3xl h-24 xs:h-44 object-cover w-auto" 
+                    className="rounded-tl-3xl h-24 xs:h-30 sm:h-44 sm:pt-8 object-cover w-auto" 
                   />
                 </div>
               </div>
             </div>
           </div>
           <div id="colr" className='hidden lg:flex lg:flex-col lg:w-2/12'>
-            <div className="w-full h-1/2 flex justify-end lg:mr-4 xl:mr-8">
+            <div className="w-full h-1/2 flex justify-start lg:mr-4 xl:mr-8">
               <img 
                 src="/home/Primera-1-desktop.png" 
                 alt="Comida en envase biodegradable" 
-                className="rounded-b-2xl h-28 xl:h-32 object-cover w-auto" 
+                className="rounded-b-2xl h-28 xl:h-40 object-cover w-auto" 
               />
             </div>
             <div className="w-full h-1/2 flex justify-end items-end">
               <img 
                 src="/home/Primera-3-desktop.png" 
                 alt="Comida en envase biodegradable" 
-                className="rounded-tl-3xl h-24 xl:h-28 object-cover w-auto" 
+                className="rounded-tl-3xl h-24 xl:h-36 object-cover w-auto" 
               />
             </div>
           </div>
