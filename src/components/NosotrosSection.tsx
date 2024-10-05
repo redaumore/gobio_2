@@ -3,7 +3,7 @@ export default function NosotrosSection() {
     <section className="bg-white">
       <a id="nosotros"></a>
       <div className="max-w-[1440px] mx-auto lg:py-28">
-        <div className="hidden lg:flex items-center justify-center w-full bg-contain bg-center bg-no-repeat h-screen bg-[url('./home/somos-text.svg')] h-96">
+        <div className="hidden lg:flex items-center justify-center w-full bg-contain bg-center bg-no-repeat bg-[url('./home/somos-text.svg')]">
           <img
             className="w-1/2"
             src="/home/Photo-group-desktop.png"
