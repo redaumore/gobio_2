@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface ProductDescriptionProps {
   name: string;
@@ -32,12 +33,16 @@ export default function ProductDescription({
 
     {/* Botones */}
     <div className="flex flex-col gap-2">
-      <button className="w-full bg-black text-white py-2 px-4 rounded">
-        WhatsApp
-      </button>
-      <button className="w-full border border-black text-black py-2 px-4 rounded">
-        Email
-      </button>
+      <Link to="https://gobio.mkt1.com.ar/form/" target='_blank'>
+        <button className="w-full bg-black text-white py-2 px-4 rounded">
+          Cotizar
+        </button>
+      </Link>
+      <Link to="/muestra" target='_blank'>
+        <button className="w-full border border-black text-black py-2 px-4 rounded">
+          Muestra
+        </button>
+      </Link>
     </div>
   </div>
   );

@@ -54,3 +54,10 @@
   font-weight: bold;
   color: #1f2937; /* text-gray-800 equivalent */
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  /* Your custom styles here */
+  color: #1f2937; /* Inherit color from parent element */
+  --swiper-theme-color: #1f2937; 
+}

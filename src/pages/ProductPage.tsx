@@ -1,11 +1,13 @@
 import { FunctionComponent } from "react";
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import ProductNameHeader from "../components/ProductNameHeader";
 import ProductCarousel from "../components/ProductCarousel";
 import GeneralInfo from "../components/GeneralInfo";
-import GobioFooter from "../components/GobioFooter";
-import productsData from '../data/products.json'
 
 interface ProductProps {
   name: string;
@@ -35,17 +37,35 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
           <h2 className="text-lg font-medium text-gray-9 my-2">{material}</h2>
         </div>
         
-        {/* Imagen */}
+        {/* Swiper Slider */}
         <div className="relative w-full md:w-1/2 aspect-square">
-          <img
-            src={images[0]}
-            alt={name}
-            className="w-full h-full object-contain rounded-lg"
-          />
-          <div className="absolute inset-0 flex items-center justify-between p-2">
-            <ArrowLeft className="text-gray-500 bg-white rounded-full p-1" />
-            <ArrowRight className="text-gray-500 bg-white rounded-full p-1" />
-          </div>
+          <Swiper
+            modules={[Navigation]}
+            navigation={{
+              prevEl: '.swiper-button-prev',
+              nextEl: '.swiper-button-next',
+            }}
+            loop={true}
+            className="w-full h-full"
+          >
+            {images.map((image, index) => (
+              <SwiperSlide key={index}>
+                <div className="w-full flex justify-center items-center">
+                  <img
+                    src={image}
+                    alt={`${name} - Image ${index + 1}`}
+                    className="w-5/6 object-contain rounded-lg"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+            <div className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10">
+              <ArrowLeft className="swiper-button-prev" />
+            </div>
+            <div className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10">
+              <ArrowRight className="swiper-button-next" />
+            </div>
+          </Swiper>
         </div>
 
         {/* Contenido para desktop */}
@@ -56,7 +76,7 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
               <div className="border-gradient">
                 <div className="flex-shrink-0 text-sm bg-white text-gray-800 font-bold border-gradient-content ">
                   100% biodegradable
-              </div>
+                </div>
               </div>
             </div>
             <h1 className="text-2xl font-bold mb-2">{name}</h1>
@@ -73,12 +93,16 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
 
           {/* Botones */}
           <div className="flex flex-col gap-2">
-            <button className="w-full text-xl bg-black text-white py-3 px-4 rounded-md">
-              WhatsApp
-            </button>
-            <button className="w-full text-xl border border-black text-black py-3 px-4 rounded-md">
-              Email
-            </button>
+            <Link to="https://gobio.mkt1.com.ar/form/" target='_blank'>
+              <button className="w-full text-xl bg-black text-white py-3 px-4 rounded-md">
+                Cotizar
+              </button>
+            </Link>
+            <Link to="/muestra" target='_blank'>
+              <button className="w-full text-xl border border-black text-black py-3 px-4 rounded-md">
+                Muestra
+              </button>
+            </Link>
           </div>
         </div>
       </div>
