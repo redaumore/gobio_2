@@ -60,7 +60,7 @@ const AliadosPage: React.FC = () => {
                   Conoce más sobre los negocios que eligen preservar el futuro día a día y las diferentes soluciones que nosotros ofrecemos.
                 </p>
               </div>
-              <Link to="https://gobio.mkt1.com.ar/form/">
+              <Link to="https://gobio.mkt1.com.ar/form/" target="_blank">
                 <button className="bg-gray-900 border-2 border-white text-xl text-white font-medium py-2 px-4 rounded-lg font-montserrat tracking-wide">
                   Unite al cambio
                 </button>

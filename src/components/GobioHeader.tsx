@@ -41,7 +41,7 @@ const GobioHeader: React.FC = () => {
               {menuItems.map((item) => (
                 item.subItems ? (
                   <div key={item.name} className="relative group">
-                    <button className="bg-gray-900 text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                    <button className="bg-gray-900 text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base flex items-center">
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
@@ -72,7 +72,7 @@ const GobioHeader: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-base text-white hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             >
               {isOpen ? (
                 <X className="block h-6 w-6" aria-hidden="true" />
