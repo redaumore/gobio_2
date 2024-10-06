@@ -40,13 +40,13 @@ const TextImageBlock: React.FC<TextImageBlockProps> = ({
     <div className="flex flex-col md:flex-row">
       {imageFirst ? (
         <>
-          <div className="flex justify-center md:w-1/2 order-2 md:order-1">{imageContent}</div>
-          <div className="md:w-1/2 order-1 md:order-2">{textContent}</div>
+          <div className="flex justify-center md:w-1/3 order-2 md:order-1">{imageContent}</div>
+          <div className="md:w-2/3 order-1 flex items-center md:order-2">{textContent}</div>
         </>
       ) : (
         <>
-          <div className="md:w-1/2">{textContent}</div>
-          <div className="flex justify-center md:w-1/2">{imageContent}</div>
+          <div className="md:w-2/3 flex items-center">{textContent}</div>
+          <div className="flex justify-center md:w-1/3">{imageContent}</div>
         </>
       )}
     </div>
