@@ -82,7 +82,7 @@ export default function HeroSection() {
               <img
                   src="/home/Hero-2-desktop.png" // Reemplaza con la ruta de tu imagen
                   alt="Personas comiendo comida asiática"
-                  className="size-44"
+                  className="size-44 rounded-xl"
               />
             </div>
             <div className='w-2/3'>
