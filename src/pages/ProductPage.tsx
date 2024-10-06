@@ -92,17 +92,21 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
           </ul>
 
           {/* Botones */}
-          <div className="flex flex-col gap-2">
-            <Link to="https://gobio.mkt1.com.ar/form/" target='_blank'>
-              <button className="w-full text-xl bg-black text-white py-3 px-4 rounded-md">
-                Cotizar
-              </button>
-            </Link>
-            <Link to="/muestra" target='_blank'>
-              <button className="w-full text-xl border border-black text-black py-3 px-4 rounded-md">
-                Muestra
-              </button>
-            </Link>
+          <div className="flex flex-col lg:flex-row justify-center gap-2">
+            <div className="w-full lg:w-1/2">
+              <Link to="https://gobio.mkt1.com.ar/form/" target='_blank'>
+                <button className="w-full lg:h-10 text-xl bg-black text-white py-2 px-4 rounded-md">
+                  Cotizar
+                </button>
+              </Link>
+            </div>
+            <div className="w-full lg:w-1/2">
+              <Link to="/muestra" target='_blank'>
+                <button className="w-full lg:h-10 text-xl border border-black bg-white text-black py-2 px-4 rounded-md">
+                  Muestra
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

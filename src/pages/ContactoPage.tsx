@@ -30,7 +30,7 @@ const ContactoPage: React.FC = () => {
   };
 
   return (
-    <div className='font-montserrat h-screen'>
+    <div className='font-montserrat'>
       <div className="mx-auto p-4 bg-white div-align-center">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
           Pedínos una <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">muestra.</span>
