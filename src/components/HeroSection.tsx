@@ -137,7 +137,7 @@ export default function HeroSection() {
             <Swiper
               freeMode={true} // Enable free mode
               modules={[Autoplay, Pagination]} 
-              spaceBetween={6} // Adjust spacing as needed
+              spaceBetween={30} // Adjust spacing as needed
               slidesPerView={slidesPerView}
               pagination={{ clickable: true }}
               loop={true} // Enable looping
@@ -149,7 +149,7 @@ export default function HeroSection() {
                   <img
                     src={logo.src}
                     alt={logo.alt}
-                    className="w-full max-h-16 object-contain" // Limit height to 63px
+                    className="w-full max-h-16 lg:max-h-12 object-contain" // Limit height to 63px
                   />
                 </SwiperSlide>
               ))}
