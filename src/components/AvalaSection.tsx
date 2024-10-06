@@ -18,7 +18,7 @@ export default function AvalaSection() {
             </div>
             <div className="flex justify-center sm:w-full lg:w-1/2 lg:pr-8">
               <img
-                className="w-full rounded-xl"
+                className="w-full rounded-xl max-w-[532px]"
                 src="/home/Avala-mobile.png"
                 alt="GoBio product in a cafe setting"
               />
