@@ -16,7 +16,7 @@ const GobioFooter: React.FC = () => {
             <a href="tel:+541127871523" className={`${location.pathname === '/aliados' ? 'text-white' : 'text-black'} no-underline`}>+54 11 2787 1523</a>
             <span>© 2021 GoBio</span>
           </div>
-          <div className="mt-4 text-sm md:text-xs text-center md:text-right max-w-2xl md:w-1/2">
+          <div className="mt-4 text-sm md:text-xs text-center  md:text-right lg:pl-4 max-w-2xl md:w-5/12">
             GoBio es la respuesta e invitación para revertir el impacto nocivo de los plásticos en el medioambiente. Desarrollamos envases para alimentos que son 100% biodegradables.
           </div>
         </div>
