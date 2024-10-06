@@ -33,19 +33,14 @@ const ContactoPage: React.FC = () => {
     <div className='font-montserrat'>
       <div className="mx-auto p-4 bg-white div-align-center max-w-[1086px]">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
-          Comencemos a reducir el impacto en el <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">medio ambiente.</span>
+          Pedínos una <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">muestra.</span>
         </h2>
         <p className="text-center text-gray-600 max-w-xl mb-0 mx-auto mx-10">
-          Comunicate con nosotros y decile adios a la contaminación plástica y hola a los envases 100% biodegradables.
+          Completá el formulario y te contactaremos para coordinar la entrega de tu muestra sin costo.
         </p>
-        <div className="flex justify-center space-x-4 m-6">
-          <button className="bg-black text-white w-32 xs:w-36 h-10 xs:h-12 text-sm xs:text-lg px-4 py-2 rounded-md hover:bg-gray-800 transition-colors">
-            WhatsApp
-          </button>
-          <button className="bg-white text-black w-32 xs:w-46 h-10 xs:h-12 text-sm xs:text-lg px-4 py-2 rounded-md border border-black hover:bg-gray-100 transition-colors">
-            Email
-          </button>
-        </div>
+        <p className="text-center text-gray-600 mt-0 mb-8 max-w-xl mx-auto">
+          ¡Queremos que los veas y pruebes por vos mismo!
+        </p>
         <div className=" container mt-8 sm:mt-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 max-w-[886px]">
           <div className="bg-gray-100 rounded-lg shadow-md container mx-auto flex flex-col justify-center">
             <form onSubmit={handleSubmit} className="w-full space-y-6">
@@ -107,7 +102,7 @@ const ContactoPage: React.FC = () => {
               </div>
             </form>
           </div>
-          <div className="block bg-[url('/contacto-mobile.png')] bg-cover bg-center bg-no-repeat w-full h-full aspect-square rounded-xl md:rounded-r-xl md:rounded-l-none ">
+          <div className="block bg-[url('/contacto-form-image-mobile.png')] bg-cover bg-center bg-no-repeat w-full h-full aspect-square rounded-xl md:rounded-r-xl md:rounded-l-none ">
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
+import productsData from '../data/products.json'
 
 // Define the type for our product data
 type ProductData = {
@@ -12,6 +13,7 @@ type ProductData = {
   shippingText: string
   imagePath: string
 }
+
 
 // Sample product data in the specified JSON format
 const productData: Record<string, ProductData> = {
