@@ -38,7 +38,7 @@ export default function ProductDescription({
           Cotizar
         </button>
       </Link>
-      <Link to="/muestra" target='_blank'>
+      <Link to="/muestra">
         <button className="w-full border border-black text-black py-2 px-4 rounded">
           Muestra
         </button>

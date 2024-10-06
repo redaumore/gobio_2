@@ -61,3 +61,7 @@
   color: #1f2937; /* Inherit color from parent element */
   --swiper-theme-color: #1f2937; 
 }
+
+.swiper-pagination {
+  display: none;
+}

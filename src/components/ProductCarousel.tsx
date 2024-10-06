@@ -102,7 +102,7 @@ export default function ProductDetail() {
   }, [])
 
   return (
-    <div className="mt-12 p-6">
+    <div className="mt-12 lg:mt-0 p-6">
     <h2 className="text-2xl font-medium mb-4">Otros Productos</h2>
     <div className="relative">
       <div 
