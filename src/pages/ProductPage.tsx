@@ -23,7 +23,7 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
   return (
     <div className="min-h-screen font-montserrat max-w-1440">
       <ProductNameHeader name={name}/>
-      <div className="flex flex-col md:flex-row md:items-start gap-6 px-6 py-10">
+      <div className="flex flex-col md:flex-row gap-6 px-6 py-10">
         {/* Etiqueta 100% biodegradable y Cabecera para móvil */}
         <div className="visible md:hidden mb-4">
           <div className="flex mb-2 ">
@@ -84,7 +84,7 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
           </div>
 
           {/* Descripción */}
-          <ul className="space-y-8 py-6 mb-6 bg-gray-200 rounded-2xl">
+          <ul className="space-y-4 py-6 mb-6 bg-gray-200 rounded-2xl text-gray-900">
             <li>{size}</li>
             {observations.map((observation, index) => (
             <li key={index}>{observation}</li>
@@ -95,14 +95,14 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
           <div className="flex flex-col lg:flex-row justify-center gap-2">
             <div className="w-full lg:w-1/2">
               <Link to="https://gobio.mkt1.com.ar/form/" target='_blank'>
-                <button className="w-full lg:h-10 text-xl bg-black text-white py-2 px-4 rounded-md">
+                <button className="w-full lg:h-10 text-xl bg-gray-900 text-white py-2 px-4 rounded-md">
                   Cotizar
                 </button>
               </Link>
             </div>
             <div className="w-full lg:w-1/2">
               <Link to="/muestra" target='_blank'>
-                <button className="w-full lg:h-10 text-xl border border-black bg-white text-black py-2 px-4 rounded-md">
+                <button className="w-full lg:h-10 text-xl border border-gray-900 bg-white text-gray-900 py-2 px-4 rounded-md">
                   Muestra
                 </button>
               </Link>

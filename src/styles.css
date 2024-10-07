@@ -65,3 +65,7 @@
 .swiper-pagination {
   display: none;
 }
+
+.swiper-slide {
+  display: flex !important;
+}
