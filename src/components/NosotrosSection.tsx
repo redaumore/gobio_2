@@ -1,6 +1,7 @@
 export default function NosotrosSection() {
   return (
-    <section className="bg-white max-w-[1440px]">
+    <section className="bg-white">
+      <div className="max-w-[1440px] mx-auto">
       <a id="nosotros"></a>
       <div className="mx-auto lg:py-28">
         <div className="hidden lg:flex items-center justify-center w-full bg-contain bg-center bg-no-repeat bg-[url('./home/somos-text.svg')]">
@@ -43,6 +44,7 @@ export default function NosotrosSection() {
             />
           </div>
         </div>
+      </div>
     </section>
   )
 }
