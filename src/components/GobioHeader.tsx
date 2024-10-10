@@ -1,29 +1,29 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { ChevronDown, X, Menu } from 'lucide-react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ChevronDown, X, Menu } from 'lucide-react';
 
 const GobioHeader: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isEcoenvaseOpen, setIsEcoenvaseOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isEcoenvaseOpen, setIsEcoenvaseOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen)
-  const toggleEcoenvase = () => setIsEcoenvaseOpen(!isEcoenvaseOpen)
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleEcoenvase = () => setIsEcoenvaseOpen(!isEcoenvaseOpen);
 
   const menuItems = [
     { name: 'Ecoenvases', subItems: [
-      { name: 'Ver Todo', url: '/ecoenvases' },
+      { name: 'Ver Todo', url: '/ecoenvases', boldItalic: true }, // Marcar este item para aplicar negrita y cursiva
       { name: 'Estuches y Bandejas', url: '/productos/estuches-y-bandejas' },
-      { name: 'Ensaladeras y bowls', url: '/productos/bowls' },
+      { name: 'Bowls', url: '/productos/bowls' },
       { name: 'Vasos', url: '/productos/vasos' },
-      { name: 'Platos y cubiertos', url: '/productos/platos-y-cubiertos' },
-      { name: 'Bolsas', url: '/productos/bolsas-y-sobres' },
-      { name: 'Accesorios', url: '/productos/accesorios-para-cafeteria' },
+      { name: 'Platos y Cubiertos', url: '/productos/platos-y-cubiertos' },
+      { name: 'Bolsas y Sobres', url: '/productos/bolsas-y-sobres' },
+      { name: 'Accesorios para Café', url: '/productos/accesorios-para-cafe' },
     ]},
     { name: 'Aliados', url: '/aliados' },
     { name: 'Nosotros', url: '/#nosotros' },
     { name: 'FAQs', url: '/faqs' },
     { name: 'Contacto', url: '/contacto' },
-  ]
+  ];
 
   return (
     <nav className="bg-gray-900 text-white">
@@ -41,7 +41,7 @@ const GobioHeader: React.FC = () => {
               {menuItems.map((item) => (
                 item.subItems ? (
                   <div key={item.name} className="relative group">
-                    <button className="bg-gray-900 text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base flex items-center">
+                    <button className="bg-gray-900 text-white hover:bg-gray-700 px-3 py-2 rounded-md flex items-center font-medium font-montserrat text-base">
                       {item.name}
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
@@ -50,7 +50,9 @@ const GobioHeader: React.FC = () => {
                         <Link
                           key={subItem.name}
                           to={subItem.url}
-                          className="block px-4 py-2 text-sm text-white hover:bg-gray-700 no-underline"
+                          className={`block px-4 py-2 text-white hover:bg-gray-700 no-underline text-sm font-montserrat ${
+                            subItem.boldItalic ? 'font-bold' : ''
+                          }`}
                         >
                           {subItem.name}
                         </Link>
@@ -61,7 +63,7 @@ const GobioHeader: React.FC = () => {
                   <Link
                     key={item.name}
                     to={item.url}
-                    className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium no-underline"
+                    className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium no-underline"
                   >
                     {item.name}
                   </Link>
@@ -103,7 +105,9 @@ const GobioHeader: React.FC = () => {
                         <Link
                           key={subItem.name}
                           to={subItem.url}
-                          className="text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-sm font-medium no-underline"
+                          className={`text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-sm font-medium no-underline ${
+                            subItem.boldItalic ? 'font-bold italic' : ''
+                          }`}
                           onClick={toggleMenu}
                         >
                           {subItem.name}
@@ -127,7 +131,8 @@ const GobioHeader: React.FC = () => {
         </div>
       )}
     </nav>
-  )
-}
+  );
+};
 
-export default GobioHeader
+export default GobioHeader;
+

@@ -84,13 +84,13 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
             value={filterFamily}
             onChange={handleFamilyChange}
           >
-            <option value="*">Todos los productos</option>
+            <option value="*">Todos los Productos</option>
             <option value="estuches-y-bandejas">Estuches y Bandejas</option>
             <option value="bowls">Bowls</option>
             <option value="vasos">Vasos</option>
             <option value="platos-y-cubiertos">Platos y Cubiertos</option>
             <option value="bolsas-y-sobres">Bolsas y Sobres</option>
-            <option value="accesorios-para-cafeteria">Accesorios para Cafetería</option>
+            <option value="accesorios-para-cafe">Accesorios para Café</option>
           </select>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 sm:mx-4">

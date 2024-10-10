@@ -35,7 +35,7 @@ const MessageBody: FunctionComponent<MessageBodyType> = ({
           />
           <button className="cursor-pointer [border:none] p-0 bg-[transparent] self-stretch flex flex-row items-start justify-center">
             <button className="cursor-pointer border-black border-[1px] border-solid py-3 px-6 bg-gray w-[361px] rounded-lg box-border h-12 flex flex-row items-center justify-center">
-              <div className="flex-1 relative text-xl font-semibold font-montserrat text-grays-white text-center">
+              <div className="flex-1 relative text-xl font-semibold font-montserrat text-grays-white text-center font-montserrat">
                 Enviar
               </div>
             </button>

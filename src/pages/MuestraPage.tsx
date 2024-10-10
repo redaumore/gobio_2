@@ -33,7 +33,7 @@ const ContactoPage: React.FC = () => {
     <div className='font-montserrat'>
       <div className="mx-auto p-4 bg-white div-align-center max-w-[1086px]">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
-          Pedínos una <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">muestra.</span>
+          Pedinos una <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">muestra.</span>
         </h2>
         <p className="text-center text-gray-600 max-w-xl mb-0 mx-auto mx-10">
           Completá el formulario y te contactaremos para coordinar la entrega de tu muestra sin costo.
@@ -95,7 +95,7 @@ const ContactoPage: React.FC = () => {
               <div className='relative flex'>
                 <button
                 type="submit"
-                className="w-full mx-4 mb-4 py-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-black hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 tracking-widest"
+                className="w-full mx-4 mb-4 py-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-black hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 tracking-widest font-montserrat"
                 >
                   Enviar
                 </button>

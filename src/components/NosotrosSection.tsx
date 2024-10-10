@@ -1,7 +1,6 @@
 export default function NosotrosSection() {
   return (
-    <section className="bg-white">
-      <div className="max-w-[1440px] mx-auto">
+    <section className="bg-white max-w-[1440px]">
       <a id="nosotros"></a>
       <div className="mx-auto lg:py-28">
         <div className="hidden lg:flex items-center justify-center w-full bg-contain bg-center bg-no-repeat bg-[url('./home/somos-text.svg')]">
@@ -17,7 +16,7 @@ export default function NosotrosSection() {
           <div className="lg:w-1/2 lg:pr-8">
             <h2 className="text-lg xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light">Nosotros</h2>
             <h3 className="text-2xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-medium">
-              Vos también podes elegir mejor. <span className="text-green-500 font-semibold">Elegí GoBio.</span>
+              Vos también podés elegir mejor. <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco2 to-eco3">Elegí GoBio.</span>
             </h3>
             <div className="mt-4 text-xs xs:text-xl lg:text-sm xl:text-lg text-gray-600 leading-5 xl:leading-6">
               <p className="xl:mb-8">
@@ -30,9 +29,9 @@ export default function NosotrosSection() {
               </p>
               <p className="xl:mb-8">
                 GoBio es la respuesta e invitación para revertir el impacto nocivo de
-                los plásticos en el medioambiente. Desarrollamos envases para
+                los plásticos en el ambiente. Desarrollamos envases para
                 alimentos que son 100% biodegradables y estamos convencidos que
-                es sólo el comienzo.
+                es solo el comienzo.
               </p>
             </div>
           </div>
@@ -44,7 +43,6 @@ export default function NosotrosSection() {
             />
           </div>
         </div>
-      </div>
     </section>
   )
 }

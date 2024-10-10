@@ -29,7 +29,7 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
           <div className="flex mb-2 ">
             <div className="border-gradient">
               <div className="flex-shrink-0 text-sm bg-white text-gray-800 font-bold border-gradient-content ">
-                100% biodegradable
+                100% Biodegradable
              </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
             <div className="flex mb-2 ">
               <div className="border-gradient">
                 <div className="flex-shrink-0 text-sm bg-white text-gray-800 font-bold border-gradient-content ">
-                  100% biodegradable
+                  100% Biodegradable
                 </div>
               </div>
             </div>
@@ -95,14 +95,14 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
           <div className="flex flex-col lg:flex-row justify-center gap-2">
             <div className="w-full lg:w-1/2">
               <Link to="https://gobio.mkt1.com.ar/form/" target='_blank'>
-                <button className="w-full lg:h-10 text-xl bg-gray-900 text-white py-2 px-4 rounded-md">
+                <button className="w-full lg:h-10 text-xl bg-gray-900 text-white py-2 px-4 rounded-md font-montserrat">
                   Cotizar
                 </button>
               </Link>
             </div>
             <div className="w-full lg:w-1/2">
-              <Link to="/muestra" target='_blank'>
-                <button className="w-full lg:h-10 text-xl border border-gray-900 bg-white text-gray-900 py-2 px-4 rounded-md">
+              <Link to="/muestra">
+                <button className="w-full lg:h-10 text-xl border border-gray-900 bg-white text-gray-900 py-2 px-4 rounded-md font-montserrat">
                   Muestra
                 </button>
               </Link>

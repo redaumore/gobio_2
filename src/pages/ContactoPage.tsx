@@ -15,12 +15,9 @@ const ContactoPage: React.FC = () => {
       alert('Por favor, complete el captcha');
       return;
     }
-    
-    // Here you would typically send the form data to your backend
-    // For this example, we'll just log it to the console
+
     console.log({ name, email, phone, message, captchaValue });
     
-    // Reset form after submission
     setName('');
     setEmail('');
     setPhone('');
@@ -33,20 +30,24 @@ const ContactoPage: React.FC = () => {
     <div className='font-montserrat'>
       <div className="mx-auto p-4 bg-white div-align-center max-w-[1086px]">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
-          Comencemos a reducir el impacto en el <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">medio ambiente.</span>
+          Comencemos a reducir el impacto en el <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">ambiente.</span>
         </h2>
         <p className="text-center text-gray-600 max-w-xl mb-0 mx-auto mx-10">
-          Comunicate con nosotros y decile adios a la contaminación plástica y hola a los envases 100% biodegradables.
+          Comunicate con nosotros y decile adiós a la contaminación plástica y hola a los envases 100% biodegradables.
         </p>
         <div className="flex justify-center space-x-4 m-6">
-          <button className="bg-black text-white w-32 xs:w-36 h-10 xs:h-12 text-sm xs:text-lg px-4 py-2 rounded-md hover:bg-gray-800 transition-colors">
-            WhatsApp
-          </button>
-          <button className="bg-white text-black w-32 xs:w-46 h-10 xs:h-12 text-sm xs:text-lg px-4 py-2 rounded-md border border-black hover:bg-gray-100 transition-colors">
-            Email
-          </button>
+          <a href="https://gobio.mkt1.com.ar/form/" target="_blank" rel="noopener noreferrer">
+            <button className="bg-black text-white w-32 xs:w-36 h-10 xs:h-12 text-xs xs:text-sm px-4 py-0.2 rounded-md hover:bg-gray-800 transition-colors font-montserrat">
+              Enviar Mensaje
+            </button>
+          </a>
+          <a href="https://gobio.mkt1.com.ar/" target="_blank" rel="noopener noreferrer">
+            <button className="bg-white text-black w-32 xs:w-46 h-10 xs:h-12 text-xs xs:text-sm px-4 py-0.2 rounded-md border border-black hover:bg-gray-100 transition-colors font-montserrat">
+              Descargar Catálogo
+            </button>
+          </a>
         </div>
-        <div className=" container mt-8 sm:mt-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 max-w-[886px]">
+        <div className="container mt-8 sm:mt-0 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 max-w-[886px]">
           <div className="bg-gray-100 rounded-lg shadow-md container mx-auto flex flex-col justify-center">
             <form onSubmit={handleSubmit} className="w-full space-y-6">
               <div className='relative flex'>
@@ -62,45 +63,45 @@ const ContactoPage: React.FC = () => {
                 />
               </div>
               <div className='relative flex'>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                value={email}
-                placeholder='Email'
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm placeholder:text-slate-300"
-              />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  value={email}
+                  placeholder='Email'
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm placeholder:text-slate-300"
+                />
               </div>
               <div className='relative flex'>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                required
-                value={phone}
-                placeholder='Teléfono'
-                onChange={(e) => setPhone(e.target.value)}
-                className="w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm placeholder:text-slate-300"
-              />
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  value={phone}
+                  placeholder='Teléfono'
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm placeholder:text-slate-300"
+                />
               </div>
               <div className='relative flex'>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                required
-                value={message}
-                placeholder='Mensaje'
-                onChange={(e) => setMessage(e.target.value)}
-                className="w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm placeholder:text-slate-300"
-              ></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={4}
+                  required
+                  value={message}
+                  placeholder='Mensaje'
+                  onChange={(e) => setMessage(e.target.value)}
+                  className="w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm placeholder:text-slate-300"
+                ></textarea>
               </div>
               <div className='relative flex'>
                 <button
-                type="submit"
-                className="w-full mx-4 mb-4 py-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-black hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 tracking-widest"
+                  type="submit"
+                  className="w-full mx-4 mb-4 py-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-black hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 tracking-widest font-montserrat"
                 >
                   Enviar
                 </button>

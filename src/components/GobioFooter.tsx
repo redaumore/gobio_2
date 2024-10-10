@@ -17,7 +17,7 @@ const GobioFooter: React.FC = () => {
             <span>© 2021 GoBio</span>
           </div>
           <div className="mt-4 text-sm md:text-xs text-center  md:text-right lg:pl-4 max-w-2xl md:w-5/12">
-            GoBio es la respuesta e invitación para revertir el impacto nocivo de los plásticos en el medioambiente. Desarrollamos envases para alimentos que son 100% biodegradables.
+            GoBio es la respuesta e invitación a revertir el impacto nocivo de los plásticos en el ambiente. Desarrollamos envases para alimentos que son 100% biodegradables.
           </div>
         </div>
       </div>

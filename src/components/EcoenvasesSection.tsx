@@ -15,9 +15,9 @@ const EcoenvasesSection: React.FC = () => {
     <section className='flex justify-center'>
       <div className="w-full max-w-1440 pb-12 pt-4">
         <h2 className="text-lg xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light px-4">Ecoenvases</h2>
-        <p className="text-xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-medium lg:max-w-lg pl-4 pr-8 sm:pr-20">
+        <p className="text-xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-semibold lg:max-w-lg pl-4 pr-8 sm:pr-20">
           Venimos de la tierra y volvemos a ella en{' '}
-          <span className="text-green-500">60 días</span>.
+          <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco2 to-eco3">60 días</span>.
         </p>
         <div className="relative px-4">
           <Swiper

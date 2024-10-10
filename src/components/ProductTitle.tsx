@@ -13,7 +13,7 @@ export default function ProductTitle({
     <div className='mb-4'>
       <div className="mb-2">
         <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
-          100% biodegradable
+          100% Biodegradable
         </span>
       </div>
       <h1 className="text-2xl font-bold mb-2">{name}</h1>

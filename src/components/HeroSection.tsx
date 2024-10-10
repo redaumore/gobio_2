@@ -108,7 +108,7 @@ export default function HeroSection() {
                   <div className='w-1/5'>
                     <div className="flex justify-center items-center">
                     <img
-                      src="/home/Hero-flecha.png" // Reemplaza con la ruta de tu imagen
+                      src="/home/Hero-flecha.png"
                       alt="Persona comiendo un bocadillo"
                       className="w-24 h-24 object-cover rounded-lg"
                     />
@@ -118,14 +118,14 @@ export default function HeroSection() {
             </div>
             <div className='flex justify-end items-end w-2/12'>
               <img
-                  src="/home/Hero-3-desktop.png" // Reemplaza con la ruta de tu imagen
+                  src="/home/Hero-3-desktop.png"
                   alt="Persona comiendo un bocadillo"
                   className="h-48 object-cover rounded-lg"
                 />
             </div>
             <div className='flex justify-end w-2/12'>
               <img
-                src="/home/Hero-1-desktop.png" // Reemplaza con la ruta de tu imagen
+                src="/home/Hero-1-desktop.png"
                 alt="Persona comiendo un bocadillo"
                 className="h-40 object-cover rounded-lg"
               />

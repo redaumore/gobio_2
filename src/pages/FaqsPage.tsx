@@ -37,7 +37,7 @@ const FaqsPage: React.FC = () => {
           Preguntas <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">frecuentes.</span>
         </h2>
         <p className="text-center text-gray-600 max-w-xl mb-0 mx-auto mx-10">
-          Si tenés alguna duda puntual podes escribirnos en la sección de contacto.
+          Si tenés alguna duda puntual podés escribirnos en la sección de contacto.
         </p>
         <div className="text-center font-semibold mb-12 mt-8">
           <a href={"/contacto"} className="text-black no-underline">Contacto →</a>

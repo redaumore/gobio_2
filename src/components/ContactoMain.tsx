@@ -15,7 +15,7 @@ const ContactoMain: FunctionComponent<ContactoMainType> = ({
         <div className="w-[920px] flex-1 relative inline-block sm:text-9xl sm:text-center sm:self-stretch sm:w-auto sm:h-auto">
           <span className="font-semibold">{`Comencemos a reducir el impacto en el `}</span>
           <b className="text-transparent !bg-clip-text [background:linear-gradient(90deg,_#f0bfc3,_#32aa93_36.5%,_#7cbf80_70%,_#e8ef7c)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-            medio ambiente.
+            ambiente.
           </b>
         </div>
         <div className="self-stretch relative text-5xl leading-[32px] font-medium sm:text-base sm:self-stretch sm:w-auto">

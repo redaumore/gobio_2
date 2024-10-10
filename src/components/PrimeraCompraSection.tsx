@@ -28,10 +28,10 @@ const PrimerCompraSection: React.FC = () => {
               <div className='flex flex-col lg:flex-row w-full'>
                 <div className="text-center px-4 xs:px-6 sm:px-8 mb-6 md:mb-0 lg:pl-16 lg:pr-0 lg:w-3/4">
                   <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-4.5xl xl:text-6xl font-medium mb-4 md:mb-8 lg:mb-6 lg:mt-16 text-left max-w-full mr-14">
-                    Realiza tu primera <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">compra.</span>
+                    Realizá tu primera <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">compra.</span>
                   </h2>
                   <p className="mb-6 md:mb-16 text-base xs:text-xl sm:text-2xl lg:text-base xl:text-xl text-left">
-                    Si no estás conforme y nos avisás en un lapso de 72 hs te devolvemos tu dinero.
+                    Si no estás conforme y nos avisás en un lapso de 72hs te devolvemos tu dinero.
                   </p>
                 </div>
                 <div className='hidden lg:flex h-72 xl:h-96 items-center lg:w-1/4'>
