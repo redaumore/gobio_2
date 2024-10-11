@@ -49,6 +49,9 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
       const matchingFamily = familiesData.find(family => family.family_id === familyId)
       setFamilyTitle(matchingFamily?.family || 'Familia no encontrada')
     }
+    
+    // Actualiza filterFamily cuando cambia familyId
+    setFilterFamily(familyId || '')
   }, [familyId, searchTerm, filterMaterial, filterFamily])
 
   const handleFamilyChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -64,9 +67,9 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
   const uniqueMaterials = Array.from(new Set(Object.values(productsData).map(product => product.material)))
 
   return (
-    <div className="font-montserrat">
+    <div className="font-montserrat bg-gray-100">
       <ProductNameHeader name={familyTitle}/>
-      <div className="max-w-1440 mx-auto pt-4 div-align-center">
+      <div className="max-w-1440 mx-auto pt-4 div-align-center bg-white rounded-2xl">
         <div className="flex relative mb-6 px-4">
           <input
             type="text"

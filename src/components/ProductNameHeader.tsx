@@ -19,12 +19,14 @@ export default function ProductNameHeader({
   };
 
   return (
-    <header className="flex justify-between items-center p-4 bg-gray-100 h-3">
-    <button className="text-gray-600 hover:text-gray-800 transition-colors"
-      onClick={handleBackClick} >
-      <ArrowLeft size={20} />
-    </button>
-    <h1 className="text-sm sm:text-xl font-semibold">{name}</h1>
-  </header>
+    <div className='max-w-1440 mx-auto'>
+      <header className="flex justify-between items-center p-4 bg-gray-100 h-3">
+        <button className="text-gray-600 hover:text-gray-800 transition-colors"
+          onClick={handleBackClick} >
+          <ArrowLeft size={20} />
+        </button>
+        <h1 className="text-sm sm:text-xl font-semibold">{name}</h1>
+      </header>
+    </div>
   );
 }

@@ -5,7 +5,7 @@ const GobioFooter: React.FC = () => {
   const location = useLocation();
 
   return (
-    <footer className={`bg-gray-200 ${location.pathname === '/aliados' ? 'bg-gray-900' : ''} text-black py-14 md:py-6 mt-auto`}>
+    <footer className={`bg-gray-100 ${location.pathname === '/aliados' ? 'bg-gray-900' : ''} text-black py-14 md:py-6 mt-auto`}>
       <div className={`${location.pathname === '/aliados' ? 'text-white' : 'text-black'} max-w-[1440px] mx-auto px-4 sm:px-6`}>
         <div className= "flex flex-col md:flex-row items-center justify-between font-montserrat">
           <div className="mb-4 md:mb-0">

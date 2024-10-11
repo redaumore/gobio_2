@@ -1,6 +1,6 @@
 [ 
   { "family_id": "estuches-y-bandejas", "family": "Estuches y Bandejas", "imageSrcMobile": "/family/Estuches-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Estuches-ecoenvases-desktop.png", "altText": "Bandejas y estuches" },
-  { "family_id": "bowls", "family": "Bowls", "imageSrcMobile": "/family/Bowls-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Bowls-ecoenvases-desktop.png", "altText": "Ensaladeras y bowls" },
+  { "family_id": "bowls", "family": "Bowls", "imageSrcMobile": "/family/Bowls-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Bowls-ecoenvases-desktop.png", "altText": "Bowls" },
   { "family_id": "vasos", "family": "Vasos", "imageSrcMobile": "/family/Vasos-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Vasos-ecoenvases-desktop.png", "altText": "Vasos" },
   { "family_id": "platos-y-cubiertos", "family": "Platos y Cubiertos", "imageSrcMobile": "/family/Cubiertos-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Cubiertos-ecoenvases-desktop.png", "altText": "Platos y cubiertos" },
   { "family_id": "bolsas-y-sobres", "family": "Bolsas y Sobres", "imageSrcMobile": "/family/Bolsas-ecoenvases-mobile.png", "imageSrcDesktop": "/family/Bolsas-ecoenvases-desktop.png", "altText": "Bolsas" },

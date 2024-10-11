@@ -12,7 +12,7 @@ const EcoenvasesSection: React.FC = () => {
   const [swiper, setSwiper] = useState<any>(null)
 
   return (
-    <section className='flex justify-center'>
+    <section id="ecoenvases" className='flex justify-center'>
       <div className="w-full max-w-1440 pb-12 pt-4">
         <h2 className="text-lg xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light px-4">Ecoenvases</h2>
         <p className="text-xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-semibold lg:max-w-lg pl-4 pr-8 sm:pr-20">

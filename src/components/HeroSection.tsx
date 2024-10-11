@@ -107,11 +107,13 @@ export default function HeroSection() {
                   </div>
                   <div className='w-1/5'>
                     <div className="flex justify-center items-center">
-                    <img
-                      src="/home/Hero-flecha.png"
+                      <a href="#ecoenvases">
+                        <img
+                          src="/home/Hero-flecha.png"
                       alt="Persona comiendo un bocadillo"
                       className="w-24 h-24 object-cover rounded-lg"
-                    />
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>

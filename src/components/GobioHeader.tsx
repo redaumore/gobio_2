@@ -20,7 +20,7 @@ const GobioHeader: React.FC = () => {
       { name: 'Accesorios para Café', url: '/productos/accesorios-para-cafe' },
     ]},
     { name: 'Aliados', url: '/aliados' },
-    { name: 'Nosotros', url: '/#nosotros' },
+    { name: 'Nosotros', url: '#nosotros' },
     { name: 'FAQs', url: '/faqs' },
     { name: 'Contacto', url: '/contacto' },
   ];
@@ -60,13 +60,23 @@ const GobioHeader: React.FC = () => {
                     </div>
                   </div>
                 ) : (
-                  <Link
-                    key={item.name}
-                    to={item.url}
-                    className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium no-underline"
-                  >
-                    {item.name}
-                  </Link>
+                  item.url.startsWith('#') ? (
+                    <a
+                      key={item.name}
+                      href={item.url}
+                      className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium no-underline"
+                    >
+                      {item.name}
+                    </a>
+                  ) : (
+                    <Link
+                      key={item.name}
+                      to={item.url}
+                      className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium no-underline"
+                    >
+                      {item.name}
+                    </Link>
+                  )
                 )
               ))}
             </div>
@@ -88,10 +98,10 @@ const GobioHeader: React.FC = () => {
 
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
             {menuItems.map((item) => (
               item.subItems ? (
-                <div key={item.name}>
+                <div key={item.name} className="w-full">
                   <button
                     onClick={toggleEcoenvase}
                     className="bg-gray-900 text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium w-full text-left flex justify-between items-center"
@@ -117,16 +127,26 @@ const GobioHeader: React.FC = () => {
                   )}
                 </div>
               ) : (
-                <Link
-                  key={item.name}
-                  to={item.url}
-                  className="text-white hover:bg-gray-700 block px-3 py-2 rounded-md text-base font-medium no-underline"
-                  onClick={toggleMenu}
-                >
-                  {item.name}
-                </Link>
+                item.url.startsWith('#') ? (
+                  <a
+                    key={item.name}
+                    href={item.url}
+                    className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium no-underline"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.url}
+                    className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium no-underline"
+                  >
+                    {item.name}
+                  </Link>
+                )
+                )
               )
-            ))}
+            )}
           </div>
         </div>
       )}
