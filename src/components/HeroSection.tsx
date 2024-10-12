@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -41,6 +40,14 @@ export default function HeroSection() {
 
     return () => window.removeEventListener('resize', updateView);
   }, []);
+
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+    const target = document.querySelector('#ecoenvases');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section className="bg-gray-900 flex justify-center">
@@ -107,11 +114,11 @@ export default function HeroSection() {
                   </div>
                   <div className='w-1/5'>
                     <div className="flex justify-center items-center">
-                      <a href="#ecoenvases">
+                      <a href="#ecoenvases" onClick={handleSmoothScroll}>
                         <img
                           src="/home/Hero-flecha.png"
-                      alt="Persona comiendo un bocadillo"
-                      className="w-24 h-24 object-cover rounded-lg"
+                          alt="Persona comiendo un bocadillo"
+                          className="w-24 h-24 object-cover rounded-lg"
                         />
                       </a>
                     </div>
