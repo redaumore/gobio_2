@@ -1,10 +1,23 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { ChevronDown, X, Menu } from 'lucide-react';
 
 const GobioHeader: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isEcoenvaseOpen, setIsEcoenvaseOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#nosotros') {
+      setTimeout(() => {
+        const nosotrosSection = document.getElementById('nosotros');
+        if (nosotrosSection) {
+          nosotrosSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const toggleEcoenvase = () => setIsEcoenvaseOpen(!isEcoenvaseOpen);
@@ -20,10 +33,26 @@ const GobioHeader: React.FC = () => {
       { name: 'Accesorios para Café', url: '/productos/accesorios-para-cafe' },
     ]},
     { name: 'Aliados', url: '/aliados' },
-    { name: 'Nosotros', url: '#nosotros' },
+    { name: 'Nosotros', url: '/#nosotros' },
     { name: 'FAQs', url: '/faqs' },
     { name: 'Contacto', url: '/contacto' },
   ];
+
+  const handleNosotrosClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const currentPath = location.pathname;
+    
+    if (currentPath === '/') {
+      const nosotrosSection = document.getElementById('nosotros');
+      if (nosotrosSection) {
+        nosotrosSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate('/#nosotros');
+    }
+    
+    setIsOpen(false);
+  };
 
   return (
     <nav className="bg-gray-900 text-white">
@@ -60,10 +89,11 @@ const GobioHeader: React.FC = () => {
                     </div>
                   </div>
                 ) : (
-                  item.url.startsWith('#') ? (
+                  item.name === 'Nosotros' ? (
                     <a
                       key={item.name}
-                      href={item.url}
+                      href="/#nosotros"
+                      onClick={handleNosotrosClick}
                       className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium no-underline"
                     >
                       {item.name}
@@ -140,13 +170,13 @@ const GobioHeader: React.FC = () => {
                     key={item.name}
                     to={item.url}
                     className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium no-underline"
+                    onClick={() => setIsOpen(false)} // Cerrar el menú móvil después de hacer clic
                   >
                     {item.name}
                   </Link>
                 )
-                )
               )
-            )}
+            ))}
           </div>
         </div>
       )}
@@ -155,4 +185,3 @@ const GobioHeader: React.FC = () => {
 };
 
 export default GobioHeader;
-
