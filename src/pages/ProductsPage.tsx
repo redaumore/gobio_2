@@ -70,31 +70,33 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
     <div className="font-montserrat bg-gray-100">
       <ProductNameHeader name={familyTitle}/>
       <div className="max-w-1440 mx-auto pt-4 div-align-center bg-white rounded-2xl">
-        <div className="flex relative mb-6 px-4">
-          <input
+        <div className='flex flex-col md:flex-row w-full'>
+          <div className="flex relative mb-6 px-4 md:w-2/3 xl:w-9/12">
+            <input
             type="text"
             placeholder="Buscar"
             className="w-full p-3 pl-10 border border-gray-300 rounded-lg sm:text-xl"
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 sm:text-xl" />
-        </div>
-        <div className="mb-6 px-4 flex justify-end">
-          <select
-            id="family_options"
-            className="p-2 border border-gray-300 rounded-lg bg-white text-gray-700 sm:text-xl"
-            value={filterFamily}
-            onChange={handleFamilyChange}
-          >
-            <option value="*">Todos los Productos</option>
-            <option value="estuches-y-bandejas">Estuches y Bandejas</option>
-            <option value="bowls">Bowls</option>
-            <option value="vasos">Vasos</option>
-            <option value="platos-y-cubiertos">Platos y Cubiertos</option>
-            <option value="bolsas-y-sobres">Bolsas y Sobres</option>
-            <option value="accesorios-para-cafe">Accesorios para Café</option>
-          </select>
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+            <Search className="absolute left-6 top-1/2 transform -translate-y-1/2 text-gray-400 sm:text-xl" />
+          </div>
+          <div className="mb-6 px-4 flex justify-end md:w-1/3 xl:w-3/12">
+            <select
+              id="family_options"
+              className="p-2 border border-gray-300 rounded-lg bg-white text-gray-700 sm:text-xl w-full"
+              value={filterFamily}
+              onChange={handleFamilyChange}
+            >
+              <option value="*">Todos los Productos</option>
+              <option value="estuches-y-bandejas">Estuches y Bandejas</option>
+              <option value="bowls">Bowls</option>
+              <option value="vasos">Vasos</option>
+              <option value="platos-y-cubiertos">Platos y Cubiertos</option>
+              <option value="bolsas-y-sobres">Bolsas y Sobres</option>
+              <option value="accesorios-para-cafe">Accesorios para Café</option>
+            </select>
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 sm:mx-4">
           {Object.entries(filteredProducts).map(([key, product]) => (
