@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
-import GobioFooter from '../components/GobioFooter';
+import { enviarEmail } from '../api/enviar-email';
+
+interface DatosFormulario {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
 
 const ContactoPage: React.FC = () => {
   const [name, setName] = useState('');
@@ -16,17 +23,21 @@ const ContactoPage: React.FC = () => {
       return;
     }
     
-    // Here you would typically send the form data to your backend
-    // For this example, we'll just log it to the console
-    console.log({ name, email, phone, message, captchaValue });
-    
-    // Reset form after submission
-    setName('');
-    setEmail('');
-    setPhone('');
-    setMessage('');
-    setCaptchaValue(null);
-    alert('Formulario enviado con éxito');
+    try {
+      const datosFormulario: DatosFormulario = { name: name, email, phone: phone, message: message };
+      await enviarEmail(datosFormulario, captchaValue);
+      
+      // Resetear el formulario después del envío exitoso
+      setName('');
+      setEmail('');
+      setPhone('');
+      setMessage('');
+      setCaptchaValue(null);
+      alert('Formulario enviado con éxito');
+    } catch (error) {
+      console.error('Error al enviar el email:', error);
+      alert('Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo.');
+    }
   };
 
   return (
@@ -91,6 +102,12 @@ const ContactoPage: React.FC = () => {
                 onChange={(e) => setMessage(e.target.value)}
                 className="w-full mx-4 py-2 border border-transparent rounded-md shadow-sm text-sm placeholder:text-slate-300"
               ></textarea>
+              </div>
+              <div className='relative flex'>
+                <ReCAPTCHA
+                  sitekey="TU_CLAVE_DE_SITIO_RECAPTCHA"
+                  onChange={(value) => setCaptchaValue(value)}
+                />
               </div>
               <div className='relative flex'>
                 <button
