@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
   family_id: string;
@@ -22,12 +23,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ family_id, family, imageSrcMo
           className="w-full object-cover mx-auto hidden lg:block" // Mostrar en pantallas medianas y grandes
         />
     </div>
-    <a href={`/productos/${family_id}`} className='no-underline text-gray-900'>
+    <Link to={`/productos/${family_id}`} className='no-underline text-gray-900'>
       <div className="pb-5 px-5 text-left">
         <h3 className="font-semibold lg:font-medium text-lg xs:text-3xl sm:text-xl md:text-base lg:text-xl mb-2">{family}</h3>
         <div className="xs:text-xl sm:text-base lg:text-base">Ver más →</div>
       </div>
-    </a>
+    </Link>
   </div>
 );
 

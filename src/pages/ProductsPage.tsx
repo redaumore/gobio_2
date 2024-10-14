@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useState, useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { Search } from 'lucide-react'
 import productsData from '../data/products.json'
 import familiesData from '../data/families.json' 
@@ -101,7 +101,7 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 sm:mx-4">
           {Object.entries(filteredProducts).map(([key, product]) => (
             <div className='relative' key={key}>
-              <a href={key === '*' ? '/producto/' : `/producto/${key}`} className="snap-start no-underline">
+              <Link to={key === '*' ? '/producto/' : `/producto/${key}`} className="snap-start no-underline">
                 <div className="w-full flex-shrink-0 border rounded-3xl overflow-hidden bg-gray-200 my-2">
                   <div className="w-full">
                     <img
@@ -121,7 +121,7 @@ const ProductsPage: FunctionComponent<ProductsPageProps> = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
