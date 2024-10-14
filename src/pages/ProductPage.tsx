@@ -87,7 +87,7 @@ const ProductPage: FunctionComponent<ProductProps> = ({name, family, material, s
 
             {/* Descripción */}
             <ul className="space-y-4 py-6 mb-6 bg-gray-200 rounded-2xl text-gray-900">
-              <li>{size}</li>
+              <li key={size}>{size}</li>
               {observations.map((observation, index) => (
               <li key={index}>{observation}</li>
               ))}

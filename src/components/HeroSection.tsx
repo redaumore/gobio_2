@@ -50,7 +50,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="bg-gray-900 flex justify-center">
+    <section id="hero" className="bg-gray-900 flex justify-center">
       <div className='max-w-1440 text-white flex flex-col justify-between'>
         <div className='lg:hidden'>
           <div className="space-y-6 text-center">
