@@ -31,8 +31,8 @@ const FaqsPage: React.FC = () => {
   };
 
   return (
-    <div className='font-montserrat h-screen max-w-1440'>
-      <div className="mx-auto p-4 bg-white div-align-center">
+    <div className='font-montserrat bg-gray-100 py-8'>
+      <div className="mx-auto p-4 pb-12 bg-white div-align-center max-w-[1086px] rounded-3xl">
         <h2 className="text-3xl font-semibold text-gray-900 mb-8 text-center">
           Preguntas <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-eco1 via-eco2 50% via-eco3 75% to-eco4">frecuentes.</span>
         </h2>
