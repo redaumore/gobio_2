@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
-import GobioFooter from '../components/GobioFooter';
 import { enviarEmail } from '../api/enviar-email';
 
 interface DatosFormulario {
@@ -8,6 +7,7 @@ interface DatosFormulario {
   email: string;
   phone: string;
   message: string;
+  subject: string;
 }
 
 const ContactoPage: React.FC = () => {
@@ -15,6 +15,7 @@ const ContactoPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [subject, setSubject] = useState('Nuevo mensaje de contacto');
   const [captchaValue, setCaptchaValue] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -25,7 +26,7 @@ const ContactoPage: React.FC = () => {
     }
     
     try {
-      const datosFormulario: DatosFormulario = { name, email, phone, message };
+      const datosFormulario: DatosFormulario = { name, email, phone, message, subject };
       await enviarEmail(datosFormulario, captchaValue);
       
       // Resetear el formulario después del envío exitoso
@@ -40,6 +41,10 @@ const ContactoPage: React.FC = () => {
       alert('Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo.');
     }
   };
+
+  const onChange = () => {
+    console.log('Hubo un cambio')
+  }
 
   return (
     <div className='font-montserrat bg-gray-100 py-8'>
@@ -115,7 +120,7 @@ const ContactoPage: React.FC = () => {
               </div>
               <div className='relative flex'>
                 <ReCAPTCHA
-                  sitekey="TU_CLAVE_DE_SITIO_RECAPTCHA"
+                  sitekey="6LeMDG8iAAAAAMNIGcOnLbnHudw09c7j9LrIwXGW"
                   onChange={(value) => setCaptchaValue(value)}
                 />
               </div>

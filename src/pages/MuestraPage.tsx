@@ -7,6 +7,7 @@ interface DatosFormulario {
   email: string;
   phone: string;
   message: string;
+  subject: string;
 }
 
 const ContactoPage: React.FC = () => {
@@ -14,6 +15,7 @@ const ContactoPage: React.FC = () => {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [subject, setSubject] = useState('Nuevo pedido de muestra');
   const [captchaValue, setCaptchaValue] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -24,7 +26,7 @@ const ContactoPage: React.FC = () => {
     }
     
     try {
-      const datosFormulario: DatosFormulario = { name: name, email, phone: phone, message: message };
+      const datosFormulario: DatosFormulario = { name: name, email, phone: phone, message: message, subject: subject };
       await enviarEmail(datosFormulario, captchaValue);
       
       // Resetear el formulario después del envío exitoso
@@ -105,7 +107,7 @@ const ContactoPage: React.FC = () => {
               </div>
               <div className='relative flex'>
                 <ReCAPTCHA
-                  sitekey="TU_CLAVE_DE_SITIO_RECAPTCHA"
+                  sitekey="6LeMDG8iAAAAAMNIGcOnLbnHudw09c7j9LrIwXGW"
                   onChange={(value) => setCaptchaValue(value)}
                 />
               </div>

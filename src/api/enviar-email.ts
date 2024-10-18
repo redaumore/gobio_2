@@ -9,7 +9,7 @@ export const enviarEmail = async (
   datosFormulario: FormData,
   captchaValue: string
 ) => {
-  const apiUrl = '/api/enviar-email'; // Ajusta esta URL según tu configuración
+  const apiUrl = 'https://mayoristas.gobio.ar/api/enviar-email.php'; // Ajusta esta URL según tu configuración
 
   try {
     const response = await fetch(apiUrl, {
@@ -28,7 +28,10 @@ export const enviarEmail = async (
     }
 
     const data = await response.json();
-    return data.mensaje;
+    if (!data.success) {
+      throw new Error(data.message || 'Error desconocido al enviar el correo');
+    }
+    console.error(JSON.stringify(data));
   } catch (error) {
     console.error('Error al enviar el correo:', error);
     throw new Error('Error al enviar el correo');
