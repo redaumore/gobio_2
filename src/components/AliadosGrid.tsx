@@ -58,11 +58,26 @@ const AliadosGrid: React.FC = () => {
     <div className="max-w-6xl mx-auto text-white bg-gray-900">
       <div className="space-y-12">
         <TextImageBlock
-          title="Hotel Four Seasons"
-          description="Uno de los más prestigiosos de la ciudad de Buenos Aires decidió no quedarse atrás e incorporar nuestros envases en su comedor interno.
-          #Esto se debe a que en la pandemia no era posible usar vajilla reutilizable y pudimos brindarles la solución de packaging descartable ecológico y no generar residuos plásticos en su comedor. Seguimos hasta el día de hoy trabajando continuamente con ellos."
+          title="Four Seasons Hotels and Resorts"
+          description="Decidieron no quedarse atrás e incorporar nuestros envases en su comedor interno.
+          #Durante la pandemia no era posible usar vajilla reutilizable y pudimos brindarles la solución de packaging descartable ecológico y no generar residuos plásticos en su comedor. Seguimos hasta el día de hoy trabajando continuamente con ellos."
           imageSrc="/aliados/four-seasons-2-logo.svg"
           imageAlt="Four Seasons Hotels and Resorts Logo"
+          imageFirst={false}
+        />
+        <TextImageBlock
+          title="Total Energies"
+          description="Reemplazamos los vasos utilizados en el consumo interno de Total Energies por vasos compostables impresos con su identidad.
+          #Esta solución reduce el impacto ambiental de la empresa y también les permite comunicar de manera efectiva a sus empleados su compromiso con la sostenibilidad, integrando este cambio ecológico en su día a día."
+          imageSrc="/aliados/total-energies.jpg"
+          imageAlt="Total Energies Logo"
+          imageFirst={true}
+        />
+        <TextImageBlock
+          title="Tea Connection"
+          description="Tea Connection es un restaurante reconocido en la ciudad de Buenos Aires y desde hace varios meses trabajamos con ellos en las cartas de invierno, reemplazando packaging de plástico por envases ecológicos de GoBio.  "
+          imageSrc="/aliados/tea-connection-logo.svg"
+          imageAlt="Tea Connection Logo"
           imageFirst={false}
         />
         <TextImageBlock
@@ -74,12 +89,28 @@ const AliadosGrid: React.FC = () => {
           imageFirst={true}
         />
         <TextImageBlock
+          title="Terma"
+          description="Terma es una marca de bebidas a base de hierbas con la cual trabajamos de manera esporádica en eventos masivos que organizan. 
+          #Reparten sus bebidas en los vasos de GoBio personalizados y creemos que estas acciones ayudan a que las empresas se sigan sumando al cambio y reemplacen sus plásticos de un solo uso."
+          imageSrc="/aliados/terma.jpeg"
+          imageAlt="Termna Logo"
+          imageFirst={false}
+        />
+        <TextImageBlock
           title="Orei"
           description="En el rubro de la gastronomía, Orei es un local que tiene todo su consumo de clientes en la vía pública. 
           #Nuestro trabajo consiste en brindarles bowls y estuches descartables ecológicos para su comida. 
           #Porque los desechos van directo a los tachos públicos y contar con una solución no tóxica para el ambiente es crucial en estos casos donde el impacto negativo de los plásticos sería muy notorio."
           imageSrc="/aliados/orei-logo.png"
           imageAlt="Orei Logo"
+          imageFirst={true}
+        />
+        <TextImageBlock
+          title="Refugio Lynch - Bariloche"
+          description="Restaurante de montaña en Bariloche que ha adoptado los envases compostables de GoBio. 
+          #Esta elección refleja su compromiso con el entorno natural que lo rodea, garantizando que cada comida servida en sus instalaciones tenga un menor impacto ambiental."
+          imageSrc="/aliados/refugio-lynch.jpg"
+          imageAlt="Refugio Lynch - Bariloche Logo"
           imageFirst={false}
         />
         <TextImageBlock
@@ -90,10 +121,26 @@ const AliadosGrid: React.FC = () => {
           imageFirst={true}
         />
         <TextImageBlock
-          title="Tea Connection"
-          description="Tea Connection es un restaurante reconocido en la ciudad de Buenos Aires y desde hace varios meses trabajamos con ellos en las cartas de invierno, reemplazando packaging de plástico por envases ecológicos de GoBio.  "
-          imageSrc="/aliados/tea-connection-logo.svg"
-          imageAlt="Tea Connection Logo"
+          title="Poke & Roll"
+          description="Adaptación de diseño gráfico de logo en bowls de 1000ml para ensaladas."
+          imageSrc="/aliados/poke-roll.jpg"
+          imageAlt="Poke And Roll Logo"
+          imageFirst={false}
+        />
+        <TextImageBlock
+          title="Universal Assistance"
+          description="Desarrollo de vasos compostables con logo y frase que indica que los mismos son biodegradables.
+          #Maximizar la inversión en packaging bio a través de la comunicación impresa es la mejor idea!"
+          imageSrc="/aliados/universal-assistance.jpg"
+          imageAlt="Universal Assistance Logo"
+          imageFirst={true}
+        />
+        <TextImageBlock
+          title="El Club de la Milanesa"
+          description="En GoBio Ecoenvases somos los encargados de proveer los cubiertos de madera para el consumo en patios de comida de shoppings.
+          #Estos cubiertos no solo refuerzan el compromiso de la marca con el ambiente sino que también ofrecen una experiencia de calidad a sus clientes."
+          imageSrc="/aliados/club-de-la-milanesa-logo.svg"
+          imageAlt="El Club de la Milanesa Logo"
           imageFirst={false}
         />
         <TextImageBlock
@@ -106,19 +153,18 @@ const AliadosGrid: React.FC = () => {
           imageFirst={true}
         />
         <TextImageBlock
-          title="Terma"
-          description="Terma es una marca de bebidas a base de hierbas con la cual trabajamos de manera esporádica en eventos masivos que organizan. 
-          #Reparten sus bebidas en los vasos de GoBio personalizados y creemos que estas acciones ayudan a que las empresas se sigan sumando al cambio y reemplacen sus plásticos de un solo uso."
-          imageSrc="/aliados/terma-logo.svg"
-          imageAlt="Termna Logo"
-          imageFirst={false}
-        />
-        <TextImageBlock
           title="Tremun"
           description="A lo largo y ancho del país trabajamos con la cadena hotelera Tremun. Los hoteles son para consumidores de distintos perfiles, pero todos con el objetivo de cuidar el ambiente y generar valor para sus clientes. 
           #El trabajo es continuo con la cadena de hoteles ya que venimos desde el 2023 reemplazando de a un hotel por vez el packaging hasta llegar a que la cadena entera sea 100% sustentable."
           imageSrc="/aliados/tremun-logo.svg"
-          imageAlt="Trenum Logo"
+          imageAlt="Tremun Logo"
+          imageFirst={false}
+        />
+        <TextImageBlock
+          title="PSA"
+          description="Desarrollamos vasos 100% compostables personalizados con logo para el uso interno de PSA :)"
+          imageSrc="/aliados/PSA.jpg"
+          imageAlt="PSA Logo"
           imageFirst={true}
         />
       </div>

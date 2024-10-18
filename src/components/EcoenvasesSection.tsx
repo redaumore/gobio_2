@@ -17,7 +17,7 @@ const EcoenvasesSection: React.FC = () => {
         <h2 className="text-lg xs:text-3xl sm:text-2xl md:text-3xl mb-2 font-light px-4">Ecoenvases</h2>
         <p className="text-xl xs:text-4xl sm:text-4xl mb-8 mt-2 font-semibold lg:max-w-lg pl-4 pr-8 sm:pr-20">
           Venimos de la tierra y volvemos a ella en{' '}
-          <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco2 to-eco3">60 días</span>.
+          <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-eco2 to-eco3">60 días.</span>
         </p>
         <div className="relative px-4">
           <Swiper
@@ -41,7 +41,7 @@ const EcoenvasesSection: React.FC = () => {
           >
             {familiesData.map((family, index) => (
               <SwiperSlide key={index}>
-                <FamilyCard {...family} />
+                <FamilyCard {...family} className="bg-gray-200" /> {/* Cards grises */}
               </SwiperSlide>
             ))}
           </Swiper>

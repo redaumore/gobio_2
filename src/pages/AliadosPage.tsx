@@ -13,14 +13,18 @@ interface LogoProps {
 }
 
 const logos: LogoProps[] = [
-  { alt: "Terma", src: "aliados/terma-white.svg" },
   { alt: "Orei", src: "aliados/orei-white.svg" },
+  { alt: "Terma", src: "aliados/terma-white.svg" },
   { alt: "Talampaya", src: "aliados/talampaya-white.svg" },
   { alt: "Alparamis", src: "aliados/alparmis-white.svg" },
   { alt: "Tremun", src: "aliados/tremun-white.svg" },
   { alt: "Four Season", src: "aliados/four-seasons-white.png" },
   { alt: "Aeropuertos Argentina 2000", src: "aliados/aa-2001-white.svg" },
-  { alt: "Tea Connection", src: "aliados/tea-connection-white.svg" }
+  { alt: "Tea Connection", src: "aliados/tea-connection-white.svg" },
+  { alt: "El Club de la Milanesa", src: "aliados/club-milanesa-logo-white.png" },
+  { alt: "PSA", src: "aliados/psa-logo-white.png" },
+  { alt: "Universal Assistance", src: "aliados/universal-assistance-logo-white.png" },
+  { alt: "Total Energies", src: "aliados/total-energies-logo-white.png" }
 ];
 
 const AliadosPage: React.FC = () => {

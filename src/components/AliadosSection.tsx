@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 
 const aliadosLogos = [
   { name: 'Four Seasons', src: '/aliados/four-seasons-2-logo.svg' },
-  { name: 'Aeropuertos Argentina 2000', src: '/aliados/aa2000-logo.svg' },
-  { name: 'Terma', src: '/aliados/terma-logo.svg' },
-  // Add more logos as needed
+  { name: 'Total Energies', src: '/aliados/total-energies-logo.jpg' },
+  { name: 'Tea Connection', src: '/aliados/tea-connection-logo.jpg' },
 ]
 
 const AliadosSection: React.FC = () => {

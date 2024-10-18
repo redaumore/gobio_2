@@ -1,7 +1,6 @@
 import React from 'react';
 import FamilyCard from './FamilyCard';
-import familiesData from '../data/families.json' 
-
+import familiesData from '../data/families.json';
 
 const EcoenvasesGrid: React.FC = () => {
   return (
@@ -14,7 +13,7 @@ const EcoenvasesGrid: React.FC = () => {
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {familiesData.map((family, index) => (
-          <FamilyCard key={index} {...family} />
+          <FamilyCard key={index} {...family} className="bg-white" />
         ))}
       </div>
     </div>
