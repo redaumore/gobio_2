@@ -17,6 +17,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     if (scriptPaths.includes(location.pathname)) {
       const script = document.createElement('script');
       script.src = 'https://leads.godixital.com/js/leads_form_trigger.js';
+      script.type = 'text/javascript';
       document.body.appendChild(script);
 
       return () => {
