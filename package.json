@@ -1,7 +1,7 @@
 {
   "name": "gobio_2",
   "version": "0.1.0",
-  "homepage": "https://redaumore.github.io/gobio_2",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fontsource/montserrat": "^5.0.19",

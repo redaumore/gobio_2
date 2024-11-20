@@ -15,7 +15,7 @@ export default defineConfig({
       ],
     }),
   ],
-  base: './',
+  base: '/',
   build: {
     outDir: 'dist', // Asegúrate de que sea 'dist'
     emptyOutDir: true, // Elimina el directorio de salida antes de cada build
